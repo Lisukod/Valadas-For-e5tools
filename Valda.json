@@ -1,0 +1,4287 @@
+{
+  "_meta": {
+		"sources": [
+			{
+				"json": "VSS",
+				"abbreviation": "VSS",
+				"full": "Valda's Spire of Secrets",
+				"authors": [
+					"Mage Hand Press"
+				],
+				"convertedBy": [
+					"Bowsori#7981"
+				],
+				"version": "1.0",
+				"url": "https://www.kickstarter.com/projects/magehandpress/spire-of-secrets?lang=fr",
+				"targetSchema": "1.0",
+        "color":"b600ed"
+			}
+		],
+    "optionalFeatureTypes":{
+      "Graft":"Graft",
+      "MV:GW":"Maneuver, Grey Watchman"
+    }
+  },
+  "class":[
+    {
+      "name":"Necromancer",
+      "source":"VSS",
+      "hd":{
+        "number":1,
+        "faces":6
+      },
+      "proficiency":[
+        "con",
+        "int"
+      ],
+      "startingProficiencies":{
+        "weapons":[
+          "simple"
+        ],
+        "skills":[
+          {
+            "choose":{
+              "from":[
+                "arcana",
+                "deception",
+                "history",
+                "investigation",
+                "intimidation",
+                "medicine",
+                "persuasion",
+                "religion"
+              ],
+              "count":2
+            }
+          }
+        ]
+      },
+      "startingEquipment":{
+        "additionalFromBackground":true,
+        "default":[
+          "A {@item dagger|phb} and any simple weapon",
+          "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+          "A {@item shovel|PHB} and (a) a {@item dungeoneer's pack|phb} or (b) a {@item scholar's pack|PHB}"
+        ]
+      },
+      "multiclassing":{
+        "requirements":{
+          "int":13
+        },
+        "proficienciesGained":{
+          "armor":[
+            "light"
+          ]
+        }
+      },
+      "classTableGroups":[
+        {
+          "colLabels":[
+            "Thrall CR"
+          ],
+          "rows":[
+            [0],
+            ["1/4"],
+            ["1/2"],
+            ["1/2"],
+            ["1"],
+            ["1"],
+            ["1"],
+            ["1"],
+            ["2"],
+            ["2"],
+            ["2"],
+            ["2"],
+            ["3"],
+            ["3"],
+            ["3"],
+            ["3"],
+            ["4"],
+            ["4"],
+            ["4"],
+            ["4"]
+          ]
+        },
+        {
+          "type":"table",
+          "colLabels":[
+            "Cantrips Known"
+          ],
+          "rows":[
+            [4],
+            [4],
+            [4],
+            [5],
+            [5],
+            [5],
+            [5],
+            [5],
+            [5],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6],
+            [6]
+          ]
+        },
+        {
+          "type":"table",
+          "colLabels":[
+            "Spells Known"
+          ],
+          "rows":[
+            [2],
+            [3],
+            [4],
+            [5],
+            [6],
+            [7],
+            [8],
+            [9],
+            [10],
+            [11],
+            [12],
+            [12],
+            [13],
+            [13],
+            [14],
+            [14],
+            [15],
+            [15],
+            [15],
+            [15]
+          ]
+        },
+        {
+          "type":"table",
+          "caption":"Spell Slots per Spell Level",
+          "colLabels":[
+          "{@filter 1st|spells|level=1|class=Necromancer (VSS)}",
+          "{@filter 2nd|spells|level=2|class=Necromancer (VSS)}",
+          "{@filter 3rd|spells|level=3|class=Necromancer (VSS)}",
+          "{@filter 4th|spells|level=4|class=Necromancer (VSS)}",
+          "{@filter 5th|spells|level=5|class=Necromancer (VSS)}",
+          "{@filter 6th|spells|level=5|class=Necromancer (VSS)}",
+          "{@filter 7th|spells|level=5|class=Necromancer (VSS)}",
+          "{@filter 8th|spells|level=5|class=Necromancer (VSS)}",
+          "{@filter 9th|spells|level=5|class=Necromancer (VSS)}"
+        ],
+        "rows":[
+          [2,0,0,0,0,0,0,0,0],
+          [3,0,0,0,0,0,0,0,0],
+          [4,2,0,0,0,0,0,0,0],
+          [4,3,0,0,0,0,0,0,0],
+          [4,3,2,0,0,0,0,0,0],
+          [4,3,3,0,0,0,0,0,0],
+          [4,3,3,1,0,0,0,0,0],
+          [4,3,3,2,0,0,0,0,0],
+          [4,3,3,3,1,0,0,0,0],
+          [4,3,3,3,2,0,0,0,0],
+          [4,3,3,3,2,1,0,0,0],
+          [4,3,3,3,2,1,0,0,0],
+          [4,3,3,3,2,1,1,0,0],
+          [4,3,3,3,2,1,1,0,0],
+          [4,3,3,3,2,1,1,1,0],
+          [4,3,3,3,2,1,1,1,0],
+          [4,3,3,3,2,1,1,1,1],
+          [4,3,3,3,3,1,1,1,1],
+          [4,3,3,3,3,2,1,1,1],
+          [4,3,3,3,3,2,2,1,1]
+        ]
+        }
+      ],
+      "casterProgression":"full",
+      "spellcastingAbility":"int",
+      "spellsKnownProgression":[
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15,
+        15,
+        15
+      ],
+      "cantripProgression":[
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "classSpells":[
+        "Acid Splash",
+        {
+          "name":"Caustic Blade",
+          "source":"VSS"
+        },
+        "Chill Touch",
+        "Dancing Lights",
+        "Light",
+        "Mage Hand",
+        "Mending",
+        "Poison Spray",
+        "Shocking Grasp",
+        "True strike",
+        {
+          "name":"Cheat",
+          "source":"VSS"
+        },
+        {
+          "name":"Cryptogram",
+          "source":"VSS"
+        },
+        {
+          "name":"Eldritch Orb",
+          "source":"VSS"
+        },
+        {
+          "name":"Eye of Anubis",
+          "source":"VSS"
+        },
+        {
+          "name":"Flesh Ripper",
+          "source":"VSS"
+        },
+        {
+          "name":"Hocuspocus",
+          "source":"VSS"
+        },
+        {
+          "name":"Lightning Surge",
+          "source":"VSS"
+        },
+        {
+          "name":"Minor Lifesteal",
+          "source":"VSS"
+        },
+        {
+          "name":"Spark of Life",
+          "source":"VSS"
+        },
+        "Alarm",
+        "Bane",
+        "Command",
+        "Detect Evil and Good",
+        "Detect Magic",
+        "Expeditious Retreat",
+        "False Life",
+        "Fog Cloud",
+        "Grease",
+        "Identify",
+        "Inflict Wounds",
+        "Mage Armor",
+        "Protection from Evil and Good",
+        "Sleep",
+        "Unseen Servant",
+        {
+          "name":"Arcane Anomaly",
+          "source":"VSS"
+        },
+        {
+          "name":"Blood Print",
+          "source":"VSS"
+        },
+        {
+          "name":"Dead Mist Lash",
+          "source":"VSS"
+        },
+        {
+          "name":"Exhume",
+          "source":"VSS"
+        },
+        {
+          "name":"Flawed Reconstruction",
+          "source":"VSS"
+        },
+        {
+          "name":"Gahoul's Shrieking Skull",
+          "source":"VSS"
+        },
+        {
+          "name":"Hollowing Curse",
+          "source":"VSS"
+        },
+        {
+          "name":"Indemnify",
+          "source":"VSS"
+        },
+        {
+          "name":"Memorize",
+          "source":"VSS"
+        },
+        {
+          "name":"Might of the Abyss",
+          "source":"VSS"
+        },
+        "Acid Arrow",
+        "Blindness/Deafness",
+        "Darkness",
+        "Darkvision",
+        "Detect Thoughts",
+        "Enlarge/Reduce",
+        "Gentle Repose",
+        "Invisibility",
+        "Knock",
+        "Locate Object",
+        "Misty Step",
+        "Pass without Trace",
+        "Ray of Enfeeblement",
+        "Silence",
+        "Spider Climb",
+        "Web",
+        {
+          "name":"Curse Ward",
+          "source":"VSS"
+        },
+        {
+          "name":"Delay",
+          "source":"VSS"
+        },
+        {
+          "name":"Nondescript",
+          "source":"VSS"
+        },
+        {
+          "name":"Protection from Ballistics",
+          "source":"VSS"
+        },
+        {
+          "name":"Protect Threshold",
+          "source":"VSS"
+        },
+        {
+          "name":"Stone Bones",
+          "source":"VSS"
+        },
+        {
+          "name":"Unseen Accountant",
+          "source":"VSS"
+        },
+        "Animate Dead",
+        "Bestow Curse",
+        "Call Lightning",
+        "Clairvoyance",
+        "Counterspell",
+        "Dispel Magic",
+        "Fear",
+        "Gaseous Form",
+        "Glyph of Warding",
+        "Nondetection",
+        "Phantom Steed",
+        "Remove Curse",
+        "Revivify",
+        "Stinking Cloud",
+        "Speak with Dead",
+        "Vampiric Touch",
+        {
+          "name":"Benign Dismemberment",
+          "source":"VSS"
+        },
+        {
+          "name":"Curse of Blades",
+          "source":"VSS"
+        },
+        {
+          "name":"Dead Fog",
+          "source":"VSS"
+        },
+        {
+          "name":"Ruby-Eye Curse",
+          "source":"VSS"
+        },
+        {
+          "name":"Rusting Grasp",
+          "source":"VSS"
+        },
+        {
+          "name":"Séance",
+          "source":"VSS"
+        },
+        "Arcane Eye",
+        "Blight",
+        "Death Ward",
+        "Dimension Door",
+        "Greater Invisibility",
+        "Locate Creature",
+        "Phantasmal killer",
+        "Secret chest",
+        {
+          "name":"Dire Warning",
+          "source":"VSS"
+        },
+        {
+          "name":"Distort Gravity",
+          "source":"VSS"
+        },
+        {
+          "name":"False Vision",
+          "source":"VSS"
+        },
+        {
+          "name":"Gahoul's Scapegoat",
+          "source":"VSS"
+        },
+        {
+          "name":"Grasp of the Grave",
+          "source":"VSS"
+        },
+        "Antilife Shell",
+        "Cloudkill",
+        "Contagion",
+        "Dispel Evil and Good",
+        "Dream",
+        "Insect Plague",
+        "Modify Memory",
+        "Scrying",
+        "Teleportation Circle",
+        {
+          "name":"Pharaoh's Curse",
+          "source":"VSS"
+        },
+        {
+          "name":"Scrutinize Foe",
+          "source":"VSS"
+        },
+        "Circle of Death",
+        "Contingency",
+        "Create Undead",
+        "Eyebite",
+        "Flesh to Stone",
+        "Harm",
+        "Magic Jar",
+        {
+          "name":"Antiballistic Shield",
+          "source":"VSS"
+        },
+        {
+          "name":"Frenzy",
+          "source":"VSS"
+        },
+        {
+          "name":"Gahoul's Spectral Scythe",
+          "source":"VSS"
+        },
+        {
+          "name":"Inexorable Sarcophagus",
+          "source":"VSS"
+        },
+        "Etherealness",
+        "Finger of Death",
+        "Sequester",
+        "Teleport",
+        {
+          "name":"Abduct",
+          "source":"VSS"
+        },
+        "Antimagic Shield",
+        "Clone",
+        "Feeblemind",
+        "Mind Blank",
+        "Power Word Stun",
+        {
+          "name":"Gahoul's Glorious Gothic",
+          "source":"VSS"
+        },
+        "Imprisonment",
+        "Power Word Kill",
+        "Storm of Vengeance",
+        "Weird",
+        {
+          "name":"Heart of Darkness",
+          "source":"VSS"
+        }
+      ],
+      "fluff":[
+        {
+          "name":"Necromancer",
+          "type":"section",
+          "entries":[
+            "A withered old woman reaches out and grasps a battle-hardened knight by the arm. The knight laughs at the crone’s gesture before collapsing in mere seconds, desiccated and dead.",
+            "A scarred and grizzled warrior in breastplate leads a charge through a detachment of soldiers, swinging a glaive, shrouded in dark energies, at her foes. A shambling, undead vanguard follows her path, and her slain foes rise to join their ranks.",
+            "A grim, robed figure presides before his court, all arranged in a marble hall of gothic construction. Shambling corpses, abominations of flesh and bone, and dead-eyed charmed nobles wait in attendance, forming perfect lines in silent obedience.",
+            "Necromancers are spellcasters that hold sway over the forces of life and death, twisting them to serve their own ambitions, and commanding small armies of lifeless, animated thralls.",
+            {
+              "name":"Morbid Curiosity",
+              "type":"entries",
+              "entries":[
+                "Necromancers must match their grand intellects with an equal lack of scruples, the willingness to turn to forbidden knowledge and unquestionably evil methods. No matter their means, every necromancer is driven by a deep fascination with the dark arts and the power necromancy can afford them. Most see themselves as outcast members of the academic elite, braving new dark territories of magic that other spellcasters are too cowardly to explore.",
+                "However, collecting knowledge expanding their understanding is merely a means to an end for most necromancers—they are almost always driven by a deeper, darker impulse, a goal which pushes them to the utter brink. This might be the perverted ideal of a “greater good” or a goal to right the wrong of mortality; in every case, necromancy is a grim implement for their life’s work."
+              ]
+            },
+            {
+              "name":"Masters of Undeath",
+              "type":"entries",
+              "entries":[
+                "Necromancers have learned through trial and error how to puppet the flesh, bone, and spirits of the dead, binding them to their will. Through their terrible magic, they command the forms of lesser undead, and demand respect from those powerful enough to resist their thrall. All necromancers share the capability of simply animating corpses, along with the knowledge and foresight to create new and terrible undead abominations to further their goals.",
+                "Beyond the basic command over the undead, each necromancer specializes in a method to impart their will upon the world. Some dive deeply into the necromantic arts, whereas others focus on their ability to assert control over others, while others still master the art of both martial and magical combat. While their skills might seem specialized, properly prepared necromancers can dominate both on the battlefield and at the round table."
+              ]
+            },
+            {
+              "name":"Creating a Necromancer",
+              "type":"entries",
+              "entries":[
+                "As you create your necromancer, the most important piece of information to consider is your character’s ambition. What is their goal? How do they intend to achieve it? How does necromancy fit into the picture? Once you’ve decided on your ambition, consider why they turned to necromancy to accomplish it. Were they scorned by their previous spellcasting master? Did they come across an old, rotting tome filled with forgotten knowledge? Were they the survivors of some great attack by another necromancer?",
+                "Work with your GM to determine how necromancy is viewed in the world. Is it just another method of spellcasting, or is it an abominable tool, used only by the most abhorred spellcaster? How do commoners react when they see you? Must you hide your thralls from public scrutiny, and if so, how? Furthermore, do the other player characters know of your sinister magic, and if so, how have they reacted to seeing your puppeteered corpses? Work with other players, especially those with cleric and paladin characters, to find suitable reasons you might work together.",
+                {
+                  "name":"Quick Build",
+                  "type":"entries",
+                  "entries":[
+                    "You can make a necromancer quickly by following these suggestions. First, Intelligence should be your highest ability score, followed by Constitution, and then Strength or Dexterity if you plan to choose to be the Death Knight ambition. Second, choose a background of your choice, preferably one that ties into your ambition. Third, choose {@spell chill touch|phb}, {@spell hocuspocus|VSS}, {@spell light|phb}, and {@spell spark of life|VSS} for your cantrips, and then choose {@spell detect magic}, {@spell expeditious retreat}, {@spell Gahoul’s gruesome garrote|vss}, and {@spell inflict wounds} as your 1st level spells."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "classFeatures":[
+        "Spellcasting|Necromancer|VSS|1",
+        "Charnel Touch|Necromancer|VSS|1",
+        "Thralls|Necromancer|VSS|2",
+        "Bag of Bones|Necromancer|VSS|2",
+        {"classFeature":"Grave Ambition|Necromancer|VSS|3", "gainSubclassFeature":true},
+        "Black Arcana|Necromancer|VSS|3",
+        "Ability Score Improvement|Necromancer|VSS|4",
+        "Critical Spellcasting|Necromancer|VSS|5",
+        {"classFeature":"Grave Ambition Feature|Necromancer|VSS|6", "gainSubclassFeature":true},
+        "Enthralling Presence|Necromancer|VSS|7",
+        "Ability Score Improvement|Necromancer|VSS|8",
+        {"classFeature":"Grave Ambition Feature|Necromancer|VSS|10", "gainSubclassFeature":true},
+        "Ability Score Improvement|Necromancer|VSS|12",
+        "Critical Spellcasting Improvement|Necromancer|VSS|14",
+        "Ability Score Improvement|Necromancer|VSS|16",
+        "Undying Servitude|Necromancer|VSS|18",
+        "Ability Score Improvement|Necromancer|VSS|19",
+        {"classFeature":"Lichdom|Necromancer|VSS|20", "gainSubclassFeature":true}
+      ],
+      "subclasses":[
+        {
+          "name":"Blood Ascendant",
+          "source":"VSS",
+          "shortName":"Blood Ascendant",
+          "subclassFeatures":[
+            "Blood Ascendant|Necromancer|VSS|Blood Ascendant|VSS|3|VSS",
+            "Vampiric Transformation|Necromancer|VSS|Blood Ascendant|VSS|6|VSS",
+            "Children of the Night|Necromancer|VSS|Blood Ascendant|VSS|10|VSS",
+            "Lichdom: Nosferatu|Necromancer|VSS|Blood Ascendant|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Death Knight",
+          "source":"VSS",
+          "shortName":"Death Knight",
+          "subclassFeatures":[
+            "Death Knight|Necromancer|VSS|Death Knight|VSS|3|VSS",
+            "Extra Attack|Necromancer|VSS|Death Knight|VSS|6|VSS",
+            "Overcharged Thralls|Necromancer|VSS|Death Knight|VSS|10|VSS",
+            "Lichdom: Imperator|Necromancer|VSS|Death Knight|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Overlord",
+          "source":"VSS",
+          "shortName":"Overlord",
+          "subclassSpells":[
+            "hold person",
+            "suggestion",
+            "haste",
+            "slow",
+            "compulsion",
+            "confusion",
+            "dominate person",
+            "geas"
+          ],
+          "subclassFeatures":[
+            "Overlord|Necromancer|VSS|Overlord|VSS|3|VSS",
+            "Despotic Discourse|Necromancer|VSS|Overlord|VSS|6|VSS",
+            "Sacrificial Thralls|Necromancer|VSS|Overlord|VSS|10|VSS",
+            "Lichdom: Tyrant|Necromancer|VSS|Overlord|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Pale Master",
+          "source":"VSS",
+          "shortName":"Pale Master",
+          "subclassFeatures":[
+            "Pale Master|Necromancer|VSS|Pale Master|VSS|3|VSS",
+            "Frightening Gaze|Necromancer|VSS|Pale Master|VSS|6|VSS",
+            "Thrall Rush|Necromancer|VSS|Pale Master|VSS|10|VSS",
+            "Lichdom: Pale Ascendant|Necromancer|VSS|Pale Master|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Pharaoh",
+          "source":"VSS",
+          "shortName":"Pharaoh",
+          "subclassSpells":[
+            {"name":"Halo of Flame", "source":"VSS"},
+            "lesser restoration",
+            {"name":"snakestaff","source":"VSS"},
+            "revivify",
+            "death ward",
+            "divination",
+            "insect plague",
+            "greater restoration"
+          ],
+          "subclassFeatures":[
+            "Pharaoh|Necromancer|VSS|Pharaoh|VSS|3|VSS",
+            "Mock Divinity|Necromancer|VSS|Pharaoh|VSS|6|VSS",
+            "Channel Divinity: Scarab of Judgement|Necromancer|VSS|Pharaoh|VSS|10|VSS",
+            "Lichdom: God-King|Necromancer|VSS|Pharaoh|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Plague Lord",
+          "source":"VSS",
+          "shortName":"Plague Lord",
+          "subclassFeatures":[
+            "Plague Lord|Necromancer|VSS|Plague Lord|VSS|3|VSS",
+            "Projectile Spew|Necromancer|VSS|Plague Lord|VSS|6|VSS",
+            "Bloated Thralls|Necromancer|VSS|Plague Lord|VSS|10|VSS",
+            "Lichdom: Corpulent Lich|Necromancer|VSS|Plague Lord|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Reanimator",
+          "source":"VSS",
+          "shortName":"Reanimator",
+          "subclassFeatures":[
+            "Reanimator|Necromancer|VSS|Reanimator|VSS|3|VSS",
+            "Lazarus Bolt|Necromancer|VSS|Reanimator|VSS|6|VSS",
+            "Arcane Stitching|Necromancer|VSS|Reanimator|VSS|10|VSS",
+            "Lichdom: Patchwork Golem|Necromancer|VSS|Reanimator|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Reaper",
+          "source":"VSS",
+          "shortName":"Reaper",
+          "subclassFeatures":[
+            "Reaper|Necromancer|VSS|Reaper|VSS|3|VSS",
+            "Umbral Form|Necromancer|VSS|Reaper|VSS|6|VSS",
+            "Wraith Flight|Necromancer|VSS|Reaper|VSS|10|VSS",
+            "Lichdom: Harbinger|Necromancer|VSS|Reaper|VSS|20|VSS"
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Warden",
+      "source":"VSS",
+      "hd":{
+        "number":1,
+        "faces":10
+      },
+      "proficiency":[
+        "str",
+        "con"
+      ],
+      "startingProficiencies":{
+        "weapons":[
+          "simple",
+          "martial"
+        ],
+        "armor":[
+          "light",
+          "medium",
+          "shields"
+        ],
+        "skills":[
+          {
+            "choose":{
+              "from":[
+                "animal handling",
+                "athletics",
+                "nature",
+                "perception",
+                "survival"
+              ],
+              "count":2
+            }
+          }
+        ]
+      },
+      "startingEquipment":{
+        "additionalFromBackground":true,
+        "default":[
+          "A {@item shield|phb} and any martial weapon",
+          "(a) a {@item chain shirt|phb}, (b) {@item leather armor|phb} and a {@item spear|phb} or (c) {@item chain mail|phb} (if proficient)",
+          "(a) two {@item light hammer|phb|light hammers} or (b) any simple melee weapon",
+          "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack}"
+        ]
+      },
+      "multiclassing":{
+        "requirements":{
+          "str":13
+        },
+        "proficienciesGained":{
+          "armor":[
+            "light",
+            "medium",
+            "shields"
+          ],
+          "weapons":[
+            "simple",
+            "martial"
+          ]
+        }
+      },
+      "fluff":[
+        {
+          "name":"Warden",
+          "type":"section",
+          "entries":[
+            "An immense goblinoid army stretches from the horizon to the castle walls. In the breach, a single knight holds back the horde, eviscerating all comers, and allowing none to pass.",
+            "Blood dripping from his blade, a scarred half orc gets down on all fours and breaks into a sprint, his eyes alight with bestial fury.",
+            "Advancing slowly, an elf brandishing a green scimitar emerges from the foliage before two poachers. Startled, they turn to run, but find their feet bound fast by leaves and vines.",
+            "Wardens are vigilant guardians, and unbreakable defenders of the weak. They are nature’s shield, and the watchers of the realms of men. When the world cries out for a champion, wardens heed the call.",
+            {
+              "type":"entries",
+              "name":"Mighty Guardians",
+              "entries":[
+                "Ever-vigilant, wardens are the staunch defenders of nature and the chosen champions of people. A warden might be selected by his tribe to defend them from their enemies, or be visited by the spirits of a sacred grove and beckoned to watch over the forest. Where a warden is not directly called to defend others, he feels the constant pull to take up a charge of his own, to use his strength as a bastion for the weak.",
+                "Wherever a warden travels, his strength travels with him, and new causes make themselves known. There is never a shortage on those who need protection, for the strong always seem to stand above the weak."
+              ]
+            },
+            {
+              "type":"entries",
+              "name":"Primal Strength",
+              "entries":[
+                "Wardens are like mighty trees in a gale storm, or the rocks along shore, constantly battered by waves. Though they may experience extraordinary hardship, a warden cannot be easily moved, and seldom can be broken.",
+                "Wardens draw their extraordinary toughness from the wild itself. They can feel the strength of the earth beneath their feet, the vitality of the air in their lungs, and the fury of the blazing sun overhead. They channel this power intuitively, without ever considering it. Indeed, some wardens believe that their power comes from within, and that nature does nothing to empower them, but even these wardens feel nature’s pull to defend the powerless and take up a cause."
+              ]
+            },
+            {
+              "type":"entries",
+              "name":"Creating a Warden",
+              "entries":[
+                "When creating a warden, consider what drives your character. What brought you to raise up your shield for others? Do you fight to protect anyone or anywhere in particular? A threat to your homeland, or loved ones, might have been your catalyst, but you also might have risen to combat a menace to the natural world. What was your call, and how do you honor it? What motivates you to keep fighting, even when you’re at death’s door?",
+                "Most wardens have been recognized as exemplary defenders. Perhaps, you are known as a wandering knight of the northern provinces, or perhaps you were beckoned by spirits of the forest to protect them from invaders. Who has called you, and how did you respond?",
+                {
+                  "type":"entries",
+                  "name":"Quick Build",
+                  "entries":[
+                    "You can build a warden quickly with these suggestions. First, make Constitution your highest ability score, followed by Strength and Dexterity. Then, choose the Primal Toughness option for Sentinel’s Stand."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "classFeatures":[
+        "Sentinel's Stand|Warden|VSS|1",
+        "Warden's Grasp|Warden|VSS|1",
+        "Fighting Style|Warden|VSS|2",
+        "Warden's Mark|Warden|VSS|2",
+        {"classFeature":"Champion's Call|Warden|VSS|3","gainSubclassFeature":true},
+        "Warden's Resolve|Warden|VSS|3",
+        "Ability Score Improvement|Warden|VSS|4",
+        "Font of Life|Warden|VSS|4",
+        "Extra Attack|Warden|VSS|5",
+        {"classFeature":"Call Feature|Warden|VSS|6","gainSubclassFeature":true},
+        "Sentinel's Step|Warden|VSS|7",
+        "Ability Score Improvement|Warden|VSS|8",
+        "Undying|Warden|VSS|9",
+        "Interrupt|Warden|VSS|10",
+        "Mark Improvement|Warden|VSS|11",
+        "Ability Score Improvement|Warden|VSS|12",
+        {"classFeature":"Call Feature|Warden|VSS|13","gainSubclassFeature":true},
+        "Grasp Improvement|Warden|VSS|14",
+        "Font of Life Improvement|Warden|VSS|15",
+        "Ability Score Improvement|Warden|VSS|16",
+        "Resolve Improvement|Warden|VSS|17",
+        "Sentinel's Soul|Warden|VSS|18",
+        "Ability Score Improvement|Warden|VSS|19",
+        {"classFeature":"Call Feature|Warden|VSS|20","gainSubclassFeature":true}
+      ],
+      "subclasses":[
+        {
+          "name":"Bloodwrath Guardian",
+          "source":"VSS",
+          "shortName":"Bloodwrath Guardian",
+          "subclassFeatures":[
+            "Bloodwrath Guardian|Warden|VSS|Bloodwrath Guardian|VSS|3|VSS",
+            "Predator's Scent|Warden|VSS|Bloodwrath Guardian|VSS|6|VSS",
+            "Evasion|Warden|VSS|Bloodwrath Guardian|VSS|13|VSS",
+            "Form of the Primal Beast|Warden|VSS|Bloodwrath Guardian|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Grey Watchman",
+          "source":"VSS",
+          "shortName":"Grey Watchman",
+          "subclassFeatures":[
+            "Grey Watchman|Warden|VSS|Grey Watchman|VSS|3|VSS",
+            "Fortification Expert|Warden|VSS|Grey Watchman|VSS|6|VSS",
+            "Mettle|Warden|VSS|Grey Watchman|VSS|13|VSS",
+            "Unbreakable Sentinel|Warden|VSS|Grey Watchman|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Nightgaunt",
+          "source":"VSS",
+          "shortName":"Nightgaunt",
+          "subclassFeatures":[
+            "Nightgaunt|Warden|VSS|Nightgaunt|VSS|3|VSS",
+            "Undead Empathy|Warden|VSS|Nightgaunt|VSS|6|VSS",
+            "Evasion|Warden|VSS|Nightgaunt|VSS|13|VSS",
+            "Gravelord|Warden|VSS|Nightgaunt|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Soulblood Shaman",
+          "source":"VSS",
+          "shortName":"Soulblood Shaman",
+          "casterProgression":"1/3",
+          "spellcastingAbility":"wis",
+          "subclassTableGroups":[
+            {
+              "colLabels":[
+                "Cantrips Known",
+                "Spells Known",
+                "1st", "2nd", "3rd", "4th"
+              ],
+              "rows":[
+                [2,3,2,0,0,0],
+                [2,4,3,0,0,0],
+                [2,4,3,0,0,0],
+                [2,4,3,0,0,0],
+                [2,5,4,2,0,0],
+                [2,6,4,2,0,0],
+                [2,6,4,2,0,0],
+                [3,7,4,3,0,0],
+                [3,8,4,3,0,0],
+                [3,8,4,3,0,0],
+                [3,9,4,3,3,0],
+                [3,10,4,3,3,0],
+                [3,10,4,3,3,0],
+                [3,10,4,3,3,0],
+                [3,11,4,3,3,0],
+                [3,11,4,3,3,0],
+                [3,11,4,3,3,0],
+                [3,11,4,3,3,0],
+                [3,12,4,3,3,1],
+                [3,13,4,3,3,1]
+              ]
+            }
+          ],
+          "subclassSpells":[
+            {
+              "class":"Druid",
+              "source":"PHB"
+            }
+          ],
+          "subclassFeatures":[
+            "Soulblood Shaman|Warden|VSS|Soulblood Shaman|VSS|3|VSS",
+            "Whispers of Beyond|Warden|VSS|Soulblood Shaman|VSS|6|VSS",
+            "Spell Resistance|Warden|VSS|Soulblood Shaman|VSS|13|VSS",
+            "Ethereal Watcher|Warden|VSS|Soulblood Shaman|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Stoneheart Defender",
+          "source":"VSS",
+          "shortName":"Stoneheart Defender",
+          "subclassFeatures":[
+            "Stoneheart Defender|Warden|VSS|Stoneheart Defender|VSS|3|VSS",
+            "Earthshatter|Warden|VSS|Stoneheart Defender|VSS|6|VSS",
+            "Mettle|Warden|VSS|Stoneheart Defender|VSS|13|VSS",
+            "Immortal Mountain|Warden|VSS|Stoneheart Defender|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Storm Sentinel",
+          "source":"VSS",
+          "shortName":"Storm Sentinel",
+          "subclassFeatures":[
+            "Storm Sentinel|Warden|VSS|Storm Sentinel|VSS|3|VSS",
+            "Static Burst|Warden|VSS|Storm Sentinel|VSS|6|VSS",
+            "Evasion|Warden|VSS|Storm Sentinel|VSS|13|VSS",
+            "Stormlord|Warden|VSS|Storm Sentinel|VSS|20|VSS"
+          ]
+        },
+        {
+          "name":"Verdant Protector",
+          "source":"VSS",
+          "shortName":"Verdant Protector",
+          "subclassFeatures":[
+            "Verdant Protector|Warden|VSS|Verdant Protector|VSS|3|VSS",
+            "Verdant Skin|Warden|VSS|Verdant Protector|VSS|6|VSS",
+            "Mettle|Warden|VSS|Verdant Protector|VSS|13|VSS",
+            "Form of the Oak Sentinel|Warden|VSS|Verdant Protector|VSS|20|VSS"
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Captain",
+      "source":"VSS",
+      "hd":{
+        "number":1,
+        "faces":8
+      },
+      "proficiency":[
+        "con",
+        "cha"
+      ],
+      "startingProficiencies":{
+        "weapons":[
+          "simple",
+          "martial"
+        ],
+        "armor":[
+          "light",
+          "medium",
+          "shields"
+        ],
+        "skills":[
+          {
+            "choose":{
+              "from":[
+                "animal handling",
+                "athletics",
+                "deception",
+                "history",
+                "insight",
+                "intimidation",
+                "perception",
+                "persuasion"
+              ],
+              "count":2
+            }
+          }
+        ]
+      },
+      "startingEquipment":{
+        "additionalFromBackground":true,
+        "default":[
+          "(a) {@item scale mail|phb}, or (b) {@item leather armor|phb}",
+          "A {@item dagger|phb} and (a) a {@item warhammer|phb}, (b) a {@item longsword|phb}, or (c) any simple weapon",
+          "(a) a {@item light crossbow|phb} and 20 bolts, (b) a {@item shortbow|phb} and 20 arrows, or (c) 5 {@item javelin|phb|javelins}",
+          "an embroidered standard and (a) an {@item explorer's pack|phb} or (b) one kit you're proficient with"
+        ]
+      },
+      "multiclassing":{
+        "requirements":{
+          "cha":13,
+          "or":[
+            {
+              "str":13,
+              "dex":13
+            }
+          ]
+        },
+        "proficienciesGained":{
+          "armor":[
+            "light",
+            "medium"
+          ],
+          "weapons":[
+            "simple",
+            "martial"
+          ]
+        }
+      }
+    }
+  ],
+  "classFeature":[
+    {
+      "name":"Spellcasting",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":1,
+      "entries":[
+        "Your connection to the realm of negative energy allows you to cast powerful necromantic spells.",
+        {
+          "name":"Cantrips",
+          "type":"entries",
+          "entries":[
+            "At 1st level, you know four cantrips of your choice from the necromancer spell list. You learn additional necromancer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Necromancer table."
+          ]
+        },
+        {
+          "name":"Spell Slots",
+          "type":"entries",
+          "entries":[
+            "The Necromancer table shows how many spell slots you have to cast spells of the 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all spell slots when you finish a long rest."
+          ]
+        },
+        {
+          "name":"Spells Known of 1st Level and Higher",
+          "type":"entries",
+          "entries":[
+            "You know two 1st-level spells of your choice from the necromancer spell list.",
+            "You learn an additional necromancer spell of your choice at each level except 12th, 14th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
+            "Additionally, when you gain a level in this class, you can choose one of the necromancer spells you know and replace it with another spell from the necromancer spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "name":"Spellcasting Ability",
+          "type":"entries",
+          "entries":[
+            "Intelligence is your spellcasting ability for your necromancer spells, since your power is rooted in the fine manipulation of negative energy and research into magical secrets. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a necromancer spell you cast and when making an attack roll with one.",
+            {
+              "type":"abilityDc",
+              "name":"Spell",
+              "attributes":[
+                "int"
+              ]
+            },
+            {
+              "type":"abilityAttackMod",
+              "name":"Spell",
+              "attributes":[
+                "int"
+              ]
+            }
+          ]
+        },
+        {
+          "name":"Ritual Casting",
+          "type":"entries",
+          "entries":[
+            "You can cast a necromancer spell as a ritual if that spell has the ritual tag."
+          ]
+        },
+        {
+          "name":"Spellcasting Focus",
+          "type":"entries",
+          "entries":[
+            "You can use an arcane focus as a spellcasting focus. For a necromancer, these are typically objects with sentimental value, such as a locket, childhood toy, prison shackle, or wedding ring, that are altered with magically conductive materials."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Charnel Touch",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":1,
+      "entries":[
+        "Your connection to the negative energy realm grants you an inner nexus of dangerous power, ready to be unleashed at a moment’s notice. At 1st level, you have a pool of Charnel Touch points equal to your necromancer level × 5 that replenishes when you finish a long rest.",
+        "As an action, declare the number of points you wish to expend, up to a maximum of 5 × your proficiency bonus, and make a melee spell attack against one target within reach. On a hit, you expend the declared amount of points and deal necrotic damage equal to the points expended. If you miss the attack, you do not expend any points. The damage dealt by your Charnel Touch is doubled when you score a critical hit, expending no additional points.",
+        "This attack deals no damage to constructs and instead heals undead for the amount of points expended. You can target a willing creature with this ability without making a spell attack roll."
+      ]
+    },
+    {
+      "name":"Thralls",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":2,
+      "entries":[
+        {
+          "type":"inset",
+          "name":"Variant Rule: Necromancy Unleashed",
+          "entries":[
+            "This class imposes limitations on animate deadstyle spells, as well as the number and types of thralls a player can use in order to ensure timely, balanced play. If you’d like to throw caution to the wind and embrace the undead horde experience, use this variant rule. Ignore the “Animate Dead” header in the Thralls feature. Animated undead from spells are separate from your thralls for the purposes of your class features, but have no other class-based limitations."
+          ]
+        },
+        "While lesser spellcasters can only animate flesh and bone in a rudimentary fashion, and must expend valuable energy to maintain their undead’s loyalty, true necromancers can provide their undead with a portion of their own life force, ensuring long term obedience. Beginning at the 2nd level, you learn an ancient and powerful ritual which allows you to raise and command your own army of the undead.",
+        {
+          "type":"entries",
+          "name":"Animate Thralls",
+          "entries":[
+            "By spending 10 uninterrupted minutes performing this ritual with a spellcasting focus or component pouch, you can raise the remains of one or more Small or Medium humanoids into undead creatures. Undead created in this way become your thralls. You maintain control over your thralls indefinitely. Stat blocks for {@creature zombie|VSS|zombies}, {@creature skeleton|VSS|skeletons}, and other thralls can be found in the Undead Thralls table."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Commanding Thralls",
+          "entries":[
+            "If you are conscious, you can mentally control all of your thralls, without using any actions. If you are unconscious, your thralls will move to protect your body from harm, but will not attack.",
+            "In combat, your thralls share your initiative count, but take their turns immediately after yours. All thralls collectively share one reaction and bonus action, which a single thrall can use each round.",
+            "Thralls use your spellcasting modifier to make their attacks."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Maximum Thralls",
+          "entries":[
+            "You can animate and control a thrall of challenge rating (CR) 1/4. As you gain levels in this class, you can animate more thralls. The combined CR of all your thralls can’t exceed the number shown in the Thrall CR Total column of the Necromancer table, and the total number of thralls under your control can never exceed your proficiency bonus.",
+            "At any time, you can use your action to sever your connection to one or more thralls, releasing them. Corporeal undead crumple into a heap and incorporeal undead flee to the Ethereal Plane."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Animate Dead",
+          "entries":[
+            "Beginning at 5th level, a necromancer can learn the {@spell animate dead} spell, a staple of the school of necromancy. Necromancers can cast this spell as an action, instead of in one minute. All undead created by the {@spell animate dead} spell (as well as any other magic, such as the create undead spell, which allows you to control undead) count as your thralls and can be commanded as such. If your new thralls granted to you by a spell cause you to exceed your total CR or number of thralls, you can immediately sever your connection to any of your existing thralls so as to stay within these limits. Your thralls can never command or create other undead.",
+            "As always, you can’t reanimate your undead which have been reduced to 0 hit points. Your Animate Thralls ritual, the {@spell animate dead} spell, and similar magic only affects humanoid corpses, whereas your thralls are undead creatures."
+          ]
+        },
+        {
+          "type":"table",
+          "caption":"Undead Thralls",
+          "colLabels":[
+            "Name",
+            "CR",
+            "AC",
+            "HP",
+            "Movement",
+            "Traits"
+          ],
+          "colStyles":[
+            "col-2 text-left",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-2 text-left",
+            "col-5 text-left"
+          ],
+          "rows":[
+            ["{@creature Bonebeast|VSS}","1","14","28","40 ft.","Keen Smell, Pack Tactics"],
+            ["{@creature Gorger|VSS}","1","8","36","30 ft.","-"],
+            ["{@creature Gravetouched Ghoul|VSS}","2","12","63","30 ft.","Regeneration"],
+            ["{@creature Skeleton|VSS}","1/4","13","13","30 ft.","-"],
+            ["{@creature Spirit|VSS}","1/4","15","7","25 ft., fly 25 ft. (hover)","Incorporeal Movement"],
+            ["{@creature Visage|VSS}","2","17","41","25 ft., fly 25 ft. (hover)","Incorporeal Movement, Magic Resistance"],
+            ["{@creature Zombie|VSS}","1/4","8","22","20 ft.","Undead Fortitude"]
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Bag of Bones",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":2,
+      "entries":[
+        "Also at 2nd level, you learn how to create a necromantic magic item, a bag of bones. The bag connects to a vast extradimensional space which can only hold Medium or smaller corpses, bones, and undead creatures; it violently expels anything else placed within it. You can use an action to place a corpse or willing undead creature into the bag, up to a maximum of 10 corpses or undead creatures, or use your action to dump the contents of the bag, which land in spaces within 5 feet of you.",
+        "You can transform any container you can carry into a bag of bones by performing a special ritual over the course of 1 hour while you hold it. This container ceases to be magical if you perform this ritual again to create a new bag of bones. The container always connects to the same extradimensional space. If the bag is placed inside an extradimensional space, such as that created by a bag of holding, it is destroyed. Its contents remain in the same extradimensional space until you create a new bag."
+      ]
+    },
+    {
+      "name":"Grave Ambition",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":3,
+      "entries":[
+        "When you reach 3rd level, you decide on a proper path of research into the dark arts in order to carve a path leading your ultimate goal. Choose one Grave Ambition, detailed at the end of the class. Your choice grants you features at 3rd level, and again at 6th, 10th, and 20th level."
+      ]
+    },
+    {
+      "name":"Grave Ambition Feature",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":6,
+      "entries":[
+        "At 6th level, you gain a feature granted by your Grave Ambition."
+      ]
+    },
+    {
+      "name":"Grave Ambition Feature",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":10,
+      "entries":[
+        "At 10th level, you gain a feature granted by your Grave Ambition."
+      ]
+    },
+    {
+      "name":"Black Arcana",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":3,
+      "entries":[
+        "Also beginning at 3rd level, as a bonus action, you can expend a spell slot to replenish your Charnel Touch point pool. Your pool regains {@dice 1d8} expended points, plus {@dice 1d8} for each level of the spell slot expended, up a maximum of your pool’s total."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":4,
+      "entries":[
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":8,
+      "entries":[
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":12,
+      "entries":[
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":16,
+      "entries":[
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":19,
+      "entries":[
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Critical Spellcasting",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":5,
+      "entries":[
+        "At 5th level, your potent necrotic powers punish your enemy at the first sign of weakness. When a creature rolls a 1 on a saving throw against one of your spells, it automatically fails the save and takes twice the number of damage dice dealt by the spell. The additional damage only applies to the creature that rolled a 1.",
+        "Additionally, your spell attacks score a critical hit on a roll of 19 or 20."
+      ]
+    },
+    {
+      "name":"Critical Spellcasting Improvement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":14,
+      "entries":[
+        "Starting at 14th level, creatures automatically fail their saving throws against your spells and take additional damage when they roll a 1 or a 2. Additionally, your spell attacks score a critical hit on a roll of 18–20."
+      ]
+    },
+    {
+      "name":"Enthralling Presence",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":7,
+      "entries":[
+        "At 7th level, the negative energy that flows through you reinforces your thralls against those who would seek to destroy or control your servants. Your thralls and other undead you control can’t be turned or forcefully controlled by another creature while you are conscious."
+      ]
+    },
+    {
+      "name":"Undying Servitude",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":18,
+      "entries":[
+        "When you reach 18th level, your connection to your thralls can pull them back from the brink of destruction. When a thrall under your control is reduced to 0 hit points and not destroyed outright, you can use your reaction to restore it to half of its maximum hit points. Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Lichdom",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "level":20,
+      "entries":[
+        "By 20th level, you have unlocked the pinnacle of necromantic prowess, through which you will conquer death itself: The Rite of Lichdom. When you reach this level, you have completed your phylactery and are ready to undergo the rite. To do so, you shut yourself away for 30 days in an isolated location of your choice, and emerge as an immortal lich, an undead of unsurpassed power. Once the rite is complete, you gain the following benefits as well as those dictated by your choice of Grave Ambition.",
+        {
+          "type":"entries",
+          "name":"Phylactery",
+          "entries":[
+            "A phylactery is a small object that houses a lich’s soul, safeguarding their immortality. If you drop to 0 hit points, your body crumbles to dust, but your will and mind escape to the phylactery. After {@dice 1d4 + 1} days, a new body coalesces as near to your phylactery as possible and you return to life (or rather, unlife). When your body reforms, you gain the benefits of a long rest. The new body is identical in every way to the one that was destroyed."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Undead Resilience",
+          "entries":[
+            "You gain immunity to poison and necrotic damage."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Undead Traits",
+          "entries":[
+            "You are immune to the effects of exhaustion and you do not need to eat, drink, sleep, or breathe. You must still rest for 4 hours a day to gain the benefits of a long rest. Though your type is Humanoid, spells and effects which specifically affect undead affect you as well. You are immune to any effect that turns undead.",
+            {
+              "type":"inset",
+              "name":"Phylactery",
+              "entries":[
+                "A lich’s phylactery is as much a memento as it is their anchor to immortality, and as such, no two are alike. Phylacteries are often constructed from objects with sentimental value, such as family heirlooms or prized possessions, but can be fashioned from swords, pieces of armor, or even entire castles.",
+                "Furthermore, every phylactery has a weakness, a critical flaw by which it can be destroyed, allowing their lich to be slain permanently. These weaknesses, too, are unique to each phylactery. One phylactery might require a ritual to be performed around it for 24 hours, while another might call for the phylactery to be dipped in the lava of an active volcano. Discuss with your GM the form your phylactery takes and what weakness it possesses."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Sentinel's Stand",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":1,
+      "entries":[
+        "Wardens are towers that cannot easily be felled. At 1st level, choose one of the following features.",
+        {
+          "type":"entries",
+          "name":"Armor Proficiency",
+          "entries":[
+            "You gain proficiency with heavy armor."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Primal Toughness",
+          "entries":[
+            "Your hit point maximum increases by 1 + your Constitution modifier, and it increases by 1 every time you gain a level in this class."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Stalwart Spirit",
+          "entries":[
+            "You gain proficiency in one saving throw of your choice."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Warden's Grasp",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":1,
+      "entries":[
+        "At 1st level, as a bonus action, you can use the force of your daunting presence to ensnare nearby enemies into combat. Until the beginning of your next turn, you can’t move, and each Large or smaller creature you choose within 5 feet can’t willingly move away from you unless it first takes the Disengage action."
+      ]
+    },
+    {
+      "name":"Grasp Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":14,
+      "entries":[
+        "At 14th level, the range of your Warden Grasp ability increases to 10 feet."
+      ]
+    },
+    {
+      "name":"Fighting Style",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":2,
+      "entries":[
+        "At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.",
+        {
+          "type":"entries",
+          "name":"Crippling",
+          "entries":[
+            "When you hit a creature with a melee weapon attack, its speed is reduced by 10 feet, to a minimum of 0, until the end of its next turn, and it can’t take the Dash action until the end of its turn."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Great Weapon Fighting",
+          "entries":[
+            "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Protection",
+          "entries":[
+            "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a weapon or shield."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Titan Fighting",
+          "entries":[
+            "You gain a +2 bonus to melee weapon attack rolls you make against Large or larger creatures."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Warden's Mark",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":2,
+      "entries":[
+        "At 2nd level, you can use your bonus action to mark a creature you can see within 30 feet. While a marked creature is within 5 feet of you, it has disadvantage on any attack roll that doesn’t target you. The mark lasts for 1 minute, or until you mark another creature, become incapacitated, or die."
+      ]
+    },
+    {
+      "name":"Mark Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":11,
+      "entries":[
+        "At 11th level, whenever you take the Attack action on your turn, you can make an additional attack against a creature you have marked."
+      ]
+    },
+    {
+      "name":"Champion's Call",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":3,
+      "entries":[
+        "By the time you reach 3rd level, you feel the inexorable pull of an important duty or task that you assume as your own. No outside force compels your choice or enforces your conduct; if you fail in your charge, you alone are responsible.",
+        "Your choice grants you features at 3rd level and again at 6th, 13th, and 20th level."
+      ]
+    },
+    {
+      "name":"Warden's Resolve",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting at 3rd level, whenever your hit points are less than half your maximum, you have resistance to bludgeoning, piercing, and slashing damage."
+      ]
+    },
+    {
+      "name":"Resolve Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":17,
+      "entries":[
+        "Starting at 17th level, when your hit points are less than half your maximum, you have resistance to all damage except psychic."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":4,
+      "entries":[
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":8,
+      "entries":[
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":12,
+      "entries":[
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":16,
+      "entries":[
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Ability Score Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":19,
+      "entries":[
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name":"Font of Life",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":4,
+      "entries":[
+        "By 4th level, you can use your action to end either one disease or one condition afflicting you. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. You can use this action even if the condition you end would otherwise prevent it. Once you use this ability, you must finish a short or long rest before you can use it again."
+      ]
+    },
+    {
+      "name":"Font of Life Improvement",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":15,
+      "entries":[
+        "At 15th level, once per day when you use your Font of Life ability, your hit points are also restored to half your maximum, if they were lower."
+      ]
+    },
+    {
+      "name":"Extra Attack",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":5,
+      "entries":[
+        "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+      ]
+    },
+    {
+      "name":"Call Feature",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":6,
+      "entries":[
+        "At 6th level, you gain a feature granted by your Champion's Call."
+      ]
+    },
+    {
+      "name":"Call Feature",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":13,
+      "entries":[
+        "At 13th level, you gain a feature granted by your Champion's Call."
+      ]
+    },
+    {
+      "name":"Call Feature",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":20,
+      "entries":[
+        "At 20th level, you gain a feature granted by your Champion's Call."
+      ]
+    },
+    {
+      "name":"Sentinel's Step",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":7,
+      "entries":[
+        "Wardens are faultless trackers, which can navigate hazardous terrain with ease. At 7th level, select one of the following features.",
+        {
+          "type":"entries",
+          "name":"Earthstrength",
+          "entries":[
+            "You possess the might of the earth itself. Your carrying capacity doubles, and you have advantage on ability checks and saving throws against being pushed against your will or knocked {@condition prone}."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Thundering Charge",
+          "entries":[
+            "On your first round of combat, your speed increases by 30 feet and you have advantage on the first melee weapon attack you make."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Wildblood",
+          "entries":[
+            "Your reflexes have been honed by the perils of nature. You can’t be {@condition surprised} while you are conscious. Additionally, you have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Undying",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":9,
+      "entries":[
+        "At 9th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Interrupt",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":10,
+      "entries":[
+        "Starting at 10th level, as a reaction when a creature within 5 feet of you makes a melee attack against you, you can punctuate its strikes. After that attack, the creature can make one fewer attack than normal on this turn."
+      ]
+    },
+    {
+      "name":"Sentinel's Soul",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "level":18,
+      "entries":[
+        "Wardens are unshakable guardians that cannot be bowed. At 18th level, choose one of the following features:",
+        {
+          "type":"entries",
+          "name":"Ageless Guardian",
+          "entries":[
+            "You are immune to poison and disease, no longer need food or water, suffer none of the frailty of old age, and can’t be aged magically. You can still die of old age, however.",
+            "Additionally, you have advantage on Dexterity saving throws."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Eyes of the Mountain",
+          "entries":[
+            "You gain tremorsense with a range of 15 feet, and can detect the presence of hidden or invisible creatures within 30 feet.",
+            "Additionally, you have advantage on Constitution saving throws."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Impenetrable Mind",
+          "entries":[
+            "Your thoughts can’t be read, and you can’t be {@condition charmed} or {@condition frightened}.",
+            "Additionally, you have advantage on Wisdom saving throws."
+          ]
+        }
+      ]
+    }
+  ],
+  "subclassFeature":[
+    {
+      "name":"Blood Ascendant",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Blood Ascendant",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Necromantic might comes in many forms, but a singular, ancient source is the blood curse of vampirism. Though it promises much—immortality, agility, charm—it comes paired with insidious drawbacks, from the stinging burn of sunlight to a perpetual thirst for blood. Necromancers that wish to capture a measure of this power without suffering its myriad weaknesses perform a special ritual with vampiric blood in order to become blood ascendents. In doing so, they fall deathly pale and lose their reflection within mirrors, but learn to slowly pry out vampiric powers without fully succumbing to the all-devouring curse.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Enthrall Humanoid|Necromancer|VSS|Blood Ascendant|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Drain|Necromancer|VSS|Blood Ascendant|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Enthrall Humanoid",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Blood Ascendant",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you choose this ambition at 3rd level, you can use your action to touch an incapacitated humanoid, bringing them under your necromantic control. The creature becomes enthralled by you. While enthralled, the creature is {@condition charmed} by you and follows your commands. It remains enthralled until a  {@spell remove curse} spell is cast on it, the charmed condition is removed from it, you use this feature again, or you release the creature as an action.",
+        "An enthralled creature counts against the total number of thralls under your control and the total CR of thralls you can control. If the creature is of a higher CR than the total CR of thralls you control, you can’t enthrall it. You can release thralls under your control as a part of the action used to enthrall a creature."
+      ]
+    },
+    {
+      "name":"Charnel Drain",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Blood Ascendant",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, you drain the essence of those you slay. When you reduce a hostile creature or an enthralled humanoid to 0 hit points with your Charnel Touch ability, you regain hit points equal to your Intelligence modifier + your necromancer level (minimum 3). Additionally, you can choose to knock the target unconscious instead of killing it."
+      ]
+    },
+    {
+      "name":"Vampiric Transformation",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Blood Ascendant",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Starting at 6th level, you can use your action and expend 15 Charnel Touch points to transform for up to 1 hour, or until you drop to 0 hit points or revert on your turn as an action. Anything you are wearing transforms with you, but nothing you are carrying does. Choose one of the following transformations:",
+        {
+          "type":"entries",
+          "name":"Bat",
+          "entries":[
+            "You transform into a Tiny bat. While in bat form, you can’t speak, your walking speed is 5 feet, and you have a flying speed of 30 feet. Your statistics, other than your size and speed, are unchanged."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Mist",
+          "entries":[
+            "You transform into a Medium cloud of mist. While in mist form, you can’t take any actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature’s space and stop there. In addition, if air can pass through a space, you can do so without squeezing, and you can’t pass through water. You have advantage on Strength, Dexterity, and Constitution saving throws, and you have resistance to bludgeoning, piercing, and slashing damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Children of the Night",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Blood Ascendant",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "By 10th level, the hordes of the night answer to your beck and call. When you perform your Animate Thralls ritual, you can summon one or more {@creature swarm of bats|MM|swarms of bats}, {@creature swarms of rats|MM|swarms of rats}, or {@creature wolf|MM|wolves} to serve as your thralls. You command these creatures as your thralls.",
+        "When one of these creatures is reduced to 0 hit points or released by you, it vanishes in a cloud of mist."
+      ]
+    },
+    {
+      "name":"Lichdom: Nosferatu",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Blood Ascendant",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. You have embraced the blood curse of vampirism to become a vampire lord in all but name: a nosferatu.",
+        {
+          "type":"entries",
+          "name":"Coffin Phylactery",
+          "entries":[
+            "Your phylactery is a coffin filled with grave dirt. When you drop to 0 hit points, you reform in your coffin after 1 hour. You are permanently weakened until you spend 24 hours resting in the coffin. During this time, your hit point maximum is reduced to 1, and you drop to 0 hit points if you begin your turn in sunlight."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Regeneration",
+          "entries":[
+            "At the start of each of your turns, you regain 10 hit points. You don’t gain this benefit if you have 0 hit points or you are in direct sunlight."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Vampiric Agility",
+          "entries":[
+            "Your movement speed doubles. Additionally, you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Death Knight",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Death Knight",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Some necromancers are content to sit in dusty old tombs with musty old tomes, privy to pick apart a battlefield for fresh ingredients and new company. The death knight is a predator among scavengers, able to reap his own rewards through the melding of magic and traditional combat. Death knights are necromancers that chose to take a more direct approach to solving their problems. Well-armed and well-protected, the death knight brings a flurry of steel with the might of death behind every strike.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Intensive Combat Research|Necromancer|VSS|Death Knight|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Strike|Necromancer|VSS|Death Knight|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Intensive Combat Research",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Death Knight",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you choose this ambition at 3rd level, you’ve honed your body and mind to the various tools of war. You gain proficiency with medium armor, shields, and martial weapons. Additionally, you can perform the somatic components of spells while wielding weapons or shields you are proficient in, as long as you have your arcane focus on your person."
+      ]
+    },
+    {
+      "name":"Charnel Strike",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Death Knight",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Also at 3rd level, when you take the Attack action on your turn, you can channel your Charnel Touch through a weapon strike as part of the attack. When you do so, make an attack with a melee weapon instead of a spell attack. On a hit, the target suffers the weapon attack’s normal effects, in addition to the necrotic damage of Charnel Touch. You can only deal necrotic damage using this ability once per turn.",
+        "Additionally, whenever you deal damage using this ability or a Charnel Touch attack, you gain temporary hit points equal to the necrotic damage dealt, up to a maximum of half your total hit points."
+      ]
+    },
+    {
+      "name":"Extra Attack",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Death Knight",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
+        "Additionally, your melee weapon attacks score a critical hit on a roll of 19 or 20."
+      ]
+    },
+    {
+      "name":"Overcharged Thralls",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Death Knight",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "At the 10th level, your inner nexus of energy has spread to your thralls, turning them into your own personal pools of spare energy when the need arises. When one of your thralls dies or you release it, your Charnel Touch point pool regains a number of expended points equal to your necromancer level."
+      ]
+    },
+    {
+      "name":"Lichdom: Imperator",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Death Knight",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Due to your martial capabilities and incredibly potent inner nexus of necromantic power, you have transformed into an imperator lich; an undead creature unmatched in both arcane and combat prowess. You gain the following features in addition to the Lichdom feature:",
+        {
+          "type":"entries",
+          "name":"Completed Combat Research",
+          "entries":[
+            "You gain proficiency in heavy armor if you did not have it already, and gain resistance to bludgeoning, piercing, and slashing damage."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Peerless Charnel Strike",
+          "entries":[
+            "The necrotic damage caused by Charnel Touch ignores resistance and immunity to necrotic damage.",
+            "Additionally, you can gain any number of temporary hit points from your Charnel Strike, instead of a maximum of half your total hit points."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Overlord",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Overlord",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "There are few ambitions the common man fantasizes about more than the power to rule. From the ignoble peasant to the haughty nobility, many dream of a world in which they are in charge. Some necromancers, known as overlords, see their magic as an opportunity to accomplish this common dream. Overlords seek control both on and off the battlefield, using dark magics to bolster their allies as well as manipulate their enemies.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Overlord Spells|Necromancer|VSS|Overlord|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Boon|Necromancer|VSS|Overlord|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Overlord Spells",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Overlord",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, 5th, 7th, and 9th level you learn the following spells, which don’t count against your number of spells known. If you gain access to a spell that does not appear on the necromancer spell list, the spell is nonetheless a necromancer spell for you.",
+        {
+          "type":"table",
+          "colLabels":[
+            "Necromancer Level",
+            "Spells"
+          ],
+          "colStyles":[
+            "col-4 text-center",
+            "col-8 text-left"
+          ],
+          "rows":[
+            ["3rd","{@spell hold person}, {@spell suggestion}"],
+            ["5th","{@spell haste}, {@spell slow}"],
+            ["7th","{@spell compulsion}, {@spell confusion}"],
+            ["9th","{@spell dominate person}, {@spell geas}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Charnel Boon",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Overlord",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, you can grant a boon to minions by empowering them with your own potency. As a bonus action on your turn, you can expend any number of points from your Charnel Touch pool to empower each of your thralls within 30 feet. Until the beginning of your next turn, the thrall gains a +1 bonus to attack rolls, damage rolls, and their AC for every 5 points expended, up to a maximum of +3."
+      ]
+    },
+    {
+      "name":"Despotic Discourse",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Overlord",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "When you reach the 6th level, your black magic has granted you a silver tongue, which you can use to manipulate those around you. You gain proficiency in your choice of {@skill Deception}, {@skill Intimidation}, or {@skill Persuasion}.",
+        "Additionally, you can use your Intelligence instead of Charisma for Charisma (Deception), Charisma (Intimidation), and Charisma (Persuasion) checks."
+      ]
+    },
+    {
+      "name":"Sacrificial Thralls",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Overlord",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "At the 10th level, you can force your thralls to sacrifice themselves to ensure your own safety. When you are targeted by an attack, you can use your reaction to force a thrall within 5 feet of you to become the new target of the attack or spell. Once you use this ability, you can’t do so until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Lichdom: Tyrant",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Overlord",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Your desire for control has warped your transformation, turning you into a tyrant lich. Your flesh and bone rapidly decay, reducing your features to nothing more than two glowing dots beneath your hood. You gain the following features in addition to the Lichdom feature:",
+        {
+          "type":"entries",
+          "name":"Immortal Rule",
+          "entries":[
+            "If you drop to 0 hit points, you can choose to possess a nearby body, instead of beginning the process of reforming at your phylactery. When you do so, choose an unconscious humanoid or the corpse of one that has died within the last minute that is within 100 feet of you to possess (a creature warded by a {@spell protection from evil and good} or {@spell magic circle} spell can’t be possessed).",
+            "Once you possess a body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. If the body has 0 hit points when you possess it, its type becomes undead and it regains 50 hit points, up to its hit point maximum. You retain the benefit of your own class features. If the target has any class levels, you can’t use any of its class features.",
+            "If you possess the body of an unconscious creature, the creature makes a Charisma saving throw against your spellcasting DC every 8 hours. On a success, you are ejected from the body and begin the process of reforming at your phylactery. You are also ejected if the body dies or you choose to leave it as an action. You can only possess a creature once using this ability."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Tyrant's Influence",
+          "entries":[
+            "You can expend 25 points from your Charnel Touch pool to cast the spell {@spell dominate beast} without using a spell slot or spell components. You can spend 30 points to cast the spell {@spell dominate person}, or 60 points to cast the spell {@spell dominate monster} without using a spell slot or spell components."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Pale Master",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pale Master",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Necromancers are defined by their ambition. Some wish to conquer, others to control, but all utilize their necromantic powers as a means to an end, a way to pave the way to their true ambitions. Pale masters are no different, but few have grand plans to compete with the overlords nor dedicate themselves to the art of war as the death knights do. Rather, pale masters dedicate themselves to self-improvement and the growth of their powers. Pale masters range from the curious mage’s college student to the power hungry spellcaster harassing the local hamlets. With the ability to embolden their spells, communicate with the undead, reduce the bravest souls to quibbling cowards, and effortlessly command their thralls in the thick of battle; these seemingly aimless spellcasters are no less a threat than any other necromancer.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Empower|Necromancer|VSS|Pale Master|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Undead Empathy|Necromancer|VSS|Pale Master|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Charnel Empower",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pale Master",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you choose this ambition at 3rd level, you can empower your spells with potent necromantic energy from your own well of magic. When you cast a necromancy spell of 1st level or higher which deals damage, you can expend a number of points up to your level + your Intelligence modifier from your Charnel Touch point pool. When you do so, you add necrotic damage equal to the number of points spent to one of the spell’s targets."
+      ]
+    },
+    {
+      "name":"Undead Empathy",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pale Master",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Also at 3rd level, your command of the undead affects the will of those who aren’t under your control. Whenever an undead creature tries to attack you, it must make a Wisdom saving throw against your spell save DC. On a failed save, its attack misses and, if its Intelligence is 4 or lower, it becomes friendly to you and your allies.",
+        "Additionally, you have advantage on Charisma checks you make against undead with Intelligence of 5 or higher."
+      ]
+    },
+    {
+      "name":"Frightening Gaze",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pale Master",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Beginning at 6th level, you gain proficiency in the {@skill Intimidation} skill, if you did not have it already.",
+        "Additionally, you can expend 10 Charnel Touch points as a bonus action to fix your horrific gaze on a creature you can see within 60 feet. This creature must make a Wisdom saving throw against your spell save DC or be {@condition frightened} of you for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+      ]
+    },
+    {
+      "name":"Thrall Rush",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pale Master",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "Beginning at 10th level, whenever you roll initiative and are not surprised, you can command each of your thralls to either move up to their movement speed or attack once."
+      ]
+    },
+    {
+      "name":"Lichdom: Pale Ascendant",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pale Master",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Your skin clings tightly to your bones, your muscles wither, and your eyes turn milky and dull. Yet, through the veil of weakness your body exudes unbelievable arcane power. You gain the following features in addition to the Lichdom feature:",
+        {
+          "type":"entries",
+          "name":"Devour Soul",
+          "entries":[
+            "When you reduce an hostile creature to 0 hit points, you can immediately devour the creature’s soul to refuel your horrific powers (no action required). Roll {@dice 1d8}, and regain a number of expended spell slots whose combined level is no greater than the number rolled. You can’t use this feature again until you finish a long rest.",
+            "A creature whose soul is devoured cannot be restored to life by means other than a {@spell true resurrection} or {@spell wish} spell."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Paralyzing Touch",
+          "entries":[
+            "When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Pharaoh",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "The god-kings of ancient kingdoms practiced a unique style of necromancy, forgotten to time. Through the extraction of organs, the desiccation of flesh, and innumerable enchantments, those ancient kings were able to rule their subjects as divine, undead beings, long past their mortal deaths. While those kingdoms have been lost to the shifting sands and wild jungles of the world, their methods have been preserved in the carvings of colossal temples, and have been revived by modern necromancers, who take on the guise of the erstwhile pharaohs. Their magic is a hybrid of divine and arcane influences, the legacy of god-kings from a forgotten age.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Pharaoh Spells|Necromancer|VSS|Pharaoh|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Channel Divinity|Necromancer|VSS|Pharaoh|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Holy Symbol|Necromancer|VSS|Pharaoh|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Pharaoh Spells",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, 5th, 7th, and 9th level you learn the following spells, which don’t count against your number of spells known. If you gain access to a spell that does not appear on the necromancer spell list, the spell is nonetheless a necromancer spell for you. New spells are marked with an asterisk.",
+        "Additionally, you learn the {@spell thaumaturgy} cantrip, which is a necromancer spell for you and does not count against your total number of cantrips known.",
+        {
+          "type":"table",
+          "colLabels":[
+            "Necromancer Level",
+            "Spells"
+          ],
+          "colStyles":[
+            "col-4 text-center",
+            "col-8 text-left"
+          ],
+          "rows":[
+            ["3rd","{@spell halo of flame|VSS}, {@spell lesser restoration}"],
+            ["5th","{@spell snakestaff|VSS}, {@spell revivify}"],
+            ["7th","{@spell death ward}, {@spell divination}"],
+            ["9th","{@spell insect plague}, {@spell greater restoration}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Channel Divinity",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting at 3rd level, you can channel your pseudodivinity to fuel magical effects. You start with one effect: Ankh of Radiance. When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again. Additionally, if you expend 15 Charnel Touch points as an action, you can regain your Channel Divinity",
+        {
+          "type":"entries",
+          "name":"Ankh of Radiance",
+          "entries":[
+            "As an action, you can brandish your holy symbol and wreath each creature you choose within 60 feet in a holy radiance, which lasts for one minute. Whenever a creature with a holy radiance makes an attack roll or saving throw, it can roll a {@dice d4} and add the number rolled to the attack roll or saving throw. The first time a creature with a holy radiance takes damage, it has resistance to that damage. The holy radiance then ends for this creature."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Holy Symbol",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Also at 3rd level, you can use a holy symbol as a spell focus for your necromancy spells."
+      ]
+    },
+    {
+      "name":"Mock Divinity",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Beginning at 6th level, you can convincingly reflect the trappings of a demigod walking the earth. You can create the following additional effects when using the {@spell thaumaturgy} cantrip:",
+        {
+          "type":"list",
+          "items":[
+            "You can brighten or darken the sun or moon, affecting a 100-foot radius, for up to 1 minute. You can change darkness to dim light, or dim light to bright light, or vice-versa. Additionally, you can heighten bright light to a blazing radiance which causes disadvantage on Wisdom (Perception) checks which rely on sight, or deepen darkness to a pitch black which limits darkvision to a 30-foot radius. This deeper darkness has no effect on creatures which can see in magical darkness.",
+            "At a point you can see within 100 feet, you manifest a Huge illusory avatar of a deity which mimics your movements and projects your speech in a booming voice for 1 minute."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Channel Divinity: Scarab of Judgement",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "Starting at 10th level, you can use your Channel Divinity to transfer life from the undead to the living. As an action, you can touch an undead creature you control and choose a willing humanoid you can see within 60 feet. The undead is destroyed and reduced to dust, and the humanoid regains hit points equal to the undead’s hit points. Once a creature regains hit points in this way, it can’t do so again until it finishes a short or long rest."
+      ]
+    },
+    {
+      "name":"Lichdom: God-King",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Pharaoh",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you undergo the ancient funeral rites of the pharaohs, removing your organs and entombing your body in a sarcophagus amongst your worldly possessions. You become the oldest and most exalted type of lich: a god-king. You gain the following features in addition to the Lichdom feature:",
+        {
+          "type":"entries",
+          "name":"Canopic Phylacteries",
+          "entries":[
+            "Your phylactery has also changed with your transformation. Your stomach, lungs, intestines, and liver have been removed and placed into canopic jars. Each one has a specific weakness, which you will need to discuss with your GM, and your regeneration is only stopped when all four canopic jars are destroyed. When you are destroyed, you reform at your sarcophagus."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Mummy Rot",
+          "entries":[
+            "When you expend 20 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be cursed with mummy rot. The cursed target can’t regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target’s hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the {@spell remove curse} spell or other magic."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Whirlwind of Sand",
+          "entries":[
+            "As an action, you can magically transform into a whirlwind of sand, move up to 60 feet, and revert to your normal form. While in whirlwind form, you are immune to all damage, can’t be {@condition grappled}, {@condition petrified}, knocked {@condition prone}, {@condition restrained}, or {@condition stunned}. Equipment you are wearing or carrying remain in your possession."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Plague Lord",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Plague Lord",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "The power of plagues can’t be denied. A single disease can single handedly overwhelm a nation, or even an empire. Necromancers that realize the potential within sickness will often seek to wield that power themselves. These are known as plague lords, commanders of vermin and disease alike. A plague lord’s touch is toxic, vermin protect them from harm, can transfer their spells through unconventional means, and spread their filth to their thralls.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Toxin|Necromancer|VSS|Plague Lord|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Vile Congregation|Necromancer|VSS|Plague Lord|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Charnel Toxin",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Plague Lord",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, even your touch can cause sickness. When you expend 10 or more points when making a Charnel Touch attack, the target must succeed on a Constitution saving throw against your spell save DC or be {@condition poisoned} until the beginning of your next turn."
+      ]
+    },
+    {
+      "name":"Vile Congregation",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Plague Lord",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting at 3rd level, leagues of vermin cling to your skin and swarm over others nearby. Whenever a creature within 5 feet of you makes an attack roll or saving throw, you can roll {@dice 1d4} and subtract the result from its attack roll or saving throw. This ability has no effect on constructs and undead."
+      ]
+    },
+    {
+      "name":"Projectile Spew",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Plague Lord",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Beginning at 6th level, your own inner nexus of power has become a volatile cocktail of disease, allowing your spells to have a far greater reach. You can reach creatures out to 15 feet with your Charnel Touch feature and spells with a range of Touch, as you use magically imbued projectile vomit to deliver your payload."
+      ]
+    },
+    {
+      "name":"Bloated Thralls",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Plague Lord",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "At the 10th level, your thralls have become hives of vermin and disease, ready to burst at any moment. When a thrall drops to 0 hit points or you release it, you can choose to cause it to explode in a shower of poison, gore, and vermin. Each creature within 5 feet of the thrall, other than yourself and your other thralls, must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes {@dice 4d6} poison damage and is {@condition poisoned} until the start of your next turn. A creature is not poisoned and takes half as much on a successful save."
+      ]
+    },
+    {
+      "name":"Lichdom: Corpulent Lich",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Plague Lord",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Your obsession with disease and rot has affected your transformation: your body engorges, much like a waterlogged corpse, and your skin turns a sickly green. You gain the following features in addition to the Lichdom feature:",
+        {
+          "type":"entries",
+          "name":"Gore Burst",
+          "entries":[
+            "When you drop to 0 hit points, your body explodes in a shower of plague and necromantic energy. Each creature in a 20-foot sphere centered on you must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes {@dice 5d10} necrotic damage and {@dice 5d10} poison damage and is {@condition poisoned} until the start of your next turn. A creature is not poisoned and takes half as much damage on a successful save."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Master of Disease",
+          "entries":[
+            "When you use your Charnel Toxin ability and expend 25 or more points from your Charnel Touch pool, the target creature is {@condition poisoned} for up to 1 minute on a failed save. Additionally, you can also apply two of the following effects of your choice which affect the creature while it is poisoned:",
+            {
+              "type":"list",
+              "items":[
+                "Choose one ability score. The target has disadvantage on ability checks and saving throws made with that ability score.",
+                "The creature can only see out to a radius of 10 feet.",
+                "The creature falls {@condition prone} at the end of each of its turns.",
+                "The creature loses an additional {@dice 1d6} hit points whenever it takes damage.",
+                "The creature can speak only in a babbling nonsense language while {@condition poisoned}, and can’t perform the verbal components of spells."
+              ]
+            },
+            "At the end of each of its turns, the creature can make a Constitution saving throw against your spell save DC, ending this effect on a success."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Reanimator",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Through bubbling test tubes and sparking electrodes, you have discovered the true heart of necromancy: mad science. You’ve experimented in far-reaching disciplines of surgery, alchemy, and physics, using your animated minions as gruesome test subjects and walking surgical dummies. Most crucially, you have discovered that lightning can imbue almost anything with a semblance of life, from the smallest severed muscle to the most towering and soulless golems.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Skilled Surgeon|Necromancer|VSS|Reanimator|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Mad Science|Necromancer|VSS|Reanimator|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Voltage|Necromancer|VSS|Reanimator|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Skilled Surgeon",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Beginning when you choose this ambition at 3rd level, you gain proficiency in the {@skill Medicine} skill, if you did not already have it. You can use your Intelligence, instead of Wisdom, for Wisdom (Medicine) checks."
+      ]
+    },
+    {
+      "name":"Mad Science",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, you can spend 10 minutes installing a {@filter monstrous graft|optionalfeatures|feature type=Graft} on one of your thralls that does not have the Incorporeal Movement trait. Additionally, your thralls don’t lose hit points or hit dice from installing or removing grafts, and it takes them no time to recover after the attachment of a new graft."
+      ]
+    },
+    {
+      "name":"Charnel Voltage",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, you supplement your necromantic energies with arcing bolts of electricity. You can choose to deal lightning damage with your Charnel Touch. When you expend 5 or more points when making a Charnel Touch attack and deal lightning damage, you can cause the energy to arc to a second creature within 5 feet of the target. The creature must make a Dexterity saving throw against your spell save DC, taking lightning damage equal to half the number of Charnel Touch points expended on a failure."
+      ]
+    },
+    {
+      "name":"Lazarus Bolt",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Starting at 6th level, as an action, you can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature returns to life with 1 hit point. This feature can’t return to life a creature that lacks a heart, a creature that has died of old age, or a creature that is missing vital organs. Once this creature returns to life, you can restore hit points to it using your Charnel Touch ability for 1 minute, as if the creature were one of your thralls.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Arcane Stitching",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "Starting at 10th level, you’ve learned how to inscribe magical effects on your thralls using gruesome arcane stitches. You can expend 10 points from your Charnel Touch pool to apply an arcane stitch to one of your thralls in a process requiring 1 minute of work with a needle and thread. The arcane stitch lasts until your thrall uses it, your thrall is killed, or you use this feature again. You can apply any of the following arcane stitches:",
+        {
+          "type":"entries",
+          "name":"Augmented Incision",
+          "entries":[
+            "The thrall gains advantage on attack rolls and ability checks until the end of its turn (no action required)."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Bulwark Backstitch",
+          "entries":[
+            "The thrall casts {@spell shield} when an attack would hit it."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Fleet Threads",
+          "entries":[
+            "The thrall’s movement speed is tripled until the end of its turn (no action required)."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Searing Suture",
+          "entries":[
+            "On a hit, the thrall deals an additional {@dice 3d6} necrotic or lightning damage (your choice)."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Lichdom: Patchwork Golem",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reanimator",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. Through abominable works of alchemy and surgery, you have constructed yourself an artificial body to act as the vessel for your soul.",
+        {
+          "type":"entries",
+          "name":"Golem Form",
+          "entries":[
+            "Your Strength, Dexterity, and Constitution scores become 20 if they weren’t already higher, and you have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons that aren’t adamantine. Additionally, you don’t lose hit points or hit dice from installing or removing {@filter grafts|optionalfeatures|feature type=Graft}, and it takes you no time to recover after the attachment of a new graft."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Magic Resistance",
+          "entries":[
+            "You have advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Reaper",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reaper",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "The oblivion of death is the sure wellspring of all necromancy, a dark abyss into which all necromancers stare, and which sometimes stares back. Those rare necromancers that gamble with their own souls might become intertwined with death, becoming reapers, figures of shadow and demise that beckon others to the afterlife. For performing this deed, they strengthen their connection to the distant oblivion, until they are but tenebrous shadows, harbingers of an inevitable end.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Shroud of Death|Necromancer|VSS|Reaper|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Charnel Veil|Necromancer|VSS|Reaper|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Shroud of Death",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reaper",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you choose this ambition at 3rd level, you manifest a wispy cloak of darkness about your person, which you can hide or reveal as a bonus action. While cloaked, you levitate one inch off the ground and ignore nonmagical difficult terrain. Additionally, you can walk across fluid surfaces, such as water and quicksand."
+      ]
+    },
+    {
+      "name":"Charnel Veil",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reaper",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, you can fade from view like a specter of death. Whenever you expend 5 or more points when making a Charnel Touch attack, you can become {@condition invisible} until the start of your next turn. During this time, you make no sound while you move."
+      ]
+    },
+    {
+      "name":"Umbral Form",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reaper",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Beginning at 6th level, as an action, you can sink into a surface, flattening until only a shadow remains. As a shadow, you can only move along the surfaces to which you are attached, but you gain a climbing speed equal to your movement speed.",
+        "Additionally, while in the form of a shadow, you can move across difficult surfaces, including ceilings, without needing to make an ability check. You can’t talk or manipulate objects, and any objects you are carrying or holding can’t be dropped, used, or otherwise interacted with. You can’t attack or cast spells.",
+        "Opportunity attacks have disadvantage against you while you are in the form of a shadow.",
+        "If you are in darkness as a shadow, you are effectively invisible to creatures without darkvision or the ability to see in darkness.",
+        "You can end this ability as a bonus action on your turn."
+      ]
+    },
+    {
+      "name":"Wraith Flight",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reaper",
+      "subclassSource":"VSS",
+      "level":10,
+      "header":2,
+      "entries":[
+        "Beginning at 10th level, spirits you command move with an unearthly speed. The flying speeds of your thralls are doubled. Additionally, when one of your thralls flies out of an enemy’s reach, opportunity attacks against it have disadvantage."
+      ]
+    },
+    {
+      "name":"Lichdom: Harbinger",
+      "source":"VSS",
+      "className":"Necromancer",
+      "classSource":"VSS",
+      "subclassShortName":"Reaper",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you have reached the pinnacle of necromancy and transformed yourself into a lich. You have become an embodiment of death itself, a harbinger of the ultimate end. Clad in shadows, you seem little more than a grim skeletal presence in a foreboding robe, a sight which all men fear to behold.",
+        {
+          "type":"entries",
+          "name":"Death's Touch",
+          "entries":[
+            "When you use Charnel Touch against a creature you can see and roll an 11 or higher on the {@dice d20} for the spell attack roll, you hit the target, regardless of its AC."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Fell Flight",
+          "entries":[
+              "You gain a 50-foot flying speed."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Grim Harvest",
+          "entries":[
+            "When you kill a humanoid using Charnel Touch, you rip their soul from their body, which animates as a {@creature visage|VSS} under your control."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Bloodwrath Guardian",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Bloodwrath Guardian",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "The primal power you wield has formed an intrinsic bond with the creatures of the wild, and you have taken up the task of defending them. Because you share in the beast’s ferocity, tenacity, and animal instinct, you can summon a beast’s primal strength from within yourself, and slay your enemies in an animalistic trance.",
+        "While entranced, you can sense a connection to a greater being, the Primal Beast, the first predator, from which all hunters are descended. As your commitment to defending the wilds from corruption grows, you grow closer to the Primal Beast, until you can at last adopt its ancient form yourself, and allow it to hunt once again.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Feral Trance|Warden|VSS|Bloodwrath Guardian|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Feral Trance",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Bloodwrath Guardian",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you hear this call at 3rd level, you can fall into a primal battle trance as a bonus action. While in your trance, you gain the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "You have advantage on Strength checks and Strength saving throws.",
+            "Your base movement speed increases by 10 feet.",
+            "You have advantage on all melee weapon attack rolls using Strength against a creature you have marked.",
+            "Attacks against you have advantage."
+          ]
+        },
+        "Your trance lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your trance on your turn as a bonus action.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Predator's Scent",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Bloodwrath Guardian",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "By 6th level, you hunt like an animal. A creature you have marked can remain marked for up to 24 hours, even if it moves out of your sight. Additionally, while this creature is marked, you can track it effortlessly; you know the direction and distance to the creature while it remains on the same plane of existence."
+      ]
+    },
+    {
+      "name":"Evasion",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Bloodwrath Guardian",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an {@spell ice storm} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "name":"Form of the Primal Beast",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Bloodwrath Guardian",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, as an action, you can transform into a hunched thing of fur and shadow, an echo of the Primal Beast. For 1 minute, you gain the following features:",
+        {
+          "type":"list",
+          "items":[
+            "You gain all the benefits of Feral Trance.",
+            "You gain temporary HP equal to twice your level.",
+            "When you hit a creature with a melee weapon attack, you can give the target a bleeding wound. Constructs, oozes, and undead can’t get bleeding wounds. A creature loses {@dice 1d8} hit points at the start of each of its turns for each of its bleeding wounds unless it uses an action to staunch the bleeding. While a target is bleeding, it can't regain lost hit points. A creature can have a number of bleeding wounds up to your proficiency bonus."
+          ]
+        },
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Grey Watchman",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Grey Watchman",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Ever vigilant and unceasing in your duties, you are a watcher of the realms of men, called to keep vigil over a keep or wall. As a grey watchman, trained in the arts of combat, you have honed your skills to a razor’s edge to repel any invaders that might challenge your land. You need not keep watch over the same keep your entire life, but, wherever you travel, you are dedicated to keeping your land safe from invading armies, marauding monsters, and other external threats.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Battle Tactics|Warden|VSS|Grey Watchman|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Hold the Line|Warden|VSS|Grey Watchman|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Battle Tactics",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Grey Watchman",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "When you hear this call at 3rd level, you learn maneuvers that are fueled by special dice called battle dice.",
+        {
+          "type":"entries",
+          "name":"Battle Dice",
+          "entries":[
+            "You have two battle dice, which are d8s. A battle die is expended when you use it. You regain all of your battle dice when you take a short or long rest, or when you roll initiative.",
+            "Your battle die changes and more battle dice become available when you reach certain levels in this class, as shown on the table below.",
+            {
+              "type":"table",
+              "colLabels":[
+                "Warden Level",
+                "Battle Dice"
+              ],
+              "colStyles":[
+                "col-6 text-center",
+                "col-6 text-center"
+              ],
+              "rows":[
+                ["3rd","{@dice 2d8}"],
+                ["7th","{@dice 3d8}"],
+                ["13th","{@dice 3d10}"],
+                ["19th","{@dice 4d10}"]
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Using Battle Dice",
+          "entries":[
+            "Once per turn, you can expend a battle die to perform a maneuver of your choice. Your maneuver options are detailed on the {@filter optional features page|optionalfeatures|feature type=MV:GW}."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Saving Throws",
+          "entries":[
+            "Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:",
+            {
+              "type":"abilityDc",
+              "name":"Maneuver",
+              "attributes":[
+                "str",
+                "dex"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Hold the Line",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Grey Watchman",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, when you use your Warden’s Grasp, any creature you choose other than yourself within the effect’s area gains a +1 bonus to Armor Class and saving throws until the beginning of your next turn while it remains in the effect’s area."
+      ]
+    },
+    {
+      "name":"Fortification Expert",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Grey Watchman",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "By 6th level, your experience manning battlements and blockades has given you insight in how to raise and reinforce them. You have advantage on any ability check you make to erect defensive fortifications, examine walls and other defenses for weak points and entryways, or climb constructed walls. Additionally, you can treat three-quarters cover as full cover."
+      ]
+    },
+    {
+      "name":"Mettle",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Grey Watchman",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "Also at 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "name":"Unbreakable Sentinel",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Grey Watchman",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "Starting at 20th level, you can use your action to transform into a paragon of battle, an unstoppable sentinel, channeling the strength of every man, woman, and child beneath your charge. For the next minute, you gain the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "You have a +2 bonus to Armor Class.",
+            "Whenever you hit a creature you have marked, you regain an expended battle die.",
+            "You can take an additional reaction during each round of combat. You can only take one reaction during each turn."
+          ]
+        },
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Nightgaunt",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Nightgaunt",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Blood-drinkers, undead, and other creatures of the night are often feared and hunted, and few stand in their defense; except, of course, the grim and terrible nightgaunt. Tales of the nightgaunt are whispered of in fairy tales, casting them as a things to be feared: hunters of clerics and goodly vampire slayers. Their appearance always presages long nights and great rises in hungry undead.",
+        "You felt the calling of the moon bringing you to the graveside of living corpses. Though vampires, zombies, and skeletons are mighty, they are always outnumbered, hunted, and turned by clerics; never given a fair chance to live peacefully. They require an ally among the living to continue their ceaseless lives, and you have risen by moonlight to the task.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Darkvision|Warden|VSS|Nightgaunt|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Marked for Death|Warden|VSS|Nightgaunt|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Darkvision",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Nightgaunt",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you hear this call at 3rd level, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray. If you already possess darkvision, its range increases by 30 feet.",
+        "Starting at 13th level, you can see through magical, as well as nonmagical, darkness."
+      ]
+    },
+    {
+      "name":"Marked for Death",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Nightgaunt",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, your mark leaves a shadow of undeath on your target, beckoning it to die. If you deal damage to a creature you have marked with a melee weapon attack and its remaining hit points are lower than the damage you dealt to it with that attack, the marked creature instead drops to 0 hit points."
+      ]
+    },
+    {
+      "name":"Undead Empathy",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Nightgaunt",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "By 6th level, you are a friend even to mindless undead. Whenever an undead tries to attack you, it must make a Wisdom saving throw (DC equals 8 + your proficiency bonus + your Constitution modifier.) On a failed save, its attack misses and, if its Intelligence is 4 or lower, it becomes friendly to you and your allies."
+      ]
+    },
+    {
+      "name":"Evasion",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Nightgaunt",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an {@spell ice storm spell}. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "name":"Gravelord",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Nightgaunt",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, you can use your action to invite the necromantic energies of true undead into your body, divorcing yourself from life for the next minute and gaining the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "You are immune to poison damage and being {@condition poisoned}.",
+            "You can use your Undying feature up to three times, even if you have already used it today.",
+            "Once per turn, when you deal damage with a melee weapon attack, you can deal an extra {@dice 4d6} necrotic damage and gain temporary hit points, which last until the beginning of your next turn, equal to the necrotic damage dealt."
+          ]
+        },
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Soulblood Shaman",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Soulblood Shaman",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "The ancestral spirits called you by starlight to enact their will on the world, to protect their descendants, and to safeguard their resting places. You are a Soulblood Shaman, a manipulator of soul and ascetic of primal magic. Your community looks to you as a leader as well as a vital connection to the afterlife, for if you play your role, they too will join their ancestors in the great beyond.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Spellcasting|Warden|VSS|Soulblood Shaman|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Soulblood|Warden|VSS|Soulblood Shaman|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Spellcasting",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Soulblood Shaman",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you hear this call at 3rd level, you can channel your ancient insights into magic.",
+        {
+          "type":"entries",
+          "name":"Cantrips",
+          "entries":[
+            "You learn two cantrips of your choice from the druid spell list. You learn an additional druid cantrip of your choice at 10th level."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Spell Slots",
+          "entries":[
+            "The Soulblood Shaman Spellcasting table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Spells Known of 1st-Level and Higher",
+          "entries":[
+            "You know three 1st-level druid spells of your choice, two of which you must choose from the evocation or transmutation spells on the druid spell list.",
+            "The Spells Known column of the Soulblood Shaman Spellcasting table shows when you learn more druid spells of 1st level or higher. Each of these spells must be an evocation or transmutation spell of your choice, and must be of a level for which you have spell slots.",
+            "The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
+            "Whenever you gain a level in this class, you can replace one of the druid spells you know with another spell of your choice from the druid spell list. The new spell must be of a level for which you have spell slots, and it must be an evocation or transmutation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
+          ]
+        },
+        {
+          "type":"entries",
+          "name":"Spellcasting Ability",
+          "entries":[
+            "Wisdom is your spellcasting ability for your druid spells, since you channel your magic through a connection to the great beyond. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.",
+            {
+              "type":"abilityDc",
+              "name":"Spell",
+              "attributes":[
+                "wis"
+              ]
+            },
+            {
+              "type":"abilityAttackMod",
+              "name":"Spell",
+              "attributes":[
+                "wis"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Soulblood",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Soulblood Shaman",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Also at 3rd level, as a reaction when a creature within 5 feet of you deals damage to you, you can mark that creature."
+      ]
+    },
+    {
+      "name":"Whispers of Beyond",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Soulblood Shaman",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "At 6th level, you can hear the small voices of ancient spirits when you need guidance. If you spend one minute in contemplation when you make an Intelligence or Wisdom check, you can consult the spirits to gain advantage on the roll. However, the GM can decline to give you advantage on this check if the spirits would not possess appropriate guidance of knowledge."
+      ]
+    },
+    {
+      "name":"Spell Resistance",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Soulblood Shaman",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "Beginning at 13th level, you have advantage on saving throws you make against spells."
+      ]
+    },
+    {
+      "name":"Ethereal Watcher",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Soulblood Shaman",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "At 20th level, as an action, you can shrug off your mortal form for a short time to become something spiritual and material, an ethereal watcher. For the next minute, you gain the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "As a bonus action on your turn, you can become ethereal, as per the {@spell etherealness} spell.",
+            "You can return from being ethereal as a bonus action when you cast a spell, or when you use your Warden’s Mark or your Warden’s Grasp feature on your turn. When you return from being ethereal, each creature you choose within 10 feet of you takes {@dice 4d10} force damage, as they are pulled partially between the planes.",
+            "You can cast 1st and 2nd-level druid spells you know without expending spell slots."
+          ]
+        },
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Stoneheart Defender",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Stoneheart Defender",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "You heard the steadfast, unyielding call from the mountains, which dwarves and gnomes have felt for generations. The stones called to you, beckoning for a protector to defend the mountains from those that would despoil them, from both within and without. You might be a watchman of old dwarven walls, or a sentinel, patrolling the lookouts of high mountain peaks; regardless of where you stand, you are unmovable: a mountain in the shape of a man. You draw your power from the earth beneath your feet and can crush your enemies with the strength of stone.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Roots of Rock|Warden|VSS|Stoneheart Defender|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Roots of Rock",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Stoneheart Defender",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you hear this call at 3rd level, when you use your Warden’s Grasp ability, rocky roots sprout from your feet, anchoring you securely. Until the beginning of your next turn, you have a +2 bonus to your Armor Class.",
+        "Additionally, until you move, you can’t be shoved or pushed from wherever you are standing by hostile actions, spells, or effects, unless you choose to be. You have advantage on Strength saving throws against being knocked down, cannot slip or fall from ledges, and are immune to the spells {@spell fly}, {@spell levitate}, and {@spell telekinesis}."
+      ]
+    },
+    {
+      "name":"Earthshatter",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Stoneheart Defender",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Starting at 6th level, you can choose to use Warden’s Grasp as an action, rather than a bonus action. When you do so, each creature affected must make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}.",
+        "You can use this ability a number of times equal to your Strength modifier, and regain all uses when you finish a long rest."
+      ]
+    },
+    {
+      "name":"Mettle",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Stoneheart Defender",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "At 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "name":"Immortal Mountain",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Stoneheart Defender",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "By 20th level, you can summon the power of true earth as an action, protecting yourself in an encasement of stone. For the next minute, you gain the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "Bludgeoning, piercing, and slashing damage you take is reduced by 5.",
+            "You gain the effects of your Roots of Rock ability for the entire duration.",
+            "As you move, you can choose to upend the earth at your feet, leaving behind a 5-foot wide trail of difficult terrain behind you wherever you move."
+          ]
+        },
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Storm Sentinel",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Storm Sentinel",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Your strength originates among furious storm clouds and flashes of lightning. As a storm sentinel, you are called to protect wayward sailors and coastal villages from the wrath of the tempests and the arrival of great waves that threaten them. You despise pirates and other enemies of coastal peoples, and will oppose them wherever they strike.",
+        "From your fingertips, you can deliver the awe of lightning and the roar of thunder to devastate your foes. With practice and patience, you can harness the power of the storm itself to fly and rain thunderbolts from above.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Flash from Above|Warden|VSS|Storm Sentinel|VSS|3|VSS"
+        },
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Thunderblast|Warden|VSS|Storm Sentinel|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Flash from Above",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Storm Sentinel",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you hear this call at 3rd level, whenever you are standing under the open sky, you can use your action to conjure a harmless, but impressive, bolt of lightning or peal of thunder. You can use this ability even when there are no clouds above you."
+      ]
+    },
+    {
+      "name":"Thunderblast",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Storm Sentinel",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "At 3rd level, whenever you hit a creature you have marked with a melee weapon attack, each creature you choose within 5 feet of the target takes {@dice 1d8} lightning damage."
+      ]
+    },
+    {
+      "name":"Static Burst",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Storm Sentinel",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "Starting at 6th level, when you use Warden’s Grasp as a bonus action, each creature affected can’t take reactions until the beginning of your next turn."
+      ]
+    },
+    {
+      "name":"Evasion",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Storm Sentinel",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "name":"Stormlord",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Storm Sentinel",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "Starting at 20th level, you have a flight speed equal to your movement speed.",
+        "Additionally, you can use your action to summon a bolt of lightning to strike you, imbuing your body with the storm’s fury. For 1 minute, you gain the following benefits:",
+        {
+          "type":"list",
+          "items":[
+            "Your flight speed is doubled.",
+            "You can cast the spell {@spell call lightning} as a bonus action (DC equals 8 + your proficiency bonus + your Constitution modifier) without using a spell slot. You can call a bolt of lightning on subsequent turns as a bonus action."
+          ]
+        },
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Verdant Protector",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Verdant Protector",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "You draw your strength from the trees of the forest and the loamy earth beneath your feet. As a Verdant Protector, you are the champion of the green things in nature, and defend them against those who would despoil the wilds. You easily find allies among druids, and others that understand the forest’s sacred trees and ancient spirits.",
+        "At your command, the plants of the earth sprout up to assist you in your duty. At the pinnacle of your power, you can assume the form of an elder tree guardian, which looks much like a treant, with tough, bark skin, and long, branchlike arms.",
+        {
+          "type":"refSubclassFeature",
+          "subclassFeature":"Green Mark|Warden|VSS|Verdant Protector|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name":"Green Mark",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Verdant Protector",
+      "subclassSource":"VSS",
+      "level":3,
+      "entries":[
+        "Starting when you hear this call at 3rd level, when you mark a creature, the plants of the earth come alive to hinder its progress. While this creature is within 30 feet of you, the ground it walks on is difficult terrain."
+      ]
+    },
+    {
+      "name":"Verdant Skin",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Verdant Protector",
+      "subclassSource":"VSS",
+      "level":6,
+      "header":2,
+      "entries":[
+        "At 6th level, you gain proficiency in the {@skill Stealth} skill, if you did not have it before. Additionally, you can use your action to draw a thick mass of vines and leaves to conceal you. Until you move, you have advantage on Dexterity (Stealth) checks you make to hide among vegetation."
+      ]
+    },
+    {
+      "name":"Mettle",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Verdant Protector",
+      "subclassSource":"VSS",
+      "level":13,
+      "header":2,
+      "entries":[
+        "At 13th level, your determination allows you to shrug off effects that would otherwise harm you. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+      ]
+    },
+    {
+      "name":"Form of the Oak Sentinel",
+      "source":"VSS",
+      "className":"Warden",
+      "classSource":"VSS",
+      "subclassShortName":"Verdant Protector",
+      "subclassSource":"VSS",
+      "level":20,
+      "header":2,
+      "entries":[
+        "Starting at 20th level, you can use your action to transform into an oak sentinel, a bark-covered titan of the forest. For 1 minute, you gain the following features:",
+        {
+          "type":"list",
+          "items":[
+            "Your AC becomes 20, if it was lower.",
+            "Your attacks have Reach, if they did not have it before.",
+            "You can use Warden’s Grasp as an action, rather than a bonus action. When you do so, you can make an attack against each creature affected, with a separate attack roll for each target."
+          ]
+        },
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    }
+  ],
+  "monster": [
+		{
+			"name": "Bonebeast",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 13,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The bonebeast has advantage on an attack roll against a creature if at least one of the bonebeast's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The bonebeast has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Constructed of haphazardly-assembled humanoid bones, a bonebeast looks nothing like a man. Lumbering about on four legs with great boney fangs, the beast can run as fast as a bear and strike as viciously as a lion."
+				]
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Gorger",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "8d8",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 7,
+			"con": 10,
+			"int": 7,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The gorger can't use its blindsight while {@condition deafened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"An unholy tangling of flesh, the gorger still vaguely resembles a humanoid in profile, except for the gaping, toothed maw in its chest. Its colossal teeth are little more than sharpened ribs, but its monstrous bite can easily decapitate."
+				]
+			},
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Gravetouched Ghoul",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "14d8",
+				"average": 63
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 10,
+			"int": 9,
+			"wis": 10,
+			"cha": 8,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The gravetouched ghoul regains 5 hit points at the start of its turn. If the gravetouched ghoul takes fire or radiant damage, this trait doesn’t function at the start of the gravetouched ghoul’s next turn. The gravetouched ghoul dies only if it starts its turn with 0 hit points and doesn’t regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Gravetouched ghouls, which are suffused with terrible necromantic energies, manifest various deformities on their undead bodies. Despite being undead, their flesh knits itself back together nearly as quick as a troll’s, with strength to match."
+				]
+			},
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Skeleton",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"The renanimated remains of humanoids long since dead, skeletons are puppets of bone held aloft by strings of magic."
+				]
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Spirit",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "2d8 ‒ 2",
+				"average": 13
+			},
+			"speed": {
+				"walk": 25,
+				"fly": {
+					"number": 25,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 14,
+			"con": 9,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The spirit can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Grave Touch",
+					"entries": [
+						"{@atk ms} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) necrotic damage and the target’s hit point maximum is reduced by an amount equal to the necrotic damage taken.. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A spirit is the scarcely tangible echo of humanoid, a soul bound to the mortal realm by necromantic magic."
+				]
+			},
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			]
+		},
+		{
+			"name": "Visage",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8",
+				"average": 40
+			},
+			"speed": {
+				"walk": 25,
+				"fly": {
+					"number": 25,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 16,
+			"con": 11,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The visage can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The visage has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Horrify",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one creature. {@h}15 ({@damage 5d4 + 3}) psychic damage."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The visage magically turns {@condition invisible} until it attacks or until its concentration ends (as if concentrating on a spell). Any equipment the visage wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Mournfully longing for the world of the living, a visage is the lingering soul of a departed humanoid. Their yearning for a life once lived binds them to the mortal realm, and drives mad those who see their terrible countenance."
+				]
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			]
+		},
+		{
+			"name": "Zombie",
+			"source": "VSS",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"formula": "3d8 + 9",
+				"average": 22
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 13,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life",
+				"as well as the languages of its creator",
+				"but can’t speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"A zombie is the rotting remains of the once-living, held together and driven by dark magic."
+				]
+			},
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	],
+  "optionalfeature":[
+    {
+      "name":"Amphibious Adaptation",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Amphibious trait",
+        "{@b Slot:} Head",
+        "You have grafted the gills of an aquatic creature to your neck, allowing you to breathe both air and water. Additionally, you attach minimal fins and gain a swim speed equal to your movement speed."
+      ]
+    },
+    {
+      "name":"Arcane Synapses",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Innate Spellcasting trait",
+        "{@b Slot:} Head",
+        "You have stolen a bit of arcane potential from a creature by inserting some of its nerves into your brain. You learn one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for this cantrip.",
+        "By harvesting a second creature, you can improve this graft and learn an additional wizard cantrip of your choice."
+      ]
+    },
+    {
+      "name":"Beast's Hide",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Beast of Large size or larger",
+        "{@b Slot:} External",
+        "You have transplanted the thick (and possibly furry) hide from a wild beast onto your body. Your Armor Class equals 13 + your Dexterity modifier."
+      ]
+    },
+    {
+      "name":"Bestial Weapons",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Beast, Dragon, Monstrosity with Bite or Claw attack",
+        "{@b Slot:} Arms or Head",
+        "You have surgically implanted either the teeth or claws from a monster into yourself, which are natural weapons which you can use to make unarmed strikes. By harvesting a second creature, you can improve this graft to gain both the claws and teeth.",
+        "You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your teeth or claws. If you hit with them, you deal damage equal to {@dice 1d6} + your Strength or Dexterity modifier (your choice), instead of the bludgeoning damage normal for an unarmed strike. Your claws deal slashing damage and take up the Arms slot, whereas your teeth deal piercing damage and take up the Head slot."
+      ]
+    },
+    {
+      "name":"Charging Hooves",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with a Charge trait or a Gore or Hooves attack",
+        "{@b Slot:} Legs",
+        "You have replaced your legs with those of a creature known for running down their foes. Once on each of your turns, when you move at least 15 feet in a straight line, you can move up to 10 additional feet in that direction without spending additional movement."
+      ]
+    },
+    {
+      "name":"Climbing Apparatus",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Beast, Humanoid, or Monstrosity with a climb speed",
+        "{@b Slot:} Legs",
+        "You have replaced or complemented your limbs with those of a climbing creature. You gain a climb speed equal to your movement speed."
+      ]
+    },
+    {
+      "name":"Darkvision",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with darkvision",
+        "{@b Slot:} Head",
+        "You have replaced your own eyes with those of a monster with keen nightvision. You gain darkvision, the ability to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+      ]
+    },
+    {
+      "name":"Doppel-Blooded",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the shapechanger subtype",
+        "{@b Slot:} Internal",
+        "You transform your appearance for up to an hour. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this ability to become quadrupedal, for instance.",
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name":"Draconis Fundamentum",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Humanoid, Dragon, or Monstrosity with a Breath weapon",
+        "{@b Slot:} Internal",
+        "You have installed the mighty source of breath weapons into yourself, and as an action on your turn, you can exhale a wave of energy. Each creature in a 15-foot cone must make a Dexterity saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@dice 1d6} damage for each point of your proficiency bonus, or half as much on a successful one. The breath’s damage is the same type as the donor’s breath weapon.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Dragon's Hide",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Dragon of Large size or larger",
+        "{@b Slot:} External",
+        "You’ve transplanted the scaly, diamondlike hide of a dragon onto your body. Your Armor Class equals 17. You also gain resistance to one of the following damage types to which the donor dragon was immune: acid, cold, fire, lightning, or poison damage. You can only install this graft if you are proficient with heavy armor."
+      ]
+    },
+    {
+      "name":"Energetic Suture",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Celestial, Dragon, Elemental, Fey, or Fiend with immunity or resistance to acid, cold, fire, lightning, poison, or thunder damage",
+        "{@b Slot:} External",
+        "You have managed to capture the essence of extraplanar resistance to magic. You gain resistance to one of the following damage types to which the donor was immune or resistant: acid, cold, fire, lightning, poison, or thunder."
+      ]
+    },
+    {
+      "name":"Heart of Steel",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any construct",
+        "{@b Slot:} Internal",
+        "You have replaced your heart with the core from a construct. As a result, you can ignore the effects of 1 level of exhaustion, and you only need to rest for 4 hours to gain the same benefit that a human does from 8 hours of rest."
+      ]
+    },
+    {
+      "name":"Horns",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with a Gore, Horns, Ram, or Tusk attack",
+        "{@b Slot:} Head",
+        "You attach a study pair of horns or tusks onto your body, which are a natural weapon that you can use to make unarmed strikes. If you hit with them, you deal damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Your horns deal the same type of damage as the donor (usually bludgeoning or piercing damage).",
+        "Additionally, if you move in a straight line for 10 feet immediately before hitting a creature with your horns, that creature must make an opposed Strength check or be knocked {@condition prone}."
+      ]
+    },
+    {
+      "name":"Fiend's Hide",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Fiend of Medium size or larger",
+        "{@b Slot:} External",
+        "You have transplanted the supernaturally tough hide of a fiend onto your body. Your Armor Class equals 15 + your Dexterity modifier (maximum 2)."
+      ]
+    },
+    {
+      "name":"Indiscernible Anatomy",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Aberration of Medium size or larger",
+        "{@b Slot:} Internal",
+        "You have spliced aberrant genetics into your body, which have subsequently altered the placement and composition of your internal organs. Any critical hit against you becomes a normal hit."
+      ]
+    },
+    {
+      "name":"Olfactory Implants",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Keen Smell or Keen Hearing and Smell trait",
+        "{@b Slot:} Head",
+        "You have replaced or modified your nose with that of a creature with keen smell. You have advantage on Wisdom (Perception) checks that rely on smell."
+      ]
+    },
+    {
+      "name":"Leaping Legs",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Pounce or Standing Leap trait",
+        "{@b Slot:} Legs",
+        "You have replaced or modified your legs with the muscular limbs of a bounding creature. Your jump distance doubles. Additionally, you can jump your full distance with or without a running start."
+      ]
+    },
+    {
+      "name":"Oversized Arms",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Giant",
+        "{@b Slot:} Arms",
+        "You have replaced your arms with a giant’s massive limbs. Your melee attacks gain Reach if they did not have it already. If you are Small, you can wield heavy weapons with which you are proficient without penalty. Additionally, you have advantage on Strength checks and saving throws you make to maintain your grip on objects."
+      ]
+    },
+    {
+      "name":"Prehensile Tail",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with a Tail attack",
+        "{@b Slot:} External",
+        "You surgically attach a muscular, prehensile tail, which is a natural weapon that you can use to make unarmed strikes. You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your tail. If you hit with it, you deal bludgeoning damage equal to {@dice 1d6} + your Strength or Dexterity modifier (your choice), instead of the damage normal for an unarmed strike.",
+        "Additionally, you can hold and manipulate objects and weapons with your tail, but you can’t make attacks with weapons held by your tail or wield a shield with your tail and gain its benefits."
+      ]
+    },
+    {
+      "name":"Regenerating Marrow",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Regeneration trait",
+        "{@b Slot:} Internal",
+        "You have replaced your bone marrow with that of a regenerating creature. On your turn, you can use a bonus action to regain hit points equal to {@dice 1d10} + your Constitution modifier.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Replacement",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any",
+        "{@b Slot:} Any",
+        "One or more of your organs or limbs has been replaced with a part harvested from a monster. A replacement can effectively solve any amputation or organ failure, but they cannot return to life someone that has died; such work is solely the domain of necromancy. Replacement limbs can resemble the original limb, or can demonstrate obvious monstrous characteristics, depending on the donor. A replacement organ or limb takes up one body slot relevant to it; for example, a troll’s hand takes the Arms slot and a replacement kidney takes up the Internal slot."
+      ]
+    },
+    {
+      "name":"Stench",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Stench trait",
+        "{@b Slot:} Internal",
+        "As a bonus action, you can release a foul liquid contained within an organ taken from the donor creatures. Each creature within 10 feet of you must make a Constitution saving throw (DC equals 8 + your Constitution modifier + your proficiency bonus) or be {@condition poisoned} until the end of its next turn. Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Tentacles",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with a Tentacles or Tendrils attack",
+        "{@b Slot:} Arms",
+        "You surgically replace or modify one or both of your arms with a flexible tentacle or tendril, which is a natural weapon you can use to make unarmed strikes against targets up to 10 feet away from you. You can use Dexterity instead of Strength for the attack rolls of your unarmed strikes made using your tentacle. If you hit with it, you deal bludgeoning damage equal to {@dice 1d6} + your Strength or Dexterity modifier (your choice), instead of the damage normal for an unarmed strike.",
+        "Additionally, when you hit a target with a melee attack using your tentacles, you can use your bonus action to attempt to grapple the target."
+      ]
+    },
+    {
+      "name":"Venom Sac",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature which can poison a creature or deal poison damage with an attack not provided by a weapon",
+        "{@b Slot:} Internal",
+        "You have installed a gland which secretes poison from your body. As a bonus action, you can coat a natural weapon, if you have one, or a weapon you are holding in basic poison. The save DC for the poison equals 8 + your Constitution modifier + your proficiency bonus.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Voice Box",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with the Mimicry trait",
+        "{@b Slot:} Head",
+        "You have augmented your own vocal folds with those of a creature that can mimic sounds. You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful Wisdom (Insight) check, contested by your Charisma (Deception) check."
+      ]
+    },
+    {
+      "name":"Webspinner Apparatus",
+      "source":"VSS",
+      "featureType":["Graft"],
+      "entries":[
+        "{@b Donor:} Any creature with a Web action",
+        "{@b Slot:} Internal",
+        "You have installed spinnerets from a spiderlike creature into your body, allowing you to produce webs. You can cast the spell {@spell web} without using spell slots or spell components (DC equals 8 + your Constitution modifier + your proficiency bonus).",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name":"Bull Rush",
+      "source":"VSS",
+      "featureType":["MV:GW"],
+      "entries":[
+        "When you move at least 10 feet in a straight line and immediately make a melee weapon attack against a creature, you can use a bonus action and expend a battle die to shove the target after the attack. Add the battle die to the Strength (Athletics) check you make to shove the target. On a success, you can push the target 10 feet, instead of only 5."
+      ]
+    },
+    {
+      "name":"Bulwark",
+      "source":"VSS",
+      "featureType":["MV:GW"],
+      "entries":[
+        "When you hit a creature with a melee attack, you can expend a battle die as a bonus action to brace yourself for its counterattack. The next time the creature damages you before the start of your next turn, you can roll the battle die and subtract the result from the damage dealt."
+      ]
+    },
+    {
+      "name":"Cleave",
+      "source":"VSS",
+      "featureType":["MV:GW"],
+      "entries":[
+        "When you reduce a hostile creature to 0 hit points or score a critical hit with a melee weapon attack on your turn, you can spend a battle die to move up to 15 feet and make an additional melee weapon attack. You add the battle die to the attack’s damage roll."
+      ]
+    },
+    {
+      "name":"Heelcutter",
+      "source":"VSS",
+      "featureType":["MV:GW"],
+      "entries":[
+        "When you make an opportunity attack against a creature, you can expend one battle die to knock the creature off balance, preventing it from escaping. You add the battle die to the attack roll, and the target must make a Strength saving throw. On a failed save, its speed is reduced to 0 until the end of its turn."
+      ]
+    },
+    {
+      "name":"Reckless Assault",
+      "source":"VSS",
+      "featureType":["MV:GW"],
+      "entries":[
+        "When you make an attack against a creature, you can expend a battle die to make a wild, desperate strike, leaving you vulnerable. You have advantage on the attack roll. Until the beginning of your next turn, however, attack rolls against you have advantage."
+      ]
+    },
+    {
+      "name":"Staggering Strike",
+      "source":"VSS",
+      "featureType":["MV:GW"],
+      "entries":[
+        "As a bonus action when you make a weapon attack against a creature, you can expend a battle die to attempt to stun a humanoid target. On a hit, the target must make a Constitution saving throw or be {@condition incapacitated} until the beginning of your next turn."
+      ]
+    }
+  ]
+}

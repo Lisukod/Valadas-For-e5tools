@@ -1,0 +1,225 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Valda's Spire of Secrets",
+        "full": "Valda's Spire of Secrets",
+				"authors": [
+          "Mage Hand Press"
+				],
+        "convertedBy": [
+          "Lisu"
+        ],
+        "abbreviation": "VSS",
+				"version": "1.0.0",
+				"url": "https://kickstarter.com/projects/magehandpress/spire-of-secrets"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Mousefolk",
+			"source": "VSS",
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Humanoid"
+			],
+			"size": [
+				"S"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Mousefolk mature in their teens and live around 80 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Most mousefolk are neutral good. They tend to be kind-hearted and have deeply rooted values."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						" Mousefolk have superior vision in dim light and darkness. You can see in dim light within 60 feet of you as if it was bright light, and darkness as if it was dim light. You can’t discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Lightfooted",
+					"entries": [
+						"You have proficiency in the Stealth skill."
+					]
+				},
+				{
+					"name": "Scurry",
+					"entries": [
+						"You can move through the space of any hostile creature as if it were difficult terrain."
+					]
+				},
+				{
+					"name": "Squeeze",
+					"entries": [
+						"You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common. You can also speak Rodentia, a quiet and squeaky language that has no established written form. Mouselings value the oral tradition highly and only take notes in Common, or using an improvised shorthand that approximates the sounds of Rodentia in Common script."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Mouseling",
+					"ability": [
+						{
+							"cha": 1
+						}
+					],
+					"size": [
+						"S"
+					],
+					"speed": {
+						"walk": 25
+					},
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Mouseling",
+									"entries": [
+										"Mouselings are smaller than their ratling cousins but all the more daring. They sport a wide variety of coats, from grey to brown to very rare whites, but all possess large ears and round, black eyes. Though these features often make them look adorable to big folk, most mouselings want nothing more than to be taken seriously. They fancy themselves knights, merchants, minstrels, explorers, and a wide variety of other occupations; only humans rival mouselings for ambition."
+									]
+								}
+							]
+						},
+						{
+							"name": "Brave",
+							"entries": [
+								"You have advantage on saving throws you make against being @condition[frightened]."
+							]
+						},
+						{
+							"name": "Nimble Escape",
+							"entries": [
+								"When a creature you can see makes an opportunity attack against you, you can use your reaction to impose disadvantage on the attack roll. You can’t use this trait when wearing medium or heavy armor."
+							]
+						}
+					]
+				},
+				{
+					"name": "Ratling",
+					"ability": [
+						{
+							"str": 1
+						}
+					],
+					"size": [
+						"S"
+					],
+					"speed": {
+						"walk": 25
+					},
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Ratling",
+									"entries": [
+										"Ratlings often stand a full foot taller than their mouseling relatives, also having longer tails and more pointed ears. They are tougher, more resistant to poison, and far more stubborn than mouselings, but are also unquestionably resourceful. When needed, a ratling can escape just about any enclosure that isn’t constructed entirely from metal and stone, a fact which many jailers hold in contempt."
+									]
+								}
+							]
+						},
+						{
+							"name": "Gnaw",
+							"entries": [
+								"You can use your action to chew through and break a small nonmagical object that isn’t being worn or carried, like a rope, a wooden rod or handle, or a length of fabric. If you chew on a wooden wall or floor for 1 minute, you can gnaw a hole large enough for a Tiny creature. You can’t chew through materials that are harder than your teeth, such as metal, stone, or crystal."
+							]
+						},
+						{
+							"name": "Rat Resilience",
+							"entries": [
+								"You have advantage on saving throws against poison, and you have resistance against poison damage."
+							]
+						}
+					],
+          "resist": [
+            "poison"
+          ]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"“You laughed when I said I would repay you,“ said the Mouse. “Now you see that even a Mousecan help a Lion.”"
+						],
+						"by": "Aesop",
+						"from": "The Lion and the Mouse"
+					},
+					"Never to be looked down upon, the slight, unassuming mousefolk are kindhearted to a fault and possess courage greater than most giants.",
+					{
+						"name": "Tiny But Brave",
+						"entries": [
+							"Though the tiny, big-eared mousefolk are often overlooked by larger creatures, history is brimming with stories of gallant mouse-knights staring down dragons, crossing blades with warlords, and charging into grand battles. It happens that few histories are written about the valor of mousefolk—though many more should be—yet they make appearances in legend all the same, their bravery cementing their place in history.",
+							"Even excluding the long and proud history of mouse-knights, few mousefolk are apt to fear either big folk or monsters. Mousefolk are good to their neighbors and rarely pick fights; after all, most folk can be reasoned with. Those who can’t be reasoned with, however, should rightly fear mousefolk striking at their knees. Mousefolk do not suffer bullies lightly."
+						]
+					},
+					{
+						"name": "Storytellers and Legend-Keepers",
+						"entries": [
+							"The mousefolk language, Rodentia, has no written form. Thus, mousefolk preserve their history in story and in song passed from elders to children through the generations. Their oral tradition is rich, filled with stories of grand heroics, shrewd tricks, and swooning romance. Indeed, many mousefolk live to see themselves preserved in the legends of their people, their deeds remembered in a grand epic for the ages."
+						]
+					},
+					{
+						"name": "Hooded or Disgraced",
+						"entries": [
+							"Though ratlings have long abandoned the old ways, a mouseling is never to be seen without a hood. Following ancient tradition, mouselings wear hoods they have sewn themselves at all times, except in the most dire of circumstances. A hood is a symbol of wealth and social standing, and is sometimes replaced with hats or other headwear when appropriate.",
+							"None can say where this tradition originated, but mouselings hold to it strongly. If one is seen without a hood, it is a sure sign of disgrace and exile, the most personal punishment a village of mouselings can inflict."
+						]
+					},
+					{
+						"name": "Mousefolk Names",
+						"entries": [
+							{
+								"entries": [
+									"Most mousefolk names are derived from Rodentia, and are fairly squeaky when pronounced as a result.",
+									{
+										"name": "Male Names",
+										"entries": [
+											"Arven, Blodge, Dunfur, Frisk, Jinoree, Phrenik, Reep, Skapp"
+										]
+									},
+                  {
+                    "name": "Female Names",
+                    "entries": [
+                      "Beeka, Constance, Juniper, Romsca, Serena, Tess, Wincey"
+                    ]
+                  }
+								]
+							}
+						]
+					}
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"rodentia": true
+				}
+			]
+		}
+	]
+}
