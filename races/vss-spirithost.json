@@ -1,0 +1,175 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Valda's Spire of Secrets",
+        "full": "Valda's Spire of Secrets",
+				"authors": [
+          "Mage Hand Press"
+				],
+        "convertedBy": [
+          "Lisu"
+        ],
+        "abbreviation": "VSS",
+				"version": "1.0.0",
+				"url": "https://kickstarter.com/projects/magehandpress/spire-of-secrets"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Spirithost",
+			"source": "VSS",
+			"ability": [
+				{
+					"dex": 1,
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"con",
+								"int",
+								"wis"
+							],
+							"weights": [
+								"2"
+							]
+						}
+					}
+				}
+			],
+			"traitTags": [
+				"Humanoid"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						" Spirithosts do not experience time in the same way as most mortal creatures. As a result, even though they mature in their teens, their lives can stretch on for hundreds of years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Though some spirithosts are evil, most are simply chaotic, harboring a deep distrust for institutions that so readily brand them as undead."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Spirithosts stand as tall as humans, usually around 5 to 6 feet tall. However, their slightly ethereal form is only loosely affiliated with gravity, weighing half as much as a similarly sized human. Your size is Medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Spirithosts move gracefully, as if drifting through water. Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Ethereal Vision",
+					"entries": [
+						"Your supernatural nature grants you superior vision. While you are on the Material Plane, you can see 60 feet into the Ethereal Plane."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"You can move through other creatures as if they were difficult terrain. You can also move through solid objects, but your partially material form can’t pass through more than one foot of stone, one inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+						"If you end your movement occupying the same spot as a solid object or creature, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved."
+					]
+				},
+				{
+					"name": "Ethereal Nature",
+					"entries": [
+						"You can go twice as long without eating, drinking, or breathing, without penalty."
+					]
+				},
+				{
+					"name": "Spirit Speech",
+					"entries": [
+						"You can cast the spell speak with dead, without using spell slots or material components. You can only ask one question of a corpse when you cast this spell in this way. Once you use this trait, you can’t use it again until you finish a long rest."
+					]
+				},
+				{
+					"name": "Translucence",
+					"entries": [
+						"As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Creatures which can see into the Ethereal Plane can see you normally. Once you use this trait, you can’t use it again until you finish a short or long rest."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"“Hers was a kind of unearthly beauty that resisted the very confines of reality—her hair so airy that it flowed in defiance of gravity, her skin so fair that it could be seen right through. I knew not if she was alive—or if I was, given the circumstances— but very little of that mattered for the first few moments, which seemed to stretch on for eons.”"
+						],
+						"by": "Jethro Meddlitt, gnome wizard",
+						"from": "meeting a spirithost"
+					},
+					"Half immaterial and half flesh, spirithosts are the eerie, spectral, humanlike residents of the Border Ethereal. Though often confused for specters, ghosts, and other incorporeal undead, spirithosts are very much alive—as much as their shifting, partly material bodies allow",
+					{
+						"name": "Spectral Sons and Daughters",
+						"entries": [
+							"The Ethereal Plane is generally thought to be lifeless; exclusively the domain of restless, incorporeal undead and other transient souls. While it is true that there are no creatures native to that plane, the Border Ethereal has its fair share of adopted inhabitants, such as the blink dog and phase spider. Spirithosts are the only humanoids to have adopted this desolate plane, and might be considered its only true descendants.",
+							"Though most spirithosts reside on the Material Plane, they can both step sideways into the Etheral Plane naturally, allowing them to bypass physical obstacles, and see into it effortlessly, allowing them to navigate both planes at once. They can even communicate with the dead directly, a feat few mediums take lightly."
+						]
+					},
+					{
+						"name": "Branded Undead",
+						"entries": [
+							"Though their bodies resemble those of ghosts— slightly translucent and glowing from inside with a pale, white light—spirithosts are not undead. Far from it: they are born, grow old, die, and can even raise children.",
+							"Despite this, most spirithosts are wrongfully believed to be undead, as their eerie, spectral forms are too similar to ghosts for the layman to differentiate. Many a well-meaning but ignorant cleric has tried to turn or banish a spirithost to no avail. To avoid such conflict, spirithosts often avoid large, unfamiliar towns, or disguise their ethereality from others"
+						]
+					},
+					{
+						"name": "Spirithost Names",
+						"entries": [
+							"Spirithost names are gentle and sibilant, sounding as if they are whispered. They sound strange in most tongues, for they originate in an old, now forgotten dialect of Common, practiced by the spirithost in days long past.",
+							{
+								"name": "Male Names",
+								"entries": [
+									"Astras, Boreas, Cin’nilas, Cusnon, Fesim, Mesaron, Senvas, Servalas, Sesirops, Yalsin"
+								]
+							},
+							{
+								"name": "Female Names",
+								"entries": [
+									"Amias, Belias, Heathimis, Lethreas, Nix’silia, Priscilla, Sayu, Shavaras, Sunda, Wishnas"
+								]
+							}
+						]
+					}
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"speak with dead"
+						]
+					}
+				}
+			]
+		}
+	]
+}

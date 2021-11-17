@@ -1,0 +1,317 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Valda's Spire of Secrets",
+        "full": "Valda's Spire of Secrets",
+				"authors": [
+          "Mage Hand Press"
+				],
+        "convertedBy": [
+          "Lisu"
+        ],
+        "abbreviation": "VSS",
+				"version": "1.0.0",
+				"url": "https://kickstarter.com/projects/magehandpress/spire-of-secrets"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Mandrake",
+			"source": "VSS",
+			"ability": [
+				{
+					"wis": 2
+				}
+			],
+			"traitTags": [
+				"Plant"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Mandrakes must grow undisturbed for a year and a day before they are harvested. They then mature in a decade and live for centuries, growing wider with more gnarled bark as they age."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Mandrakes are known to keep centuries-old concords known only to the oldest of creatures. Though they stay neutral in most matters, they tend to lean toward lawful alignments."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Mandrakes usually stand tall and slim, typically almost seven feet high, with spring mandrakes being smaller and winter mandrakes being slightly larger, and often hunched over. Your size is Medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Plant Nature",
+					"entries": [
+						"Even though you are not fully a plant, you still possess many of the same traits as one. As long as you are within direct sunlight for at least 4 hours a day, you do not need to eat. Additionally, you can breathe through your leaves and extremities, and can absorb water and nutrients through your feet.",
+						"Even if you aren’t proficient in Stealth, you can add your proficiency bonus to Dexterity (Stealth) checks that you make to hide in natural environments, such as forests."
+					]
+				},
+				{
+					"name": "Root Magic",
+					"entries": [
+						"You know the shillelagh cantrip and can target yourself with the spell, treating one of your limbs as a club instead of an unarmed strike. When you reach 3rd level, you can cast the goodberry spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the barkskin spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common. You can also communicate simple ideas to nonmagical plants and can question plants about events that occurred nearby during the past day, gaining information about creatures that have passed, weather, and other circumstances."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Spring",
+					"ability": [
+						{
+							"dex": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Spring",
+									"entries": [
+										"Mandrakes harvested in the spring are limber and flexible, bearing lighter bark and short green buds instead of leaves. They are by far the thinnest and most agile of the mandrakes."
+									]
+								}
+							]
+						},
+						{
+							"name": "Sprightly Movement",
+							"entries": [
+								" Your walking speed increases by 5 feet."
+							]
+						},
+						{
+							"name": "Storm Resistance",
+							"entries": [
+								"Accustomed to the thunderstorms of spring, you have resistance to lightning damage."
+							]
+						}
+					],
+					"speed": [
+						{
+							"walk": 35
+						}
+					],
+					"resist": [
+						{
+							"lightning": true
+						}
+					]
+				},
+				{
+					"name": "Summer",
+					"ability": [
+						{
+							"str": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Summer",
+									"entries": [
+										"Summer mandrakes grow high and strong, as they are accustomed to the warm months and everabundant sunlight. Their leaves almost form a canopy, and the roots along their feet can hold fast to the loam when the need arises."
+									]
+								}
+							]
+						},
+						{
+							"name": "Deep Roots",
+							"entries": [
+								" As long as your feet are on natural ground, you have advantage on Strength saving throws and on all ability checks you make to resist being pushed, shoved, knocked prone, or otherwise moved involuntarily."
+							]
+						},
+						{
+							"name": "Wildfire Resistance",
+							"entries": [
+								"Having withstood the dry conditions and occasional forest fires of midsummer, you have resistance to fire damage."
+							]
+						}
+					],
+					"resist": [
+						{
+							"fire": true
+						}
+					]
+				},
+				{
+					"name": "Autumn",
+					"ability": [
+						{
+							"cha": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Autumn",
+									"entries": [
+										"Mandrakes harvested during autumn are more colorful than the other varieties, both in disposition and appearance. They are decorated with leaves in a myriad of reds, purples, and yellows. They reflect the natural world at its most bountiful and seek to share the harvest’s gifts with all who will accept them."
+									]
+								}
+							]
+						},
+						{
+							"name": "Abundance",
+							"entries": [
+								"You gain the ability to cast the goodberry spell, as per your Root Magic trait, when you choose this subrace at 1st level, instead of at 3rd level. When you cast this spell using this trait, each creature that consumes a berry regains hit points equal to your proficiency bonus."
+							]
+						},
+						{
+							"name": "Toxin Resistance",
+							"entries": [
+								"The vibrant colors of autumn bring with them the promise of harvests to come. To protect such a harvest, you have resistance to poison damage."
+							]
+						}
+					],
+					"resist": [
+						{
+							"poison": true
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"goodberry"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Winter",
+					"ability": [
+						{
+							"con": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Winter",
+									"entries": [
+										"Mandrakes which are harvested in winter first glimpse the natural world at its harshest, and become harsh in return. Winter mandrakes never grow leaves, and develop gnarled bark that makes them look much older than they are. In addition, they grow large; surviving the winter months fosters a certain strength that other mandrakes rarely, if ever, develop."
+									]
+								}
+							]
+						},
+						{
+							"name": "Frost Resistance",
+							"entries": [
+								"Due to the bitter frost of the long winter months, you have resistance to cold damage."
+							]
+						},
+						{
+							"name": "Powerful Build",
+							"entries": [
+								"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+							]
+						}
+					],
+					"resist": [
+						{
+							"cold": true
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"“It was an ancient thing of moss-covered wood which creaked like a greatoak as it breathed, but I’ll never forget its eyes: those glowing points were a thing of the fey, a thing of the deep woods forgotten to man.”"
+						],
+						"by": "Faizon the Blue",
+						"from": "encountering a mandrake"
+					},
+					"Laymen believe that mandrakes are screaming, crying babies grown from the roots of a plant. However, small, wailing mandrakes are those which are harvested too early; literally children still in infancy. If allowed to grow for a year and a day before being harvested, they emerge fully formed, able to mature into great and powerful tree people.",
+					{
+						"name": "Flesh from Wood",
+						"entries": [
+							"With a skin of thick bark and leaves growing at their extremities, you could be forgiven for believing that mandrakes are simply bizarre plants, treants, or animated trees. This might even be partially true: it seems that while mandrakes originated from some plant ancestor, they have become something midway between animal and plant through some strange magic or stranger evolution",
+							"Mandrake anatomies are filled with paradoxes. They bleed a ruby ichor, reminiscent of both blood and sap. Their hearts, which look like a knot of roots, pump this around their body, enriching it with oxygen borne by leaves and special pores on their extremities. By preference, mandrakes can bask in the sunlight or consume living things for nourishment, and can even absorb nutrients through their feet, though they rarely subsist by sunlight and water alone."
+						]
+					},
+					{
+						"name": "Forest Envoys",
+						"entries": [
+							"Alchemists and arcanists alike scratch their heads at mandrakes, but druids know them as the green emissaries who stand between the realms of animals and plants, making peace for all parties. To druidic tradition, mandrakes are unique, ancient constructions of Mother Nature herself, intended to act as delegates for her will. Mandrakes are credited by old druids for aligning elves with the forests and dwarves with the mountains; only with the rising tide of humanoids and their preponderance of gods did most creatures forget about Mother Nature and her half-plant ambassadors.",
+							"Today, mandrakes are rare, and make their homes in the forests near where villages and cities meet the true wilds. Humans tell tales of mandrakes savaging those who enter their domain, but druids and those who respect the old traditions of the forest know that such ire is seldom undeserved."
+						]
+					},
+					{
+						"name": "Mandrake Names",
+						"entries": [
+							"Taking their names from the old spirits of the forest, which have long been forgotten by men, mandrakes treat all names with great reverence",
+							{
+								"name": "Male Names",
+								"entries": [
+									"Akathaso, Bistonis, Cithaeron, Hathor, Nomina, Orseis, Othrys, Yggdras"
+								]
+							},
+							{
+								"name": "Female Names",
+								"entries": [
+									"Argyra, Circe, Claea, Hadryade, Helike, Lauma, Moria, Thronia"
+								]
+							}
+						]
+					}
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"shillelagh#c"
+						],
+						"3": [
+							"goodberry"
+						],
+						"5": [
+							"barkskin"
+						]
+					}
+				}
+			]
+		}
+	]
+}

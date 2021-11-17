@@ -33,6 +33,9 @@
 			"size": [
 				"S"
 			],
+			"speed": {
+				"walk": 25
+			},
 			"entries": [
 				{
 					"name": "Age",
@@ -80,12 +83,6 @@
 							"con": 1
 						}
 					],
-					"size": [
-						"S"
-					],
-					"speed": {
-						"walk": 25
-					},
 					"entries": [
 						{
 							"type": "section",
@@ -127,15 +124,9 @@
 					"name": "Marionette",
 					"ability": [
 						{
-							"dex": 1
+							"dex": 2
 						}
 					],
-					"size": [
-						"S"
-					],
-					"speed": {
-						"walk": 25
-					},
 					"entries": [
 						{
 							"type": "section",
@@ -171,15 +162,9 @@
 					"name": "Raggedy",
 					"ability": [
 						{
-							"cha": 1
+							"cha": 2
 						}
 					],
-					"size": [
-						"S"
-					],
-					"speed": {
-						"walk": 25
-					},
 					"entries": [
 						{
 							"type": "section",

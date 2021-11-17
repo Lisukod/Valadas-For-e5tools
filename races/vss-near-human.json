@@ -1,0 +1,818 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Valda's Spire of Secrets",
+        "full": "Valda's Spire of Secrets",
+				"authors": [
+          "Mage Hand Press"
+				],
+        "convertedBy": [
+          "Lisu"
+        ],
+        "abbreviation": "VSS",
+				"version": "1.0.0",
+				"url": "https://kickstarter.com/projects/magehandpress/spire-of-secrets"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Near-Human",
+			"source": "VSS",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis"
+						],
+						"count" : 2
+					}
+				}
+			],
+			"traitTags": [
+				"Humanoid"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"subraces": [
+				{
+					"name": "Aboleth Spawn",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Aboleth Spawn",
+									"entries": [
+										"You were somehow created by an aboleth, and you suffer from strange and hideous mutations as a result. Due to these changes, you have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have uncanny psychic resistances. You have advantage on saving throws you make against being charmed.",
+												"At least one of your limbs is muscular, rubbery, and pliant, acting more as a tentacle than a limb in its own right. You can use this limb as a natural weapon to make unarmed strikes. On a hit with it, you deal bludgeoning damage equal to 1d4 + your Strength modifier instead of the normal damage for an unarmed strike."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Aquatic",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"speed" : {
+						"swim": 30
+					},
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Aquatic",
+									"entries": [
+										"One of your parents is a merfolk, or you are distantly descended from the Elemental Plane of Water; consequently, you have aquatic features like gills, webbed fingers and toes, and fishlike scales, which grant you the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You can breathe water as well as air.",
+												"You have a swimming speed equal to your walking speed."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Beastman",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Beastman",
+									"entries": [
+										"With a short tail, coarse fur covering your face, and long teeth and claws, you appear more like a ferocious beast than a man. Perhaps your parentage includes a werecreature or an intelligent beast, granting you the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have advantage on Wisdom (Perception) checks made to smell.",
+												"You possess sharp claws, which are natural weapons that you can use to make unarmed strikes. On a hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Firebrand",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"resist": [
+						{
+							"fire": true
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"produce flame#c"
+								],
+								"3": [
+									"burning hands"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Firebrand",
+									"entries": [
+										"Born, imbued with, or later marked by the powers of Elemental Fire, these near-humans have an affinity for fire magic. Their heritage makes them dangerous adversaries in combat, as does the volatile nature of their innate powers. Firebrands are human in shape, but have deep red skin and flames behind their eyes. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have resistance to fire damage.",
+												"You know the produce flame cantrip. At 3rd level, you can also cast the burning hands spell once with this trait and regain the ability to do so when you finish a long rest. Your spellcasting ability for these spells is Charisma."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Green Skin",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"resist": [
+						{
+							"poison": true
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Green Skin",
+									"entries": [
+										"Your people metabolize by basking in the sunlight. Aided by your tough, photosynthetic skin, you gain the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have advantage on saving throws against being poisoned and have resistance to poison damage.",
+												"While you aren’t wearing armor, your AC equals 12 + your Dexterity modifier."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Grendel",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Grendel",
+									"entries": [
+										"With their green-tinted and boil-ridden skin, spindly fingers, and pointed teeth, few people will mark a grendel as half-human. Grendels exclusively favor the look of their troll parentage and have immense difficulty in human society. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You retain some of the regenerative properties of your troll parentage. Whenever you have fewer than one-fourth of your maximum hit points (rounded down), you regain 1 hit point each minute."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Grue",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"darkvision": 60,
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Grue",
+									"entries": [
+										"One of your parents was a creature of darkness, such as a shadow or a native of the Plane of Shadow. Grues, such as yourself, have blackened skin and cast a shadow in all directions, even when directly in light. In shadows, you are nearly invisible. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have darkvision, the ability to see in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+												"When you are hidden and a creature discovers you with a successful Wisdom (Perception) check, you can reattempt your Dexterity (Stealth) check to hide. On a success, you silently reposition yourself and the creature doesn’t notice you. Once you use this trait, you can’t use it again until you finish a short or long rest."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Hobbin",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"weaponProficiencies": [
+						{
+							"flail|phb": true,
+							"javelin|phb": true,
+							"shortsword|phb": true,
+							"sling|phb": true,
+							"whip|phb": true
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Hobbin",
+									"entries": [
+										"The foul-smelling hobbins are half-human and halfhobgoblin. With great, flat noses, orange-tanned skin, coarse hair, and three knuckles on each finger, they don’t quite resemble either of their parents, and may go to great lengths to resemble a normal human or hobgoblin in everyday life. You retain much of the talent for war enjoyed by hobgoblins, and have the following racial traits as a result:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You gain proficiency with flails, javelins, shortswords, slings, war picks, and whips.",
+												"When you roll initiative and you are neither surprised nor unconscious, you can move up to 10 feet and can make one melee weapon attack against a creature within your reach."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Mul",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"darkvision": 60,
+					"languageProficiencies": [
+						{
+							"dwarven": true
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Mul",
+									"entries": [
+										"Though one of your parents was a human, the other was a dwarf. Such a pairing is unlikely to have produced offspring, but you have defied the odds to join the ranks of the few, and exclusively sterile, muls. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have darkvision, the ability to see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+												"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+												"You can read, speak, and write Dwarven."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Ogre-blodded",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"skillProficiencies" : [
+						{
+							"intimidation": true
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Ogre-blodded",
+									"entries": [
+										"Your coarse features and monstrous build betray the foul blood that runs through your veins, evidence that one of your parents is an ogre. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You gain proficiency in the Intimidation skill.",
+												"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Owlbearman",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Owlbearman",
+									"entries": [
+										"You are a hulking thing of feathers, flesh, and fur; half-man, half-bear, and half-owl, none can say for sure what you are, other than the result of some mad wizard meddling in the gods’ domain. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You can attempt to grapple creatures two size categories larger than yourself, and you have advantage on grappling checks you make on your turn against creatures that are at least one size category smaller than you.",
+												"You have a long, hooked beak, normally only possessed by owlbears and birds of prey, which you can use to make unarmed strikes. On a hit with it, you deal piercing damage equal to 1d6 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Porterling",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Porterling",
+									"entries": [
+										"You are a porterling, parented both by a human and either a gnome or a halfling. You stand about as tall as a dwarf, but are far leaner—and if fathered by a gnome, also somewhat top-heavy. Though they are often confused for dwarves, porterlings can only rarely grow large or thick beards. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"Porterlings are unnaturally flexible. You have advantage on checks you make to escape grapple or to slip bindings.",
+												"You suffer no penalty for squeezing into a space that is only large enough for a creature that is one size smaller than you.",
+												"You can roll a d8 whenever you make a long or high jump, adding the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Proto-man",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Proto-man",
+									"entries": [
+										"You come from a place of massive flora and ancient creatures; your people are hearty and robust, much like very early humans. You gain the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You always add your proficiency bonus to saving throws against being frightened. ",
+												"When you take a short rest, you can automatically regain 1 hit die and can choose to spend it immediately. You can’t use the ability again until you finish a long rest."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reptiloid",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"languageProficiencies": [
+						{
+							"draconic": true
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Reptiloid",
+									"entries": [
+										"You bear the abrasive skin, slitted eyes, and split tongue of a reptile—perhaps due to a dragonborn or kobold parent—which grant you the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You can go twice as long as other humans without eating or drinking. ",
+												"You can use your action to spit acid from your mouth. When you do so, make a ranged weapon attack roll against a creature within 30 feet. On a hit, the target takes 1d8 acid damage for each point of your proficiency bonus. Once you use this trait to spit acid, you can’t do so again until you finish a short or long rest.",
+												"You can speak, read, and write Draconic."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Roguean",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"darkvision": 60,
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Roguean",
+									"entries": [
+										"You hail from an icy, desolate land, prone to dramatic swings in temperature. Surviving the interminable harshness of your home gives you the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You have resistance to cold damage.",
+												"You can tolerate temperatures as low as −100 degrees Fahrenheit (-73.33 Celcius) and as high as 300 degrees Fahrenheit (149 Celcius)",
+												"You have darkvision, the ability to see in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Stoneborn",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Stoneborn",
+									"entries": [
+										"With cracked and abrasive skin, stoneborn appear as if they were roughly hewn from granite and have similarly rigid personalities. These near-humans are proud of their connection to Elemental Earth and believe themselves conquerors, fated to rule over every stone. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"Your Armor Class increases by 1.",
+												"You have advantage on ability checks and saving throws you make to resist being knocked prone or moved against you will.",
+												"By placing your hand on natural stone and using your action to focus, you can feel the presence of any natural gems or metals within 100 feet of you."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Tauran",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Tauran",
+									"entries": [
+										"Your large nose, strong jaw, and wide head do much to reveal your distantly bovine nature, but the prominent bull-horns atop your head reveal to all that you are half-minotaur. Taurans tower over most people and can solve mazes with ease, but typically possess only a shadow of their minotaur parent’s might. You have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"You can perfectly recall any path you have traveled.",
+												"On any turn in which you only move in a straight line, your speed increases by 10 feet",
+												"You have two horns that you can use to effectively gore your enemies. The horns are a natural melee weapon that you can use to make unarmed strikes. On a hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Windswept",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis"
+								]
+							}
+						}
+					],
+					"speed": [
+						{
+							"walk": 35
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate":{
+								"1":[
+									"message#c"
+								]
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "section",
+							"entries": [
+								{
+									"name": "Windswept",
+									"entries": [
+										"Carefree and constantly possessed of wanderlust, the extraordinarily pale windswept embody their connection to Elemental Air. Windswept humans are never likely to sleep in the same bed for two nights in a row; they are always moving, always exploring, and always following the wind. You are lighter than a normal human, capable of floating gently on the breeze, and have faint inborn power over the winds, which grant you have the following racial traits:",
+										{
+											"type": "list",
+											"items": [
+												"Increase one ability score of your choice by 1, to a maximum of 20.",
+												"When you fall and aren’t incapacitated, you can subtract up to 100 feet from the fall when calculating falling damage and can move up to 2 feet horizontally for every 1 foot you descend.",
+												"Your walking speed increases by 5 feet.",
+												"Your whispers carry on the wind. You know the message cantrip"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Humans are known for being ambitious, diverse, and extremely short-lived, but also have the dubious honor of being associated with an abundance of near-human offshoots, for it seems humans can breed with just about anything. Near-humans are still basically humans, bearing subtly different traits from a wide variety of sources, and are individually rare but make up a surprisingly large portion of any human population. ",
+					"If you choose a human for your race, you can use the Near-Human variant traits, which replaces the human’s Ability Score Increase trait:",
+					{
+						"name": "Ability Score Increase",
+						"entries": [
+							"Two different ability scores of your choice increase by 1."
+						]
+					},
+					{
+						"name": "Skills",
+						"entries": [
+							"You gain proficiency in one skill of your choice."
+						]
+					},
+					{
+						"name": "Feat",
+						"entries": [
+							"You gain one feat of your choice. This feat must have Near-Human variant as a prerequisite."
+						]
+					}
+				]
+			},
+			"skillProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"feats": 1
+		}
+	]
+}

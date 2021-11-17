@@ -32,6 +32,9 @@
 			"size": [
 				"S"
 			],
+			"speed": {
+				"walk": 25
+			},
 			"entries": [
 				{
 					"name": "Age",
@@ -84,12 +87,6 @@
 							"cha": 1
 						}
 					],
-					"size": [
-						"S"
-					],
-					"speed": {
-						"walk": 25
-					},
 					"entries": [
 						{
 							"type": "section",
@@ -123,12 +120,6 @@
 							"str": 1
 						}
 					],
-					"size": [
-						"S"
-					],
-					"speed": {
-						"walk": 25
-					},
 					"entries": [
 						{
 							"type": "section",
