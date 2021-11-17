@@ -130,43 +130,6 @@
 					]
 				}
 			],
-      "classFeatures": [
-        "Expertise|Investigator|VSS|1",
-        "Ritualist|Investigator|VSS|1",
-        "Myths and Legends|Investigator|VSS|2",
-        "Rushed Incantation|Investigator|VSS|2",
-        {
-          "classFeature": "Occult Specialization|Investigator|VSS|3",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Investigator|VSS|4",
-        "Exploit Vulnerability|Investigator|VSS|5",
-        "Expertise|Investigator|VSS|6",
-        {
-          "classFeature": "Occult Specialization Feature|Investigator|VSS|6",
-          "gainSubclassFeature": true
-        },
-        "Opportunistic Piety|Investigator|VSS|7",
-        "Ability Score Improvement|Investigator|VSS|8",
-        "Supernatural Resolve|Investigator|VSS|9",
-        {
-          "classFeature": "Occult Specialization Feature|Investigator|VSS|10",
-          "gainSubclassFeature": true
-        },
-        "Finisher|Investigator|VSS|11",
-        "Ability Score Improvement|Investigator|VSS|12",
-        "Enigma Arcane|Investigator|VSS|13",
-        {
-          "classFeature": "Occult Specialization feature|Investigator|VSS|14",
-          "gainSubclassFeature": true
-        },
-        "Enigma Arcane improvement|Investigator|VSS|15",
-        "Ability Score Improvement|Investigator|VSS|16",
-        "Enigma Arcane improvement|Investigator|VSS|17",
-        "Exorcist|Investigator|VSS|18",
-        "Ability Score Improvement|Investigator|VSS|19",
-        "Spellbinder|Investigator|VSS|20"
-      ],
       "subclassTitle": "Occult Specializations",
       "classSpells": [
         "Alarm",
@@ -357,6 +320,43 @@
           "page": 103,
           "source": "VSS"
         }
+      ],
+      "classFeatures": [
+        "Expertise|Investigator|VSS|1",
+        "Ritualist|Investigator|VSS|1",
+        "Myths and Legends|Investigator|VSS|2",
+        "Rushed Incantation|Investigator|VSS|2",
+        {
+          "classFeature": "Occult Specialization|Investigator|VSS|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Investigator|VSS|4",
+        "Exploit Vulnerability|Investigator|VSS|5",
+        "Expertise|Investigator|VSS|6",
+        {
+          "classFeature": "Occult Specialization Feature|Investigator|VSS|6",
+          "gainSubclassFeature": true
+        },
+        "Opportunistic Piety|Investigator|VSS|7",
+        "Ability Score Improvement|Investigator|VSS|8",
+        "Supernatural Resolve|Investigator|VSS|9",
+        {
+          "classFeature": "Occult Specialization Feature|Investigator|VSS|10",
+          "gainSubclassFeature": true
+        },
+        "Finisher|Investigator|VSS|11",
+        "Ability Score Improvement|Investigator|VSS|12",
+        "Enigma Arcane|Investigator|VSS|13",
+        {
+          "classFeature": "Occult Specialization feature|Investigator|VSS|14",
+          "gainSubclassFeature": true
+        },
+        "Enigma Arcane improvement|Investigator|VSS|15",
+        "Ability Score Improvement|Investigator|VSS|16",
+        "Enigma Arcane improvement|Investigator|VSS|17",
+        "Exorcist|Investigator|VSS|18",
+        "Ability Score Improvement|Investigator|VSS|19",
+        "Spellbinder|Investigator|VSS|20"
       ]
     }
   ],
@@ -679,21 +679,17 @@
     {
       "name": "Antiquarian",
       "source": "VSS",
-      "page": 107,
       "className": "Investigator",
       "classSource": "VSS",
-      "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "page": 107,
       "level": 3,
       "entries": [
         "Festooned with magical trinkets from every corner of the globe, antiquarians have a tool for every occasion: silver arrowheads for lycanthropes, heartwood stakes for vampires, blessed relics for fiends, and so on. As they expand their collections from piles of trinkets to veritable museums, they become adept historians and arcanists, familiar with the story of every magic item their care, as well how to use them in dire situations.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Artifact Historian|Investigator|VSS|Antiquarian|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Antiquarian|VSS|3|VSS"
         }
       ]
     },
@@ -828,10 +824,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Trinket|Investigator|VSS|Archivist|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Thesis|Investigator|VSS|Archivist|VSS|3|VSS"
         }
       ]
     },
@@ -966,10 +958,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Investigator's Hunch|Investigator|VSS|Detective|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Detective|VSS|3|VSS"
         }
       ]
     },
@@ -1068,10 +1056,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Bonus Proficiencies|Investigator|VSS|Exterminator|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Exterminator|VSS|3|VSS"
         }
       ]
     },
@@ -1176,14 +1160,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Bonus Proficiencies|Investigator|VSS|Inquisitor|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Exorcist's Doctrines|Investigator|VSS|Inquisitor|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Inquisitor|VSS|3|VSS"
         }
       ]
     },
@@ -1301,10 +1277,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Fortelling|Investigator|VSS|Medium|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Medium|VSS|3|VSS"
         }
       ]
     },
@@ -1406,10 +1378,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Trinket|Investigator|VSS|Occultist|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Pact Magic|Investigator|VSS|Occultist|VSS|3|VSS"
         }
       ]
     },
@@ -1539,10 +1507,6 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Bravado|Investigator|VSS|Spy|VSS|3|VSS"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Spy|VSS|3|VSS"
         }
       ]
     },
