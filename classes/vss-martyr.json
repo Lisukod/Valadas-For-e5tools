@@ -16,45 +16,37 @@
   },
   "class": [
     {
-      "name": "Investigator",
+      "name": "Martyr",
       "source": "VSS",
-      "page": 103,
+      "page": 115,
       "hd": {
         "number": 1,
-        "faces": 8
+        "faces": 12
       },
-      "proficiency": ["dex", "int"],
+      "proficiency": ["str", "wis"],
       "startingProficiencies": {
-        "armor": ["light"],
+        "armor": [
+          "light", 
+          "medium", 
+          "{@item shield|phb|shields}"
+        ],
         "weapons": [
           "simple",
-          "hand crossbows",
-          "heavy crossbows",
-          "longswords",
-          "rapiers",
-          "shortswords"
+          "martial"
         ],
-        "tools": ["One gaming set of your choice"],
         "skills": [
           {
             "choose": {
               "from": [
-                "arcana",
                 "athletics",
-                "deception",
                 "history",
                 "insight",
                 "intimidation",
-                "investigation",
                 "medicine",
-                "nature",
-                "perception",
                 "persuasion",
-                "stealth",
-                "slieght of hand",
                 "religion"
               ],
-              "count": 3
+              "count": 2
             }
           }
         ]
@@ -62,133 +54,101 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "A {@item Leather armor|phb}",
-          "A {@item dagger} and (a) a {@item longsword|phb} or (b) {@item rapier|phb}",
-          "(a) a {@item heavy crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) a {@item hand crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
-          "(a){@item dungeoneer's pack|phb} or (b) one kit you're proficient with",
-          "A grimoire and {@item component pouch|phb}"
+          "(a) a {@filter melee weapon|items|type=melee weapon} and {@item shield|phb|shields} or (b) two {@filter simple weapon|items|type=melee weapon}",
+          "(a) {@item scale mail|phb} or (b) {@item chain mail|phb} (if proficient)",
+          "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}, or (b) any {@filter simple weapon|items|type=melee weapon}",
+          "(a){@item priest's pack|phb} or (b) an explorer's pack",
+          "A (@item holy symbol)"
         ]
       },
       "multiclassing": {
         "requirements": {
-          "int": 13
+          "con": 13,
+          "wis": 13
         },
         "proficienciesGained": {
-          "armor": ["light"],
-          "weapons": ["heavy crossbow", "hand crossbow"],
-          "skills": [
-            {
-              "choose": {
-                "from": [
-                  "arcana",
-                  "athletics",
-                  "deception",
-                  "history",
-                  "insight",
-                  "intimidation",
-                  "investigation",
-                  "medicine",
-                  "nature",
-                  "perception",
-                  "persuasion",
-                  "stealth",
-                  "slieght of hand",
-                  "religion"
-                ],
-                "count": 1
-              }
-            }
-          ]
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": ["simple", "martial"]
         }
       },
       "classFeatures": [
-        "Expertise|Investigator|VSS|1",
-        "Ritualist|Investigator|VSS|1",
-        "Myths and Legends|Investigator|VSS|2",
-        "Rushed Incantation|Investigator|VSS|2",
         {
-          "classFeature": "Occult Specialization|Investigator|VSS|3",
+          "classFeature": "Mortal Burden|Martyr|VSS|1",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Investigator|VSS|4",
-        "Exploit Vulnerability|Investigator|VSS|5",
-        "Expertise|Investigator|VSS|6",
+        "Ordained Death|Martyr|VSS|1",
+        "Mark of the Herald|Martyr|VSS|2",
+        "Sainted Reprisal|Martyr|VSS|2",
+        "Divine Healing|Martyr|VSS|3",
+        "Torment|Martyr|VSS|3",
+        "Ability Score Improvement|Martyr|VSS|4",
+        "Extra Attack|Martyr|VSS|5",
         {
-          "classFeature": "Occult Specialization Feature|Investigator|VSS|6",
+          "classFeature": "Mortal Burden feature|Martyr|VSS|6",
           "gainSubclassFeature": true
         },
-        "Opportunistic Piety|Investigator|VSS|7",
-        "Ability Score Improvement|Investigator|VSS|8",
-        "Supernatural Resolve|Investigator|VSS|9",
+        "Respite|Martyr|VSS|7",
+        "Ability Score Improvement|Martyr|VSS|8",
+        "Undying Conviction|Martyr|VSS|10",
+        "Torment Improvement|Martyr|VSS|11",
+        "Ability Score Improvement|Martyr|VSS|12",
         {
-          "classFeature": "Occult Specialization Feature|Investigator|VSS|10",
+          "classFeature": "Mortal Burden feature|Martyr|VSS|14",
           "gainSubclassFeature": true
         },
-        "Finisher|Investigator|VSS|11",
-        "Ability Score Improvement|Investigator|VSS|12",
-        "Enigma Arcane|Investigator|VSS|13",
+        "March Undo Destiny|Martyr|VSS|15",
+        "Ability Score Improvement|Martyr|VSS|16",
         {
-          "classFeature": "Occult Specialization feature|Investigator|VSS|14",
+          "classFeature": "Mortal Burden feature|Martyr|VSS|18",
           "gainSubclassFeature": true
         },
-        "Enigma Arcane improvement|Investigator|VSS|15",
-        "Ability Score Improvement|Investigator|VSS|16",
-        "Enigma Arcane improvement|Investigator|VSS|17",
-        "Exorcist|Investigator|VSS|18",
-        "Ability Score Improvement|Investigator|VSS|19",
-        "Spellbinder|Investigator|VSS|20"
+        "Ability Score Improvement|Martyr|VSS|19",
+        "Final Martyrdom|Martyr|VSS|20"
       ],
-      "subclassTitle": "Occult Specializations",
+      "subclassTitle": "Mortal Burden",
       "classSpells": [
-        "Alarm",
+        "Bless",
         {
           "name": "Blood Print",
           "source": "VSS"
         },
         {
-          "name": "Clue",
-          "source": "VSS"
-        },
-        "Comprehend Languages",
-        {
-          "name": "Conjure Cover",
+          "name": "Boomering",
           "source": "VSS"
         },
         {
-          "name": "Consecrated Armor",
+          "name": "Burnt Offering",
           "source": "VSS"
         },
+        "Command",
+        "Cure Wounds",
         "Detect Evil and Good",
         "Detect Magic",
         "Detect Poison and Disease",
-        "Disguise Self",
-        "Find Familiar",
-        "Floating Disk",
+        "Guiding Bolt",
         "Heroism",
-        "Identify",
-        "Illusory Script",
         {
-          "name": "Memorize",
+          "name": "Indemnify",
           "source": "VSS"
         },
+        "Inflict Wounds",
+        {
+          "name": "Instant Replay",
+          "source": "VSS"
+        },
+        "Protection from Evil and Good",
         "Purify Food and Drink",
-        {
-          "name": "Rumor",
-          "source": "VSS"
-        },
-        "Speak with Animals",
+        "Sanctuary",
+        "Shield of Faith",
         {
           "name": "Transient Bulwark",
           "source": "VSS"
         },
-        "Unseen Servant",
-        {
-          "name": "Whispering Wind",
-          "source": "VSS"
-        },
-        "Animal Messenger",
-        "Arcane Lock",
-        "Arcanist’s Magic Aura",
+        "Aid",
         "Augury",
         {
           "name": "Curse Ward",
@@ -196,136 +156,95 @@
         },
         "Gentle Repose",
         {
-          "name": "Jethro’s Instant Reload",
+          "name": "Halo of Flame",
           "source": "VSS"
         },
-        "Knock",
-        "Locate Animals or Plants",
+        "Hold Person",
+        "Lesser Restoration",
         "Locate Object",
-        "Magic Mouth",
+        "Magic Weapon",
         {
-          "name": "Nondescript",
+          "name": "Protection from Ballistics",
           "source": "VSS"
         },
+        "Protection from Poison",
         {
-          "name": "Protect Threshold",
+          "name": "Stone Bones",
           "source": "VSS"
         },
-        {
-          "name": "Recall",
-          "source": "VSS"
-        },
-        "See Invisibility",
-        "Silence",
-        "Spider Climb",
-        {
-          "name": "Unseen Accountant",
-          "source": "VSS"
-        },
+        "Warding Bond",
         "Zone of Truth",
-        {
-          "name": "After Image",
-          "source": "VSS"
-        },
-        {
-          "name": "Benign Dismemberment",
-          "source": "VSS"
-        },
-        "Clairvoyance",
-        "Fly",
-        {
-          "name": "Geomantic Discernment",
-          "source": "VSS"
-        },
+        "Create Food and Water",
+        "Daylight",
+        "Dispel Magic",
         "Magic Circle",
-        "Meld into Stone",
-        "Phantom Steed",
+        {
+          "name": "Pillar of Salt",
+          "source": "VSS"
+        },
+        "Protection from Energy",
         "Remove Curse",
-        {
-          "name": "Séance",
-          "source": "VSS"
-        },
-        "Sending",
-        "Speak with Plants",
-        "Water Breathing",
-        "Water Walk",
-        {
-          "name": "Dire Warning",
-          "source": "VSS"
-        },
-        {
-          "name": "Distort Gravity",
-          "source": "VSS"
-        },
+        "Revivify",
+        "Snakestaff",
+        "Speak with Dead",
+        "Tongues",
+        "Banishment",
+        "Death Ward",
         "Divination",
-        {
-          "name": "False Vision",
-          "source": "VSS"
-        },
-        {
-          "name": "Invisibility Purge",
-          "source": "VSS"
-        },
         "Locate Creature",
-        "Private Sanctum",
+        "Stoneskin",
         "Commune",
-        "Commune with Nature",
-        "Dream",
-        "Legend Lore",
-        {
-          "name": "Scrutinize Foe",
-          "source": "VSS"
-        },
-        "Telepathic Bond",
-        "Find the Path",
-        "Forbiddance",
-        {
-          "name": "Game of Fate",
-          "source": "VSS"
-        },
-        "Instant Summons"
+        "Dispel Evil and Good",
+        "Flame Strike",
+        "Geas",
+        "Greater Restoration",
+        "Hallow",
+        "Insect Plague",
+        "Mass Cure Wounds",
+        "Raise Dead"
       ],
       "fluff": [
         {
           "entries": [
-            "A collage of diagrams, maps, and small items litters the wall, pinned with nails and connected by a spiderweb of colorful strings. An elf stands nearby, contemplating the mystery splayed out in front of her and readying her crossbow for work.",
-            "A half-orc wearing a wide-brimmed hat leafs through a thick tome, double-checking the preparations: a sturdy net trap, holy symbols on the doors, cloves of garlic, and several dozen wooden stakes. The preparations made, the half-orc slinks into the shadows and readies himself for the bloodshed.",
-            "Hastily tracing symbols in chalk, a human wearing a long coat whirls about in a wide arc, completing a rough magic circle in mere seconds. A monstrously fat demon, blood dripping with its drool, lunges at him, but instead impacts off an invisible magical barrier, a cylinder raised from the circle’s edge. The fiend howls with rage, and the inquisitor breathes a sigh of relief.",
-            "Supernatural detectives and monster slayers, investigators are always on the hunt for malevolent outsiders. Whenever evil seeps into the world—be it fiends, undead, or strange abominations from beyond the stars—investigators will be the first to locate them and banish their foul corruption from the mortal plane.",
+            "Squalid masses draw close around a young dwarf in spotless clothing. He touches each person in turn, healing injuries, curing illnesses, and restoring hope.",
+            "A ragged tiefling speaks in a crowded square. As if in response, dark clouds gather over her head and the earth trembles at her words.",
+            "A mad king spits and swears from his throne at imperial guards who have fled or been slain. A lone dragonborn stands before him, solemnly preparing herself for divinely demanded regicide.",
+            "Martyrs are implements of the gods, handpicked to spill their blood in service of a divine cause. Such an end is inevitable, for once a martyr is chosen, their fate is fixed in the heavens",
             {
-              "name": "Paranormal Investigators",
+              "name": "Fated to Die",
               "type": "entries",
               "entries": [
-                "There are forces more ancient than time, foes more sinister than the foulest men, and beings more titanic than gods. The world stands at a precipice of woe and terror, being threatened nightly by dark agents and hordes of monsters. At risk to their own lives and sanities, investigators penetrate the evil that creeps in the shadows and banish it from the world. Their battles are never-ending, for victory only delays doomsday another night.",
-                "Investigators track supernatural threats ranging from incorporeal spirits, to nefarious vampires and lycanthropes, to incursions of demons and devils. Often in their investigations, they often uncover secret cults and maligned individuals who bring these supernatural threats to bear. It is always their goal to impede these evildoers by any means necessary, resorting to trickery, guile, magic, and bloodshed when necessary. To an investigator, no tactic is unthinkable when the world is at stake."
+                "Martyrs are chosen by the gods, predestined to speed forth to a final destination: they are ordained to die for a great cause. They are prophets and oracles, great priests and liberators. Regardless of how much good they might accomplish in their lives, the end must always be the same: a glorious death, to be remembered in legend.",
+                "No matter the circumstance, a martyr cannot avoid their destiny. While some martyrs gladly accept their holy approbation, others struggle against it. However, from the moment the gods choose their martyr, they shall intervene in the martyr’s fate, pulling them inexorably towards their cause. The gods will settle for a lesser martyr if they must—if the one chosen is unwilling to follow their path— but they always prefer to uplift their martyr to the heights of sainthood before their inevitable death."
               ]
             },
             {
-              "name": "Exorcists and Occultists",
+              "name": "Blood of the Martyr",
               "type": "entries",
               "entries": [
-                "Even as they strive to contain its influence from the world at large, investigators dabble in forbidden magic to give themselves an edge against supernatural threats. Prepared investigators keep a well-stocked grimoire of magical secrets, containing rituals, incantations, notes on monsters’ powers and weaknesses, recipes for poisons, and arcane diagrams—everything needed to confront their foes on an even footing. Even so, an investigator’s occupation is perilous. A grimoire might spell out a vampire’s fear of sunlight and aversion to silver, but it does little to hinder their fangs."
+                "As martyrs are ordained by the gods to die, their suffering is holy sacrament. Martyrs brought close to death grow more powerful, not less, and those that spill their own blood evoke waves of divine energy. In the view of the gods, such hardship only heightens martyrdom and hastens the martyr to their destiny.",
+                "Paradoxically, martyrs are protected from death’s precipice even as they are edged closer towards it. Every torment and persecution suffered by them is weighed with equal moments of respite offered by the gods. The gods do not mean to kill their charge early; a martyr should meet their fate only at the preordained time and place."
               ]
             },
             {
-              "name": "Creating an Investigator",
+              "name": "Creating a Martyr",
               "type": "entries",
               "entries": [
-                "As you build your investigator, consider what sort of supernatural threat first drove you to investigating and combating the occult. Did one of your family members strike a bargain with a fiend? Were you kidnapped by a cabal of vampires or a pack of lycanthropes? Did you stumble across evidence of an eldritch abomination, such as a Great Old One? The type of creature you first did battle with likely shaped your tools and methods later on.",
-                "Did you apprentice under a seasoned monster hunter, learning the ropes of tracking a threat, uncovering its weaknesses, and setting a trap for it? Or did you strike out on your own, compiling your own grimoire from hard-earned research? Perhaps you learned everything about monster hunting from someone else’s grimoire, a masterwork containing an abridged library of occult knowledge and a lifetime of experience. It’s even possible that you signed a contract with a minor fiend and turned to supernatural investigation in a last-ditch effort to save your soul.",
+                "As you create a martyr, think about the moment you were chosen by the gods and your burden was placed upon you. Were you visited by an angelic host or a god disguised as a mortal? Did you quietly hear a divine voice in your ear, as stigmata formed on your body? Was your soul violently dragged to the Upper (or Lower) Planes for an audience with the gods?",
+                "Consider the life you led before you were ordained for martyrdom. Were you a wicked soul, purified and redeemed to undergo this task? Were you already a warrior, adventurer, or cleric in service of the gods? Also consider how you reacted. Did you accept the task and your inevitable destiny, or did you run from it? Are you still running?",
                 {
                   "name": "Quick Build",
                   "type": "entries",
                   "entries": [
-                    "Follow these suggestions to build an investigator quickly: Intelligence should be your highest ability score, followed by Dexterity or Strength. Choose any background. Then, select the rituals {@spell clue|VSS}, {@spell comprehend languages|phb}, {@spell detect magic|phb}, and {@spell transient bulwark|VSS} to add to your grimoire."
+                    "To build a martyr quickly, follow these suggestions: Constitution should be your highest ability score. Your next highest ability score should be Strength if you choose a Burden, such as the Burden of Revolution, which focuses on melee combat, or Wisdom if you choose one focused on spellcasting. Choose any background."
                   ]
                 }
               ]
             }
           ],
-          "name": "Investigator",
+          "name": "Martyr",
           "type": "section",
-          "page": 103,
+          "page": 115,
           "source": "VSS"
         }
       ]
@@ -333,140 +252,211 @@
   ],
   "classFeature": [
     {
-      "name": "Expertise",
+      "name": "Mortal Burden",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 116,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 1,
       "entries": [
-        "At 1st level, choose two of your skill proficiencies; your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-        "At 6th level, you can choose two more of your proficiencies to gain this benefit."
+        "Beginning at 1st level, you are fated to perish in the name of a great ideal, cementing your name alongside others who have done the same. Choose a Mortal Burden, detailed at the end of the class description. Your choice grants you features at 1st level, and again at 6th, 14th, and 18th level.",
+        {
+          "type": "entries",
+          "name": "Burden Spells",
+          "entries": [
+            "Each burden has a list of associated spells that you gain at the martyr levels specified in the burden description. Once you gain access to a burden spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.",
+            "If you gain a burden spell that doesn’t appear on the martyr spell list, the spell is nonetheless a martyr spell for you."
+          ]
+        }
       ]
     },
     {
-      "name": "Ritualist",
+      "name": "Mortal Burden feature",
       "source": "VSS",
-      "page": 105,
-      "className": "Investigator",
+      "page": 116,
+      "className": "Martyr",
+      "classSource": "VSS",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature from your Mortal Burden."
+      ]
+    },
+    {
+      "name": "Mortal Burden feature",
+      "source": "VSS",
+      "page": 116,
+      "className": "Martyr",
+      "classSource": "VSS",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature from your Mortal Burden."
+      ]
+    },
+    {
+      "name": "Mortal Burden feature",
+      "source": "VSS",
+      "page": 116,
+      "className": "Martyr",
+      "classSource": "VSS",
+      "level": 18,
+      "entries": [
+        "At 18th level, you gain a feature from your Mortal Burden."
+      ]
+    },
+    {
+      "name": "Ordained Death",
+      "source": "VSS",
+      "page": 117,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 1,
       "entries": [
-        "You maintain a grimoire brimming with magical rituals, your most potent tools to defeat supernatural threats.",
+        "As a martyr, you have been predestined by the gods to perish for a great cause; there is no greater glory in death, and no greater joy in the afterlife. However, it is not yet your time. Starting at 1st level, when you fall to 0 hit points and begin to make death saving throws, you must fail 5 saving throws to die. Additionally, if a spell has the sole effect of restoring you to life (but not undeath), the caster doesn’t need material components to cast the spell on you."
+      ]
+    },
+    {
+      "name": "Mark of the Herald",
+      "source": "VSS",
+      "page": 117,
+      "className": "Martyr",
+      "classSource": "VSS",
+      "level": 2,
+      "entries": [
+        "At 2nd level, your divine cause manifests itself upon you, forming a special mark or stigmata for all to see. You have advantage on ability checks you make to convince other creatures to assist you in service of your holy cause"
+      ]
+    },
+    {
+      "name": "Spellcasting",
+      "source": "VSS",
+      "page": 117,
+      "className": "Martyr",
+      "classSource": "VSS",
+      "level": 2,
+      "entries": [
+        "Starting at 2nd level, you can leverage the power of your suffering to cast divine magic.",
         {
-          "name": "Grimoire",
+          "name": "Casting Spells",
           "type": "entries",
           "entries": [
-            "At 1st level, you have a grimoire containing four 1st-level spells of your choice that have the ritual tag from any class’s spell list (the spells needn’t be from the same list). You can’t cast spells in your grimoire except as rituals, unless you’ve learned them by some other means. ",
-            "Whenever you gain a level in this class, you can add an additional ritual spell from the Investigator Rituals list to your grimoire at no cost. The Ritual Level column on the Investigator table shows the maximum spell level you can add to your grimoire.",
-            "Additionally, whenever you find a ritual spell on your adventures, you can add it to your grimoire if it is on the Investigator Rituals list of a level you can add to your grimoire. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+            "To cast one of your martyr spells of 1st level or higher, you must lose hit points to create and expend a spell slot greater than or equal to that spell’s level. The number of hit points is listed on the Hit Points Spellcasting table and can’t be reduced or avoided. You don’t make Constitution saving throws to maintain concentration on spells as a result of losing these hit points.",
+            "The Martyr table shows the maximum level of spell slot you can create.",
+            "The Spell Uses column of the Martyr table shows how many spells you can cast. When you expend hit points to cast a spell, you expend one of these uses. You regain all expended uses when you finish a long rest."
           ]
         },
         {
-          "name": "Bonus Rituals",
+          "type": "table",
+          "caption": "Hit Points Spellcasting",
+          "colLabels": [
+                "Spell Level",
+                "Point Cost"
+              ],
+              "colStyles": [
+                "col-1 text-center",
+                "col-1 text-center"
+              ],
+              "rows": [
+                [
+                  "1st",
+                  "5"
+                ],
+                [
+                  "2nd",
+                  "10"
+                ],
+                [
+                  "3rd",
+                  "20"
+                ],
+                [
+                  "4th",
+                  "30"
+                ],
+                [
+                  "5th",
+                  "45"
+                ]
+              ]
+        },
+        {
+          "name": "Preparing Spells",
           "type": "entries",
           "entries": [
-            "As an investigator, you can treat specific spells as if they had the ritual tag, allowing you to add them to your grimoire and cast them as rituals. These spells are listed on the Investigator Rituals table to the right."
+            "You prepare the list of martyr spells that are available for you to cast, choosing from the martyr spell list. When you do so, choose a number of martyr spells equal to your Wisdom modifier + half your martyr level, rounded down (minimum of one spell). Spells you choose must be of a level no higher than what’s shown in the Max Spell Level column for your level. You can change your list of prepared spells when you finish a long rest."
+          ]
+        },
+        {
+          "name": "Healing Magic",
+          "type": "entries",
+          "entries": [
+            "Because your power is derived from mortal suffering, you can’t regain hit points from any spell you cast."
           ]
         },
         {
           "name": "Spellcasting Ability",
           "type": "entries",
           "entries": [
-            "Intelligence is your spellcasting ability for your ritual spells, since you master your spells through deduction and cunning. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, when you cast an investigator ritual or a spell offered to you by a feature in this class, you use your Intelligence modifier when setting the saving throw DC and making an attack roll.",
+            "Wisdom is your spellcasting ability for your martyr spells, since your power originates in the devotion used to overcome your trials and tribulations. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a martyr spell you cast and when making an attack roll with one.",
             {
               "type": "abilityDc",
               "name": "Spell",
-              "attributes": ["int"]
+              "attributes": ["wis"]
             },
             {
               "type": "abilityAttackMod",
               "name": "Spell",
-              "attributes": ["int"]
+              "attributes": ["wis"]
             }
+          ]
+        },
+        {
+          "name": "Spellcasting Focus",
+          "type": "entries",
+          "entries": [
+            "You can use a holy symbol as a spellcasting focus for your martyr spells."
           ]
         }
       ]
     },
     {
-      "name": "Myths and Legends",
+      "name": "Sainted Reprisal",
       "source": "VSS",
-      "page": 105,
-      "className": "Investigator",
+      "page": 117,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 2,
       "entries": [
-        "At 2nd level, you are extremely adept at uncovering knowledge which pertains to eldritch threats and forgotten legends. You have advantage on Intelligence checks related to researching creatures, spells, and other ancient or secret lore."
+        "Also at 2nd level, you can reprimand those who draw your blood. When a creature you can see within 5 feet of you hits you with a melee attack, you can use your reaction to deal that creature 1d6 necrotic or radiant damage (your choice).",
+        "The damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
       ]
     },
     {
-      "name": "Rushed Incantation",
+      "name": "Divine Healing",
       "source": "VSS",
-      "page": 105,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 2,
-      "entries": [
-        "Beginning at 2nd level, you can hastily perform any ritual spell in your grimoire that has a casting time of 1 action, completing the ritual as a bonus action. If the ritual requires spell components worth 100 gp or less, you cast it without using spell components. You can use this feature a number of times equal to your Intelligence modifier (minimum once), and regain the ability to do so when you finish a long rest.",
-        "As you gain higher levels in this class, you can use this feature additional times. You can use it once more at 5th level (Intelligence modifier + 1), 9th level (Intelligence modifier + 2), 13th level (Intelligence modifier + 3), and 17th level (Intelligence modifier + 4)."
-      ]
-    },
-    {
-      "name": "Occult Specialization",
-      "source": "VSS",
-      "page": 105,
-      "className": "Investigator",
+      "page": 117,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 3,
       "entries": [
-        "At 3rd level, you choose a specialization, an area of expertise in handling eldritch threats. Your specialization choices are detailed at the end of the class description. Your specialization choice grants you features at 3rd level and then again at 6th, 10th, and 14th level.",
-        {
-          "type": "entries",
-          "name": "Trinkets",
-          "entries": [
-            "Investigators of each specialization also collect a number of supernatural trinkets. Once you use one of your trinkets, you can’t this feature again until you finish a short or long rest. As you gain higher levels in this class, you can use your trinkets additional times: You can use them once more at 5th level (2 uses), 11th level (3 uses), and 17th level (4 uses)."
-          ]
-        }
+        "Starting at 3rd level, you can utter a prayer to the gods for mercy. As an action, you can spend Hit Dice and regain hit points as if you had just finished a short rest. When you use this ability, you can spend a number of Hit Dice up to your proficiency bonus."
       ]
     },
     {
-      "name": "Occult Specialization feature",
+      "name": "Torment",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
-      "level": 6,
+      "level": 3,
       "entries": [
-        "At 6th level, you gain a feature from your Occult Specialization."
-      ]
-    },
-    {
-      "name": "Occult Specialization feature",
-      "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 10,
-      "entries": [
-        "At 10th level, you gain a feature from your Occult Specialization."
-      ]
-    },
-    {
-      "name": "Occult Specialization feature",
-      "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 14,
-      "entries": [
-        "At 14th level, you gain a feature from your Occult Specialization."
+        "By 3rd level, you have learned to curry the gods’ favor through anguish and mortal trials. Once on each of your turns when you hit a creature with a melee weapon attack, you can lose 5 hit points to deal an extra +10 bonus necrotic or radiant damage (your choice) to the target. You don’t make Constitution saving throws to maintain concentration on spells as a result of losing these hit points.",
+        "Starting at 11th level, you can choose to lose 10 hit points to deal an extra +20 damage to the target."
       ]
     },
     {
       "name": "Ability Score Improvement",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 4,
       "entries": [
@@ -476,8 +466,8 @@
     {
       "name": "Ability Score Improvement",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 8,
       "entries": [
@@ -487,8 +477,8 @@
     {
       "name": "Ability Score Improvement",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 12,
       "entries": [
@@ -498,8 +488,8 @@
     {
       "name": "Ability Score Improvement",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 16,
       "entries": [
@@ -509,8 +499,8 @@
     {
       "name": "Ability Score Improvement",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 19,
       "entries": [
@@ -518,131 +508,60 @@
       ]
     },
     {
-      "name": "Exploit Vulnerability",
+      "name": "Extra Attack",
       "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 5,
       "entries": [
-        "Most supernatural creatures have some form of weakness, a gap in their armor that allows them to be defeated. Starting at 5th level, once on each of your turns when you hit a creature with a weapon attack, it is treated as if it has vulnerability to the weapon’s damage. Vulnerability from this feature only doubles your weapon damage dice and your ability modifier; do not double additional sources of damage, such as spells and other class features.",
-        "Additionally, the attack, as well as all other attacks made against the creature until the start of your next turn, are considered magical for the purposes of bypassing damage resistance and immunity."
+        "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
       ]
     },
     {
-      "name": "Expertise",
+      "name": "Respite",
       "source": "VSS",
-      "page": 104,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 6,
-      "entries": [
-        "At 6th level, you can choose two more of your proficiencies to gain this benefit."
-      ]
-    },
-    {
-      "name": "Opportunistic Piety",
-      "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 7,
       "entries": [
-        "By 7th level, you always keep a wide array of holy symbols and blessed items on your person, even if you aren’t particularly pious. When you use your Opportunistic Piety, you choose which effect to create from the list below. You must then finish a short or long rest to use your Opportunistic Piety again.",
-        {
-          "type": "entries",
-          "name": "Banish",
-          "entries": [
-            "You cast the spell {@spell banishment|PHB} without using a spell slot. If the target is a fey, fiend, or undead and fails its saving throw against this spell, it also takes radiant damage equal to your level."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Miracle Healing",
-          "entries": ["As an action, divine light from your hands knit the wounds of a willing creature you touch. That creature regains a number of hit points equal to twice your investigator level. This ability has no effect on undead or constructs."]
-        },
-        {
-          "type": "entries",
-          "name": "Warding",
-          "entries": ["As an action, you trace a holy symbol on a creature within 5 feet of you, warding it from harm. For the next minute, aberrations, celestials, fey, fiends, and undead which touch the target creature or hit it with a melee attack take {@dice 1d12} radiant damage."]
-        }
+        "Beginning at 7th level, you regain all spent Hit Dice when you finish a long rest, instead of only half of them."
       ]
     },
     {
-      "name": "Supernatural Resolve",
+      "name": "Undying Conviction",
       "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
-      "level": 9,
+      "level": 10,
       "entries": [
-        "At 9th level, you gain an extreme resilience to the attacks and effects of the creatures you regularly investigate. You can’t be {@condition possessed} or {@condition charmed}, and you gain resistance to both psychic and necrotic damage."
+        "Beginning at 10th level, when you drop to 0 hit points and aren’t killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can’t use it again until you finish a long rest."
       ]
     },
     {
-      "name": "Finisher",
+      "name": "March Unto Destiny",
       "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 11,
-      "entries": [
-        "Beginning at 11th level, you know exactly how to bring a monster down. When you take the Attack action and hit a creature with a weapon attack, you can deal an extra {@dice 2d8} damage to the creature. If the creature has less than half its hit points remaining, you can instead deal an extra {@dice 4d8} damage to the creature."
-      ]
-    },
-    {
-      "name": "Enigma Arcane",
-      "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 13,
-      "entries": [
-        "At 13th level, you uncover a magical secret connected to a wellspring of potent magic. You can cast one of the following spells once without expending a spell slot: {@spell mirage arcane|PHB}, {@spell plane shift|PHB}, {@spell reverse gravity|PHB}, {@spell sequester|PHB}, or {@spell teleport|PHB}. You must finish a long rest before you can do so again."
-      ]
-    },
-    {
-      "name": "Enigma Arcane Improvement",
-      "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 15,
       "entries": [
-        "At 15th level, you can also cast one of the following spells without expending a spell slot: {@spell antimagic field|PHB}, {@spell glibness|PHB}, {@spell maze|PHB}, or {@spell mind blank|PHB}. You must finish a long rest before you can do so again."
+        "At 15th level, your inevitable end draws nearer, and nothing can hold you from it. You do not need to eat or drink, and can’t be paralyzed, petrified, or stunned."
       ]
     },
     {
-      "name": "Enigma Arcane Improvement",
+      "name": "Final Martyrdom",
       "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 17,
-      "entries": [
-        "At 17th level, you can also cast one of the following spells without expending a spell slot: {@spell astral projection|PHB}, {@spell gate|PHB}, or {@spell weird|PHB}. You must finish a long rest before you can do so again."
-      ]
-    },
-    {
-      "name": "Exorcist",
-      "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
-      "classSource": "VSS",
-      "level": 18,
-      "entries": [
-        "Beginning at 18th level, you can cast the spell {@spell protection from evil and good|PHB} without using a spell slot or spell components."
-      ]
-    },
-    {
-      "name": "Spellbinder",
-      "source": "VSS",
-      "page": 106,
-      "className": "Investigator",
+      "page": 118,
+      "className": "Martyr",
       "classSource": "VSS",
       "level": 20,
       "entries": [
-        "By 20th level, many rituals you perform have become second nature to you. Select five ritual spells in your grimoire with a casting time of 1 action. You can cast these spells as a bonus action without using a use of Rushed Incantation, and you can do so without your grimoire on hand. If the ritual requires spell components worth 100 gp or less, you cast it without using spell components."
+        "At 20th level, you have at last reached your predestination: you will die in eternal glory. You can use your action to become immune to all damage for 10 minutes. During this duration, you can’t be blinded, charmed, deafened, exhausted, frightened, incapacitated, poisoned, restrained, or rendered unconscious. You have advantage on all ability checks, attack rolls, and saving throws.",
+        "Additionally, during this duration, you can cast the wish spell once, without spending a spell slot or hit points. If you use the spell to produce any effect other than duplicating another spell, the stress of casting it doesn’t reduce your Strength or cause you to take necrotic damage.",
+        "At the end of this duration, you die. No force short of divine intervention can prevent your death, and you can’t be returned to life by any means."
       ]
     }
   ],
@@ -651,7 +570,7 @@
       "name": "Antiquarian",
       "source": "VSS",
       "page": 107,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
@@ -660,11 +579,11 @@
         "Festooned with magical trinkets from every corner of the globe, antiquarians have a tool for every occasion: silver arrowheads for lycanthropes, heartwood stakes for vampires, blessed relics for fiends, and so on. As they expand their collections from piles of trinkets to veritable museums, they become adept historians and arcanists, familiar with the story of every magic item their care, as well how to use them in dire situations.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Artifact Historian|Investigator|VSS|Antiquarian|VSS|3|VSS"
+          "subclassFeature": "Artifact Historian|Martyr|VSS|Antiquarian|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Antiquarian|VSS|3|VSS"
+          "subclassFeature": "Trinkets|Martyr|VSS|Antiquarian|VSS|3|VSS"
         }
       ]
     },
@@ -672,7 +591,7 @@
       "name": "Artifact Historian",
       "source": "VSS",
       "page": 107,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
@@ -685,7 +604,7 @@
       "name": "Trinkets",
       "source": "VSS",
       "page": 107,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
@@ -705,7 +624,7 @@
         {
           "type": "entries",
           "name": "Razortooth Bandages",
-          "entries": ["You can cast the spell {@spell cure wounds|PHB} or {@spell inflict wounds|PHB} once without using a spell slot or spell components. This spell is cast as if using a spell slot of the level shown in the Ritual Level column of the Investigator table."]
+          "entries": ["You can cast the spell {@spell cure wounds|PHB} or {@spell inflict wounds|PHB} once without using a spell slot or spell components. This spell is cast as if using a spell slot of the level shown in the Ritual Level column of the Martyr table."]
         }
       ]
     },
@@ -713,7 +632,7 @@
       "name": "Relics",
       "source": "VSS",
       "page": 107,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
@@ -741,7 +660,7 @@
       "name": "Magical Item Collection",
       "source": "VSS",
       "page": 108,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
@@ -755,7 +674,7 @@
       "name": "Phylactery",
       "source": "VSS",
       "page": 108,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Antiquarian",
       "subclassSource": "VSS",
@@ -789,20 +708,20 @@
       "name": "Archivist",
       "source": "VSS",
       "page": 108,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Archivist",
       "subclassSource": "VSS",
       "level": 3,
       "entries": [
-        "Though most investigators fill their grimoires with hard-won knowledge borne from encounters with the supernatural threats, some prefer to do bookkeeping instead. Such archivists accrue knowledge, not trinkets, by spending untold hours digging through disparate tomes of occult knowledge and compiling them into encyclopedic texts on the supernatural. Through their research, archivists become academic masters of the arcane, and priceless reservoirs of obscure knowledge.",
+        "Though most Martyrs fill their grimoires with hard-won knowledge borne from encounters with the supernatural threats, some prefer to do bookkeeping instead. Such archivists accrue knowledge, not trinkets, by spending untold hours digging through disparate tomes of occult knowledge and compiling them into encyclopedic texts on the supernatural. Through their research, archivists become academic masters of the arcane, and priceless reservoirs of obscure knowledge.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinket|Investigator|VSS|Archivist|VSS|3|VSS"
+          "subclassFeature": "Trinket|Martyr|VSS|Archivist|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Thesis|Investigator|VSS|Archivist|VSS|3|VSS"
+          "subclassFeature": "Thesis|Martyr|VSS|Archivist|VSS|3|VSS"
         }
       ]
     },
@@ -810,7 +729,7 @@
       "name": "Trinket",
       "source": "VSS",
       "page": 108,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Archivist",
       "subclassSource": "VSS",
@@ -828,17 +747,17 @@
       "name": "Thesis",
       "source": "VSS",
       "page": 108,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Archivist",
       "subclassSource": "VSS",
       "level": 3,
       "entries": [
-        "Also at 3rd level, you gain access to certain spells associated with your thesis. Pick one of the following subject areas for your thesis: Corpus, Ignis, Mortis, or Regis. You gain a list of associated thesis spells. Once you gain access to a thesis spell, it is added to your grimoire. If you gain access to a spell that doesn’t appear on the investigator ritual list, the spell is nonetheless an investigator spell for you. You can use your action and expend a use of your Rushed Incantation feature to cast one of your thesis spells.",
+        "Also at 3rd level, you gain access to certain spells associated with your thesis. Pick one of the following subject areas for your thesis: Corpus, Ignis, Mortis, or Regis. You gain a list of associated thesis spells. Once you gain access to a thesis spell, it is added to your grimoire. If you gain access to a spell that doesn’t appear on the Martyr ritual list, the spell is nonetheless an Martyr spell for you. You can use your action and expend a use of your Rushed Incantation feature to cast one of your thesis spells.",
         {
           "type": "table",
           "caption": "Corpus",
-          "colLabels": ["Investigator Level", "Spells"],
+          "colLabels": ["Martyr Level", "Spells"],
           "colStyles": ["col-2 text-center", "col-6"],
           "rows": [
             ["1st", "{@spell jump|PHB}, {@spell longstrider|PHB}"],
@@ -849,7 +768,7 @@
         {
           "type": "table",
           "caption": "Ignis",
-          "colLabels": ["Investigator Level", "Spells"],
+          "colLabels": ["Martyr Level", "Spells"],
           "colStyles": ["col-2 text-center", "col-6"],
           "rows": [
             ["1st", "{@spell burning hands|PHB}, {@spell shatter|PHB}"],
@@ -860,7 +779,7 @@
         {
           "type": "table",
           "caption": "Mortis",
-          "colLabels": ["Investigator Level", "Spells"],
+          "colLabels": ["Martyr Level", "Spells"],
           "colStyles": ["col-2 text-center", "col-6"],
           "rows": [
             ["1st", "{@spell bane|PHB}, {@spell false life|PHB}"],
@@ -871,7 +790,7 @@
         {
           "type": "table",
           "caption": "Mortis",
-          "colLabels": ["Investigator Level", "Spells"],
+          "colLabels": ["Martyr Level", "Spells"],
           "colStyles": ["col-2 text-center", "col-6"],
           "rows": [
             ["1st", "{@spell charm person|PHB}, {@spell hideous laughter|PHB}"],
@@ -885,7 +804,7 @@
       "name": "Erudite Spell",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Archivist",
       "subclassSource": "VSS",
@@ -899,7 +818,7 @@
       "name": "Encyclopedic Expertise",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Archivist",
       "subclassSource": "VSS",
@@ -912,7 +831,7 @@
       "name": "Eidetic Memory",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Archivist",
       "subclassSource": "VSS",
@@ -927,7 +846,7 @@
       "name": "Detective",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Detective",
       "subclassSource": "VSS",
@@ -936,19 +855,19 @@
         "Prowling at the edge of darkness, detectives chase down clues and pull on threads to unravel conspiracies which bring darkness into the world. Sometimes, this requires that you infiltrate a cult’s secret meetings, other times it calls on you to reconstruct a man’s last moments at a murder scene, but no matter what the mystery, you know that there is always an explanation.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Investigator's Hunch|Investigator|VSS|Detective|VSS|3|VSS"
+          "subclassFeature": "Martyr's Hunch|Martyr|VSS|Detective|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Detective|VSS|3|VSS"
+          "subclassFeature": "Trinkets|Martyr|VSS|Detective|VSS|3|VSS"
         }
       ]
     },
     {
-      "name": "Investigator's Hunch",
+      "name": "Martyr's Hunch",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Detective",
       "subclassSource": "VSS",
@@ -961,7 +880,7 @@
       "name": "Trinkets",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Detective",
       "subclassSource": "VSS",
@@ -989,7 +908,7 @@
       "name": "Predictive Intuition",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Detective",
       "subclassSource": "VSS",
@@ -1002,7 +921,7 @@
       "name": "Interrogator's Instinct",
       "source": "VSS",
       "page": 109,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Detective",
       "subclassSource": "VSS",
@@ -1015,7 +934,7 @@
       "name": "Power of Deduction",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Detective",
       "subclassSource": "VSS",
@@ -1029,7 +948,7 @@
       "name": "Exterminator",
       "source": "VSS",
       "page": 108,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Exterminator",
       "subclassSource": "VSS",
@@ -1038,11 +957,11 @@
         "An exterminator suffers no monster to live. Trained in the art of slaying aberrations, fiends, and undead, you stand against evil where others falter, and draw your blade before others recognize a threat. Grand schemes and plots are less important than retribution against those monsters which stalk the night, and your thirst for such retribution is unquenchable. There is always another werewolf to be slain, another vampire to be staked, another demon to be banished; people rarely thank you, but you find satisfaction enough in your work.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bonus Proficiencies|Investigator|VSS|Exterminator|VSS|3|VSS"
+          "subclassFeature": "Bonus Proficiencies|Martyr|VSS|Exterminator|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Exterminator|VSS|3|VSS"
+          "subclassFeature": "Trinkets|Martyr|VSS|Exterminator|VSS|3|VSS"
         }
       ]
     },
@@ -1050,7 +969,7 @@
       "name": "Bonus Proficiencies",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Exterminator",
       "subclassSource": "VSS",
@@ -1063,7 +982,7 @@
       "name": "Trinkets",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Exterminator",
       "subclassSource": "VSS",
@@ -1097,7 +1016,7 @@
       "name": "Monster Slayer",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Exterminator",
       "subclassSource": "VSS",
@@ -1110,7 +1029,7 @@
       "name": "Silvered Edge",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Exterminator",
       "subclassSource": "VSS",
@@ -1123,7 +1042,7 @@
       "name": "Killer Instinct",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Exterminator",
       "subclassSource": "VSS",
@@ -1136,7 +1055,7 @@
       "name": "Inquisitor",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1146,15 +1065,15 @@
         "As a righteous inquisitor of the faith, you are tasked with rooting out heresy, exorcising demons, and stamping out any sign of the occult, and are offered clemency for any action you take in the defense of the greater good. You may investigate anyone or anything you deem to be in line with the forces of evil, for you alone are a holy blade in the dark, the arbiter of your church.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bonus Proficiencies|Investigator|VSS|Inquisitor|VSS|3|VSS"
+          "subclassFeature": "Bonus Proficiencies|Martyr|VSS|Inquisitor|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Exorcist's Doctrines|Investigator|VSS|Inquisitor|VSS|3|VSS"
+          "subclassFeature": "Exorcist's Doctrines|Martyr|VSS|Inquisitor|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Inquisitor|VSS|3|VSS"
+          "subclassFeature": "Trinkets|Martyr|VSS|Inquisitor|VSS|3|VSS"
         }
       ]
     },
@@ -1162,7 +1081,7 @@
       "name": "Bonus Proficiencies",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1175,7 +1094,7 @@
       "name": "Exorcist's Doctrines",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1188,7 +1107,7 @@
       "name": "Trinkets",
       "source": "VSS",
       "page": 110,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1222,7 +1141,7 @@
       "name": "Divine Strike",
       "source": "VSS",
       "page": 111,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1235,7 +1154,7 @@
       "name": "Rote Piety",
       "source": "VSS",
       "page": 111,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1248,7 +1167,7 @@
       "name": "Excommunication",
       "source": "VSS",
       "page": 111,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Inquisitor",
       "subclassSource": "VSS",
@@ -1262,7 +1181,7 @@
       "name": "Medium",
       "source": "VSS",
       "page": 111,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Medium",
       "subclassSource": "VSS",
@@ -1271,11 +1190,11 @@
         "As conduits between the living and dead, mediums offer an essential glimpse past the veil of mortality. Using their auguries, seances, and divinations, mediums can retrieve morsels of information from the afterlife to settle debts with the living or and assist ongoing investigations. This information, however cryptic, can point an interested party toward clues or evidence which only the deceased might be able to provide.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Fortelling|Investigator|VSS|Medium|VSS|3|VSS"
+          "subclassFeature": "Fortelling|Martyr|VSS|Medium|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Medium|VSS|3|VSS"
+          "subclassFeature": "Trinkets|Martyr|VSS|Medium|VSS|3|VSS"
         }
       ]
     },
@@ -1283,7 +1202,7 @@
       "name": "Fortelling",
       "source": "VSS",
       "page": 111,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Medium",
       "subclassSource": "VSS",
@@ -1297,7 +1216,7 @@
       "name": "Trinkets",
       "source": "VSS",
       "page": 111,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Medium",
       "subclassSource": "VSS",
@@ -1325,7 +1244,7 @@
       "name": "Forewarning Presence",
       "source": "VSS",
       "page": 112,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Medium",
       "subclassSource": "VSS",
@@ -1339,7 +1258,7 @@
       "name": "Whispers From Beyond",
       "source": "VSS",
       "page": 112,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Medium",
       "subclassSource": "VSS",
@@ -1353,7 +1272,7 @@
       "name": "Third Eye",
       "source": "VSS",
       "page": 112,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Medium",
       "subclassSource": "VSS",
@@ -1367,20 +1286,20 @@
       "name": "Occultist",
       "source": "VSS",
       "page": 112,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Occultist",
       "subclassSource": "VSS",
       "level": 3,
       "entries": [
-        "Vampires, demons, lycanthropes, and aberrations all have one thing in common: they are all magical threats, best combated through magical means. To meet these foes on a level playing field, occultists indulge in arcana, filling their grimoires with magical secrets and mastering a handful of spells. Occultists are the most likely investigators to cavort with warlocks, borrow tricks from wizards and magicians, and dabble in dark magic to defeat their foes.",
+        "Vampires, demons, lycanthropes, and aberrations all have one thing in common: they are all magical threats, best combated through magical means. To meet these foes on a level playing field, occultists indulge in arcana, filling their grimoires with magical secrets and mastering a handful of spells. Occultists are the most likely Martyrs to cavort with warlocks, borrow tricks from wizards and magicians, and dabble in dark magic to defeat their foes.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinket|Investigator|VSS|Occultist|VSS|3|VSS"
+          "subclassFeature": "Trinket|Martyr|VSS|Occultist|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Pact Magic|Investigator|VSS|Occultist|VSS|3|VSS"
+          "subclassFeature": "Pact Magic|Martyr|VSS|Occultist|VSS|3|VSS"
         }
       ]
     },
@@ -1388,7 +1307,7 @@
       "name": "Trinket",
       "source": "VSS",
       "page": 112,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Occultist",
       "subclassSource": "VSS",
@@ -1406,7 +1325,7 @@
       "name": "Pact Magic",
       "source": "VSS",
       "page": 112,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Occultist",
       "subclassSource": "VSS",
@@ -1441,7 +1360,7 @@
           "type": "entries",
           "name": "Spellcasting Ability",
           "entries": [
-            "Intelligence is your spellcasting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. Use your investigator spell save DC and spell attack bonus for your warlock spells.",
+            "Intelligence is your spellcasting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. Use your Martyr spell save DC and spell attack bonus for your warlock spells.",
             {
               "type": "abilityDc",
               "name": "Spell",
@@ -1460,7 +1379,7 @@
       "name": "Eldritch Ruin",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Occultist",
       "subclassSource": "VSS",
@@ -1473,7 +1392,7 @@
       "name": "Eyes of Another World",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Occultist",
       "subclassSource": "VSS",
@@ -1486,7 +1405,7 @@
       "name": "Maleficium",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Occultist",
       "subclassSource": "VSS",
@@ -1500,7 +1419,7 @@
       "name": "Spy",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Spy",
       "subclassSource": "VSS",
@@ -1509,11 +1428,11 @@
         "Infiltration, disguise, and lying through their teeth: these are the principle skills of a spy. A talented spy rarely ever needs to draw a dagger to silence someone, for their honeyed words and agreeable disposition are all that is needed to draw out someone’s secrets. Of course, when they do strike, it is decisively and without warning. Such skills are invaluable for governments and organizations of all varieties, for stealing confidential information, sabotage, monitoring persons of interest, and everything in between.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bravado|Investigator|VSS|Spy|VSS|3|VSS"
+          "subclassFeature": "Bravado|Martyr|VSS|Spy|VSS|3|VSS"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trinkets|Investigator|VSS|Spy|VSS|3|VSS"
+          "subclassFeature": "Trinkets|Martyr|VSS|Spy|VSS|3|VSS"
         }
       ]
     },
@@ -1521,7 +1440,7 @@
       "name": "Bravado",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Spy",
       "subclassSource": "VSS",
@@ -1534,7 +1453,7 @@
       "name": "Trinkets",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Spy",
       "subclassSource": "VSS",
@@ -1562,7 +1481,7 @@
       "name": "Cloak and Dagger",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Spy",
       "subclassSource": "VSS",
@@ -1575,7 +1494,7 @@
       "name": "Shaken Not Stirred",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Spy",
       "subclassSource": "VSS",
@@ -1589,7 +1508,7 @@
       "name": "Body Double",
       "source": "VSS",
       "page": 113,
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "subclassShortName": "Spy",
       "subclassSource": "VSS",
@@ -1604,24 +1523,24 @@
     {
       "name": "Antiquarian",
       "subclassFeatures": [
-        "Antiquarian|Investigator|VSS|Antiquarian|VSS|3",
-        "Relics|Investigator|VSS|Antiquarian|VSS|6",
-        "Magical Item Collection|Investigator|VSS|Antiquarian|VSS|10",
-        "Phylactery|Investigator|VSS|Antiquarian|VSS|14"
+        "Antiquarian|Martyr|VSS|Antiquarian|VSS|3",
+        "Relics|Martyr|VSS|Antiquarian|VSS|6",
+        "Magical Item Collection|Martyr|VSS|Antiquarian|VSS|10",
+        "Phylactery|Martyr|VSS|Antiquarian|VSS|14"
       ],
 	  "shortName": "Antiquarian",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 107
     },
     {
       "name": "Archivist",
       "subclassFeatures": [
-        "Archivist|Investigator|VSS|Archivist|VSS|3",
-        "Erudite Spell|Investigator|VSS|Archivist|VSS|6",
-        "Encyclopedic Expertise|Investigator|VSS|Archivist|VSS|10",
-        "Eidetic Memory|Investigator|VSS|Archivist|VSS|14"
+        "Archivist|Martyr|VSS|Archivist|VSS|3",
+        "Erudite Spell|Martyr|VSS|Archivist|VSS|6",
+        "Encyclopedic Expertise|Martyr|VSS|Archivist|VSS|10",
+        "Eidetic Memory|Martyr|VSS|Archivist|VSS|14"
       ],
 	  "subclassSpells": [
         "jump",
@@ -1651,63 +1570,63 @@
       ],
 	  "shortName": "Archivist",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 108
     },
     {
       "name": "Detective",
       "subclassFeatures": [
-        "Detective|Investigator|VSS|Detective|VSS|3",
-        "Predictive Intuition|Investigator|VSS|Detective|VSS|6",
-        "Interrogator's Instinct|Investigator|VSS|Detective|VSS|10",
-        "Power of Deduction|Investigator|VSS|Detective|VSS|14"
+        "Detective|Martyr|VSS|Detective|VSS|3",
+        "Predictive Intuition|Martyr|VSS|Detective|VSS|6",
+        "Interrogator's Instinct|Martyr|VSS|Detective|VSS|10",
+        "Power of Deduction|Martyr|VSS|Detective|VSS|14"
       ],
 	  "shortName": "Detective",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 109
     },
     {
       "name": "Exterminator",
       "subclassFeatures": [
-        "Exterminator|Investigator|VSS|Exterminator|VSS|3",
-        "Monster Slayer|Investigator|VSS|Exterminator|VSS|6",
-        "Silvered Edge|Investigator|VSS|Exterminator|VSS|10",
-        "Killer Instinct|Investigator|VSS|Exterminator|VSS|14"
+        "Exterminator|Martyr|VSS|Exterminator|VSS|3",
+        "Monster Slayer|Martyr|VSS|Exterminator|VSS|6",
+        "Silvered Edge|Martyr|VSS|Exterminator|VSS|10",
+        "Killer Instinct|Martyr|VSS|Exterminator|VSS|14"
       ],
 	  "shortName": "Exterminator",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 110
     },
     {
       "name": "Inquisitor",
       "subclassFeatures": [
-        "Inquisitor|Investigator|VSS|Inquisitor|VSS|3",
-        "Divine Strike|Investigator|VSS|Inquisitor|VSS|6",
-        "Rote Piety|Investigator|VSS|Inquisitor|VSS|10",
-        "Excommunication|Investigator|VSS|Inquisitor|VSS|14"
+        "Inquisitor|Martyr|VSS|Inquisitor|VSS|3",
+        "Divine Strike|Martyr|VSS|Inquisitor|VSS|6",
+        "Rote Piety|Martyr|VSS|Inquisitor|VSS|10",
+        "Excommunication|Martyr|VSS|Inquisitor|VSS|14"
       ],
 	  "shortName": "Inquisitor",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 110
     },
     {
       "name": "Medium",
       "subclassFeatures": [
-        "Medium|Investigator|VSS|Medium|VSS|3",
-        "Forewarning Presence|Investigator|VSS|Medium|VSS|6",
-        "Whispers From Beyond|Investigator|VSS|Medium|VSS|10",
-        "Third Eye|Investigator|VSS|Medium|VSS|14"
+        "Medium|Martyr|VSS|Medium|VSS|3",
+        "Forewarning Presence|Martyr|VSS|Medium|VSS|6",
+        "Whispers From Beyond|Martyr|VSS|Medium|VSS|10",
+        "Third Eye|Martyr|VSS|Medium|VSS|14"
       ],
 	  "shortName": "Medium",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 111
     },
@@ -1753,28 +1672,28 @@
         }
       ],
       "subclassFeatures": [
-        "Occultist|Investigator|VSS|Occultist|VSS|3",
-        "Eldritch Ruin|Investigator|VSS|Occultist|VSS|6",
-        "Eyes of Another World|Investigator|VSS|Occultist|VSS|10",
-        "Maleficium|Investigator|VSS|Occultist|VSS|14"
+        "Occultist|Martyr|VSS|Occultist|VSS|3",
+        "Eldritch Ruin|Martyr|VSS|Occultist|VSS|6",
+        "Eyes of Another World|Martyr|VSS|Occultist|VSS|10",
+        "Maleficium|Martyr|VSS|Occultist|VSS|14"
       ],
 	  "shortName": "Occultist",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 112
     },
     {
       "name": "Spy",
       "subclassFeatures": [
-        "Spy|Investigator|VSS|Spy|VSS|3",
-        "Cloak and Dagger|Investigator|VSS|Spy|VSS|6",
-        "Shaken Not Stirred|Investigator|VSS|Spy|VSS|10",
-        "Body Double|Investigator|VSS|Spy|VSS|14"
+        "Spy|Martyr|VSS|Spy|VSS|3",
+        "Cloak and Dagger|Martyr|VSS|Spy|VSS|6",
+        "Shaken Not Stirred|Martyr|VSS|Spy|VSS|10",
+        "Body Double|Martyr|VSS|Spy|VSS|14"
       ],
 	  "shortName": "Spy",
       "source": "VSS",
-      "className": "Investigator",
+      "className": "Martyr",
       "classSource": "VSS",
       "page": 113
     }

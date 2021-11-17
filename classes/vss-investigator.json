@@ -1,0 +1,1813 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "VSS",
+        "abbreviation": "VSS",
+        "full": "Valda's Spire of Secrets",
+        "authors": ["Mage Hand Press"],
+        "convertedBy": ["Lisu#4516"],
+        "version": "1.0",
+        "url": "https://www.kickstarter.com/projects/magehandpress/spire-of-secrets",
+        "targetSchema": "1.0",
+        "color": "5d325a"
+      }
+    ]
+  },
+  "class": [
+    {
+      "name": "Investigator",
+      "source": "VSS",
+      "page": 103,
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": ["dex", "int"],
+      "startingProficiencies": {
+        "armor": ["light"],
+        "weapons": [
+          "simple",
+          "hand crossbows",
+          "heavy crossbows",
+          "longswords",
+          "rapiers",
+          "shortswords"
+        ],
+        "tools": ["One gaming set of your choice"],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "athletics",
+                "deception",
+                "history",
+                "insight",
+                "intimidation",
+                "investigation",
+                "medicine",
+                "nature",
+                "perception",
+                "persuasion",
+                "stealth",
+                "slieght of hand",
+                "religion"
+              ],
+              "count": 3
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "A {@item Leather armor|phb}",
+          "A {@item dagger} and (a) a {@item longsword|phb} or (b) {@item rapier|phb}",
+          "(a) a {@item heavy crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) a {@item hand crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
+          "(a){@item dungeoneer's pack|phb} or (b) one kit you're proficient with",
+          "A grimoire and {@item component pouch|phb}"
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        },
+        "proficienciesGained": {
+          "armor": ["light"],
+          "weapons": ["heavy crossbow", "hand crossbow"],
+          "skills": [
+            {
+              "choose": {
+                "from": [
+                  "arcana",
+                  "athletics",
+                  "deception",
+                  "history",
+                  "insight",
+                  "intimidation",
+                  "investigation",
+                  "medicine",
+                  "nature",
+                  "perception",
+                  "persuasion",
+                  "stealth",
+                  "slieght of hand",
+                  "religion"
+                ],
+                "count": 1
+              }
+            }
+          ]
+        }
+      },
+      "classTableGroups": [
+				{
+					"colLabels": [
+						"Ritual Level"
+					],
+					"rows": [
+						["1st"],
+						["1st"],
+						["2nd"],
+						["2nd"],
+						["3rd"],
+						["3rd"],
+						["4th"],
+						["4th"],
+						["5th"],
+						["5th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"],
+						["6th"]
+					]
+				}
+			],
+      "classFeatures": [
+        "Expertise|Investigator|VSS|1",
+        "Ritualist|Investigator|VSS|1",
+        "Myths and Legends|Investigator|VSS|2",
+        "Rushed Incantation|Investigator|VSS|2",
+        {
+          "classFeature": "Occult Specialization|Investigator|VSS|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Investigator|VSS|4",
+        "Exploit Vulnerability|Investigator|VSS|5",
+        "Expertise|Investigator|VSS|6",
+        {
+          "classFeature": "Occult Specialization Feature|Investigator|VSS|6",
+          "gainSubclassFeature": true
+        },
+        "Opportunistic Piety|Investigator|VSS|7",
+        "Ability Score Improvement|Investigator|VSS|8",
+        "Supernatural Resolve|Investigator|VSS|9",
+        {
+          "classFeature": "Occult Specialization Feature|Investigator|VSS|10",
+          "gainSubclassFeature": true
+        },
+        "Finisher|Investigator|VSS|11",
+        "Ability Score Improvement|Investigator|VSS|12",
+        "Enigma Arcane|Investigator|VSS|13",
+        {
+          "classFeature": "Occult Specialization feature|Investigator|VSS|14",
+          "gainSubclassFeature": true
+        },
+        "Enigma Arcane improvement|Investigator|VSS|15",
+        "Ability Score Improvement|Investigator|VSS|16",
+        "Enigma Arcane improvement|Investigator|VSS|17",
+        "Exorcist|Investigator|VSS|18",
+        "Ability Score Improvement|Investigator|VSS|19",
+        "Spellbinder|Investigator|VSS|20"
+      ],
+      "subclassTitle": "Occult Specializations",
+      "classSpells": [
+        "Alarm",
+        {
+          "name": "Blood Print",
+          "source": "VSS"
+        },
+        {
+          "name": "Clue",
+          "source": "VSS"
+        },
+        "Comprehend Languages",
+        {
+          "name": "Conjure Cover",
+          "source": "VSS"
+        },
+        {
+          "name": "Consecrated Armor",
+          "source": "VSS"
+        },
+        "Detect Evil and Good",
+        "Detect Magic",
+        "Detect Poison and Disease",
+        "Disguise Self",
+        "Find Familiar",
+        "Floating Disk",
+        "Heroism",
+        "Identify",
+        "Illusory Script",
+        {
+          "name": "Memorize",
+          "source": "VSS"
+        },
+        "Purify Food and Drink",
+        {
+          "name": "Rumor",
+          "source": "VSS"
+        },
+        "Speak with Animals",
+        {
+          "name": "Transient Bulwark",
+          "source": "VSS"
+        },
+        "Unseen Servant",
+        {
+          "name": "Whispering Wind",
+          "source": "VSS"
+        },
+        "Animal Messenger",
+        "Arcane Lock",
+        "Arcanist’s Magic Aura",
+        "Augury",
+        {
+          "name": "Curse Ward",
+          "source": "VSS"
+        },
+        "Gentle Repose",
+        {
+          "name": "Jethro’s Instant Reload",
+          "source": "VSS"
+        },
+        "Knock",
+        "Locate Animals or Plants",
+        "Locate Object",
+        "Magic Mouth",
+        {
+          "name": "Nondescript",
+          "source": "VSS"
+        },
+        {
+          "name": "Protect Threshold",
+          "source": "VSS"
+        },
+        {
+          "name": "Recall",
+          "source": "VSS"
+        },
+        "See Invisibility",
+        "Silence",
+        "Spider Climb",
+        {
+          "name": "Unseen Accountant",
+          "source": "VSS"
+        },
+        "Zone of Truth",
+        {
+          "name": "After Image",
+          "source": "VSS"
+        },
+        {
+          "name": "Benign Dismemberment",
+          "source": "VSS"
+        },
+        "Clairvoyance",
+        "Fly",
+        {
+          "name": "Geomantic Discernment",
+          "source": "VSS"
+        },
+        "Magic Circle",
+        "Meld into Stone",
+        "Phantom Steed",
+        "Remove Curse",
+        {
+          "name": "Séance",
+          "source": "VSS"
+        },
+        "Sending",
+        "Speak with Plants",
+        "Water Breathing",
+        "Water Walk",
+        {
+          "name": "Dire Warning",
+          "source": "VSS"
+        },
+        {
+          "name": "Distort Gravity",
+          "source": "VSS"
+        },
+        "Divination",
+        {
+          "name": "False Vision",
+          "source": "VSS"
+        },
+        {
+          "name": "Invisibility Purge",
+          "source": "VSS"
+        },
+        "Locate Creature",
+        "Private Sanctum",
+        "Commune",
+        "Commune with Nature",
+        "Dream",
+        "Legend Lore",
+        {
+          "name": "Scrutinize Foe",
+          "source": "VSS"
+        },
+        "Telepathic Bond",
+        "Find the Path",
+        "Forbiddance",
+        {
+          "name": "Game of Fate",
+          "source": "VSS"
+        },
+        "Instant Summons"
+      ],
+      "fluff": [
+        {
+          "entries": [
+            "A collage of diagrams, maps, and small items litters the wall, pinned with nails and connected by a spiderweb of colorful strings. An elf stands nearby, contemplating the mystery splayed out in front of her and readying her crossbow for work.",
+            "A half-orc wearing a wide-brimmed hat leafs through a thick tome, double-checking the preparations: a sturdy net trap, holy symbols on the doors, cloves of garlic, and several dozen wooden stakes. The preparations made, the half-orc slinks into the shadows and readies himself for the bloodshed.",
+            "Hastily tracing symbols in chalk, a human wearing a long coat whirls about in a wide arc, completing a rough magic circle in mere seconds. A monstrously fat demon, blood dripping with its drool, lunges at him, but instead impacts off an invisible magical barrier, a cylinder raised from the circle’s edge. The fiend howls with rage, and the inquisitor breathes a sigh of relief.",
+            "Supernatural detectives and monster slayers, investigators are always on the hunt for malevolent outsiders. Whenever evil seeps into the world—be it fiends, undead, or strange abominations from beyond the stars—investigators will be the first to locate them and banish their foul corruption from the mortal plane.",
+            {
+              "name": "Paranormal Investigators",
+              "type": "entries",
+              "entries": [
+                "There are forces more ancient than time, foes more sinister than the foulest men, and beings more titanic than gods. The world stands at a precipice of woe and terror, being threatened nightly by dark agents and hordes of monsters. At risk to their own lives and sanities, investigators penetrate the evil that creeps in the shadows and banish it from the world. Their battles are never-ending, for victory only delays doomsday another night.",
+                "Investigators track supernatural threats ranging from incorporeal spirits, to nefarious vampires and lycanthropes, to incursions of demons and devils. Often in their investigations, they often uncover secret cults and maligned individuals who bring these supernatural threats to bear. It is always their goal to impede these evildoers by any means necessary, resorting to trickery, guile, magic, and bloodshed when necessary. To an investigator, no tactic is unthinkable when the world is at stake."
+              ]
+            },
+            {
+              "name": "Exorcists and Occultists",
+              "type": "entries",
+              "entries": [
+                "Even as they strive to contain its influence from the world at large, investigators dabble in forbidden magic to give themselves an edge against supernatural threats. Prepared investigators keep a well-stocked grimoire of magical secrets, containing rituals, incantations, notes on monsters’ powers and weaknesses, recipes for poisons, and arcane diagrams—everything needed to confront their foes on an even footing. Even so, an investigator’s occupation is perilous. A grimoire might spell out a vampire’s fear of sunlight and aversion to silver, but it does little to hinder their fangs."
+              ]
+            },
+            {
+              "name": "Creating an Investigator",
+              "type": "entries",
+              "entries": [
+                "As you build your investigator, consider what sort of supernatural threat first drove you to investigating and combating the occult. Did one of your family members strike a bargain with a fiend? Were you kidnapped by a cabal of vampires or a pack of lycanthropes? Did you stumble across evidence of an eldritch abomination, such as a Great Old One? The type of creature you first did battle with likely shaped your tools and methods later on.",
+                "Did you apprentice under a seasoned monster hunter, learning the ropes of tracking a threat, uncovering its weaknesses, and setting a trap for it? Or did you strike out on your own, compiling your own grimoire from hard-earned research? Perhaps you learned everything about monster hunting from someone else’s grimoire, a masterwork containing an abridged library of occult knowledge and a lifetime of experience. It’s even possible that you signed a contract with a minor fiend and turned to supernatural investigation in a last-ditch effort to save your soul.",
+                {
+                  "name": "Quick Build",
+                  "type": "entries",
+                  "entries": [
+                    "Follow these suggestions to build an investigator quickly: Intelligence should be your highest ability score, followed by Dexterity or Strength. Choose any background. Then, select the rituals {@spell clue|VSS}, {@spell comprehend languages|phb}, {@spell detect magic|phb}, and {@spell transient bulwark|VSS} to add to your grimoire."
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "Investigator",
+          "type": "section",
+          "page": 103,
+          "source": "VSS"
+        }
+      ]
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Expertise",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 1,
+      "entries": [
+        "At 1st level, choose two of your skill proficiencies; your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+        "At 6th level, you can choose two more of your proficiencies to gain this benefit."
+      ]
+    },
+    {
+      "name": "Ritualist",
+      "source": "VSS",
+      "page": 105,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 1,
+      "entries": [
+        "You maintain a grimoire brimming with magical rituals, your most potent tools to defeat supernatural threats.",
+        {
+          "name": "Grimoire",
+          "type": "entries",
+          "entries": [
+            "At 1st level, you have a grimoire containing four 1st-level spells of your choice that have the ritual tag from any class’s spell list (the spells needn’t be from the same list). You can’t cast spells in your grimoire except as rituals, unless you’ve learned them by some other means. ",
+            "Whenever you gain a level in this class, you can add an additional ritual spell from the Investigator Rituals list to your grimoire at no cost. The Ritual Level column on the Investigator table shows the maximum spell level you can add to your grimoire.",
+            "Additionally, whenever you find a ritual spell on your adventures, you can add it to your grimoire if it is on the Investigator Rituals list of a level you can add to your grimoire. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+          ]
+        },
+        {
+          "name": "Bonus Rituals",
+          "type": "entries",
+          "entries": [
+            "As an investigator, you can treat specific spells as if they had the ritual tag, allowing you to add them to your grimoire and cast them as rituals. These spells are listed on the Investigator Rituals table to the right."
+          ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "type": "entries",
+          "entries": [
+            "Intelligence is your spellcasting ability for your ritual spells, since you master your spells through deduction and cunning. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, when you cast an investigator ritual or a spell offered to you by a feature in this class, you use your Intelligence modifier when setting the saving throw DC and making an attack roll.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": ["int"]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": ["int"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Myths and Legends",
+      "source": "VSS",
+      "page": 105,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 2,
+      "entries": [
+        "At 2nd level, you are extremely adept at uncovering knowledge which pertains to eldritch threats and forgotten legends. You have advantage on Intelligence checks related to researching creatures, spells, and other ancient or secret lore."
+      ]
+    },
+    {
+      "name": "Rushed Incantation",
+      "source": "VSS",
+      "page": 105,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 2,
+      "entries": [
+        "Beginning at 2nd level, you can hastily perform any ritual spell in your grimoire that has a casting time of 1 action, completing the ritual as a bonus action. If the ritual requires spell components worth 100 gp or less, you cast it without using spell components. You can use this feature a number of times equal to your Intelligence modifier (minimum once), and regain the ability to do so when you finish a long rest.",
+        "As you gain higher levels in this class, you can use this feature additional times. You can use it once more at 5th level (Intelligence modifier + 1), 9th level (Intelligence modifier + 2), 13th level (Intelligence modifier + 3), and 17th level (Intelligence modifier + 4)."
+      ]
+    },
+    {
+      "name": "Occult Specialization",
+      "source": "VSS",
+      "page": 105,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 3,
+      "entries": [
+        "At 3rd level, you choose a specialization, an area of expertise in handling eldritch threats. Your specialization choices are detailed at the end of the class description. Your specialization choice grants you features at 3rd level and then again at 6th, 10th, and 14th level.",
+        {
+          "type": "entries",
+          "name": "Trinkets",
+          "entries": [
+            "Investigators of each specialization also collect a number of supernatural trinkets. Once you use one of your trinkets, you can’t this feature again until you finish a short or long rest. As you gain higher levels in this class, you can use your trinkets additional times: You can use them once more at 5th level (2 uses), 11th level (3 uses), and 17th level (4 uses)."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Occult Specialization feature",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature from your Occult Specialization."
+      ]
+    },
+    {
+      "name": "Occult Specialization feature",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 10,
+      "entries": [
+        "At 10th level, you gain a feature from your Occult Specialization."
+      ]
+    },
+    {
+      "name": "Occult Specialization feature",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature from your Occult Specialization."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 8,
+      "entries": [
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 12,
+      "entries": [
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 16,
+      "entries": [
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 19,
+      "entries": [
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      ]
+    },
+    {
+      "name": "Exploit Vulnerability",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 5,
+      "entries": [
+        "Most supernatural creatures have some form of weakness, a gap in their armor that allows them to be defeated. Starting at 5th level, once on each of your turns when you hit a creature with a weapon attack, it is treated as if it has vulnerability to the weapon’s damage. Vulnerability from this feature only doubles your weapon damage dice and your ability modifier; do not double additional sources of damage, such as spells and other class features.",
+        "Additionally, the attack, as well as all other attacks made against the creature until the start of your next turn, are considered magical for the purposes of bypassing damage resistance and immunity."
+      ]
+    },
+    {
+      "name": "Expertise",
+      "source": "VSS",
+      "page": 104,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 6,
+      "entries": [
+        "At 6th level, you can choose two more of your proficiencies to gain this benefit."
+      ]
+    },
+    {
+      "name": "Opportunistic Piety",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 7,
+      "entries": [
+        "By 7th level, you always keep a wide array of holy symbols and blessed items on your person, even if you aren’t particularly pious. When you use your Opportunistic Piety, you choose which effect to create from the list below. You must then finish a short or long rest to use your Opportunistic Piety again.",
+        {
+          "type": "entries",
+          "name": "Banish",
+          "entries": [
+            "You cast the spell {@spell banishment|PHB} without using a spell slot. If the target is a fey, fiend, or undead and fails its saving throw against this spell, it also takes radiant damage equal to your level."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Miracle Healing",
+          "entries": ["As an action, divine light from your hands knit the wounds of a willing creature you touch. That creature regains a number of hit points equal to twice your investigator level. This ability has no effect on undead or constructs."]
+        },
+        {
+          "type": "entries",
+          "name": "Warding",
+          "entries": ["As an action, you trace a holy symbol on a creature within 5 feet of you, warding it from harm. For the next minute, aberrations, celestials, fey, fiends, and undead which touch the target creature or hit it with a melee attack take {@dice 1d12} radiant damage."]
+        }
+      ]
+    },
+    {
+      "name": "Supernatural Resolve",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 9,
+      "entries": [
+        "At 9th level, you gain an extreme resilience to the attacks and effects of the creatures you regularly investigate. You can’t be {@condition possessed} or {@condition charmed}, and you gain resistance to both psychic and necrotic damage."
+      ]
+    },
+    {
+      "name": "Finisher",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 11,
+      "entries": [
+        "Beginning at 11th level, you know exactly how to bring a monster down. When you take the Attack action and hit a creature with a weapon attack, you can deal an extra {@dice 2d8} damage to the creature. If the creature has less than half its hit points remaining, you can instead deal an extra {@dice 4d8} damage to the creature."
+      ]
+    },
+    {
+      "name": "Enigma Arcane",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 13,
+      "entries": [
+        "At 13th level, you uncover a magical secret connected to a wellspring of potent magic. You can cast one of the following spells once without expending a spell slot: {@spell mirage arcane|PHB}, {@spell plane shift|PHB}, {@spell reverse gravity|PHB}, {@spell sequester|PHB}, or {@spell teleport|PHB}. You must finish a long rest before you can do so again."
+      ]
+    },
+    {
+      "name": "Enigma Arcane Improvement",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 15,
+      "entries": [
+        "At 15th level, you can also cast one of the following spells without expending a spell slot: {@spell antimagic field|PHB}, {@spell glibness|PHB}, {@spell maze|PHB}, or {@spell mind blank|PHB}. You must finish a long rest before you can do so again."
+      ]
+    },
+    {
+      "name": "Enigma Arcane Improvement",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 17,
+      "entries": [
+        "At 17th level, you can also cast one of the following spells without expending a spell slot: {@spell astral projection|PHB}, {@spell gate|PHB}, or {@spell weird|PHB}. You must finish a long rest before you can do so again."
+      ]
+    },
+    {
+      "name": "Exorcist",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 18,
+      "entries": [
+        "Beginning at 18th level, you can cast the spell {@spell protection from evil and good|PHB} without using a spell slot or spell components."
+      ]
+    },
+    {
+      "name": "Spellbinder",
+      "source": "VSS",
+      "page": 106,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "level": 20,
+      "entries": [
+        "By 20th level, many rituals you perform have become second nature to you. Select five ritual spells in your grimoire with a casting time of 1 action. You can cast these spells as a bonus action without using a use of Rushed Incantation, and you can do so without your grimoire on hand. If the ritual requires spell components worth 100 gp or less, you cast it without using spell components."
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Antiquarian",
+      "source": "VSS",
+      "page": 107,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Festooned with magical trinkets from every corner of the globe, antiquarians have a tool for every occasion: silver arrowheads for lycanthropes, heartwood stakes for vampires, blessed relics for fiends, and so on. As they expand their collections from piles of trinkets to veritable museums, they become adept historians and arcanists, familiar with the story of every magic item their care, as well how to use them in dire situations.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Artifact Historian|Investigator|VSS|Antiquarian|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinkets|Investigator|VSS|Antiquarian|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Artifact Historian",
+      "source": "VSS",
+      "page": 107,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialty at 3rd level, you add the spell {@spell identify|PHB} to your grimoire and never require material components to cast it."
+      ]
+    },
+    {
+      "name": "Trinkets",
+      "source": "VSS",
+      "page": 107,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "By 3rd level, you’ve collected a number of magical trinkets to help you collect and unravel profound arcane secrets. You can use the following trinkets:",
+        {
+          "type": "entries",
+          "name": "Hateful Arrowhead",
+          "entries": ["You can cast the spell {@spell scorching ray|PHB} or {@spell ray of enfeeblement|PHB} once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Mirrored Prism",
+          "entries": ["You can cast the spell {@spell blur|PHB} or {@spell mirror image|PHB}, targeting yourself only, once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Razortooth Bandages",
+          "entries": ["You can cast the spell {@spell cure wounds|PHB} or {@spell inflict wounds|PHB} once without using a spell slot or spell components. This spell is cast as if using a spell slot of the level shown in the Ritual Level column of the Investigator table."]
+        }
+      ]
+    },
+    {
+      "name": "Relics",
+      "source": "VSS",
+      "page": 107,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "By 6th level, you’ve secured a handful of priceless relics with rare and delicate enchantments. You can use one of the following relics, and regain the ability to use this feature when you finish a short or long rest.",
+        {
+          "type": "entries",
+          "name": "Antediluvian Dynamo",
+          "entries": ["You can cast the spell {@spell fireball|PHB} or {@spell lightning bolt|PHB} once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Lich’s Deathmask",
+          "entries": ["You can cast the spell {@spell counterspell|PHB} or {@spell dispel magic|PHB} once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Mortal Coil",
+          "entries": ["You can cast the spell {@spell animate dead|PHB} or {@spell revivify|PHB} once without using a spell slot or spell components. Casting {@spell animate dead|PHB} using this trinket causes all undead servants created by previous castings of the spell to revert to lifeless corpses."]
+        }
+      ]
+    },
+    {
+      "name": "Magical Item Collection",
+      "source": "VSS",
+      "page": 108,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, you maintain a vault of magic items, secured in an extradimensional space with an elaborate locking mechanism. You can produce one of these items, and change your selection each day when you finish a long rest.",
+        "The item is your choice of the following: a {@item carpet of flying|PHB}, a {@item cloak of the bat|PHB}, a {@item flame tongue|PHB}, {@item gauntlets of ogre power|PHB}, an {@item instant fortress|PHB}, a {@item ring of regeneration|PHB}, a {@item ring of telekinesis|PHB}, a {@item sun blade|PHB}, or a {@item wand of wonder|PHB}."
+      ]
+    },
+    {
+      "name": "Phylactery",
+      "source": "VSS",
+      "page": 108,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Antiquarian",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "By 14th level, you’ve secured the crown jewel of your collection: a lich’s phylactery. Though the original owner’s soul has been expelled from this accursed artifact, it retains many of its unique properties.",
+        "This magic item is always attuned to you and doesn’t count against your total number of attuned magic items. It has 5 charges, and regains {@dice 1d4 + 1} expended charges daily at dawn. You can expend one or more of these charges to use the following abilities:",
+        {
+          "type": "entries",
+          "name": "1 Charge:",
+          "entries": ["You can cast the spell {@spell false life|PHB} as a second level spell without expending spell slots or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "1 Charge:",
+          "entries": ["You can use your bonus action to regain an expended use of your Trinkets."]
+        },
+        {
+          "type": "entries",
+          "name": "2 Charges:",
+          "entries": ["As a reaction when you drop to 0 hit points, you can drop to 1 hit point instead."]
+        },
+        {
+          "type": "entries",
+          "name": "3 Charges:",
+          "entries": ["Make a melee spell attack against creature within your reach. On a hit, the target takes {@dice 5d6} necrotic damage and you regain hit points equal to the total amount of necrotic damage dealt."]
+        }
+      ]
+    },
+    {
+      "name": "Archivist",
+      "source": "VSS",
+      "page": 108,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Archivist",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Though most investigators fill their grimoires with hard-won knowledge borne from encounters with the supernatural threats, some prefer to do bookkeeping instead. Such archivists accrue knowledge, not trinkets, by spending untold hours digging through disparate tomes of occult knowledge and compiling them into encyclopedic texts on the supernatural. Through their research, archivists become academic masters of the arcane, and priceless reservoirs of obscure knowledge.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinket|Investigator|VSS|Archivist|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Thesis|Investigator|VSS|Archivist|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Trinket",
+      "source": "VSS",
+      "page": 108,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Archivist",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you’ve collected a powerful trinket to enhance your ritual magic:",
+        {
+          "type": "entries",
+          "name": "Archaic Scroll",
+          "entries": ["You can perform a ritual spell with your Rushed Incantation feature without expending one of the feature’s uses."]
+        }
+      ]
+    },
+    {
+      "name": "Thesis",
+      "source": "VSS",
+      "page": 108,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Archivist",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Also at 3rd level, you gain access to certain spells associated with your thesis. Pick one of the following subject areas for your thesis: Corpus, Ignis, Mortis, or Regis. You gain a list of associated thesis spells. Once you gain access to a thesis spell, it is added to your grimoire. If you gain access to a spell that doesn’t appear on the investigator ritual list, the spell is nonetheless an investigator spell for you. You can use your action and expend a use of your Rushed Incantation feature to cast one of your thesis spells.",
+        {
+          "type": "table",
+          "caption": "Corpus",
+          "colLabels": ["Investigator Level", "Spells"],
+          "colStyles": ["col-2 text-center", "col-6"],
+          "rows": [
+            ["1st", "{@spell jump|PHB}, {@spell longstrider|PHB}"],
+            ["2nd", "{@spell alter self|PHB}, {@spell heat metal|PHB}"],
+            ["3th", "{@spell gaseous form|PHB}, {@spell meld into stone|PHB}"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Ignis",
+          "colLabels": ["Investigator Level", "Spells"],
+          "colStyles": ["col-2 text-center", "col-6"],
+          "rows": [
+            ["1st", "{@spell burning hands|PHB}, {@spell shatter|PHB}"],
+            ["2nd", "{@spell gust of wind|PHB}, {@spell scorching ray|PHB}"],
+            ["3th", "{@spell call lightning|PHB}, {@spell wind wall|PHB}"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Mortis",
+          "colLabels": ["Investigator Level", "Spells"],
+          "colStyles": ["col-2 text-center", "col-6"],
+          "rows": [
+            ["1st", "{@spell bane|PHB}, {@spell false life|PHB}"],
+            ["2nd", "{@spell blindness/deafness|PHB}, {@spell darkness|PHB}"],
+            ["3th", "{@spell revivify|PHB}, {@spell vampiric touch|PHB}"]
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Mortis",
+          "colLabels": ["Investigator Level", "Spells"],
+          "colStyles": ["col-2 text-center", "col-6"],
+          "rows": [
+            ["1st", "{@spell charm person|PHB}, {@spell hideous laughter|PHB}"],
+            ["2nd", "{@spell enthrall|PHB}, {@spell suggestion|PHB}"],
+            ["3th", "{@spell dispel magic|PHB}, {@spell hypnotic pattern|PHB}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Erudite Spell",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Archivist",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "By 6th level, you’ve mastered the difficult theory behind arcane propagation. When you cast a spell which forces a creature to make a saving throw to resist its effects, you can give one target of the spell disadvantage on its first saving throw against the spell.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Encyclopedic Expertise",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Archivist",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, you can identify any arcane effect from memory. Whenever you witness a spell being cast or investigate a magical effect, you can always identify the spell that was cast, the magic item responsible, or the monster which produced the effect. However, this ability fails to identify spells, magic items, and monsters which are utterly unique or are otherwise not recorded in arcane texts."
+      ]
+    },
+    {
+      "name": "Eidetic Memory",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Archivist",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "At 14th level, you can effortlessly duplicate spells you see in the world. You can copy any ritual spell you see being cast into your grimoire.",
+        "Moreover, you can precisely copy the exact motions of a spell’s casting to duplicate its effect. When you see a spell of 5th level or lower being cast, you can use your action and spend 1 use of your Rushed Incantation feature as an action to cast the spell yourself without spending a spell slot. The spell must have a casting time of 1 action, must not have expensive spell components, and must have taken place within the last minute to use this ability.",
+        "Once you duplicate a spell in this way, you can’t duplicate it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Detective",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Detective",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Prowling at the edge of darkness, detectives chase down clues and pull on threads to unravel conspiracies which bring darkness into the world. Sometimes, this requires that you infiltrate a cult’s secret meetings, other times it calls on you to reconstruct a man’s last moments at a murder scene, but no matter what the mystery, you know that there is always an explanation.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Investigator's Hunch|Investigator|VSS|Detective|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinkets|Investigator|VSS|Detective|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Investigator's Hunch",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Detective",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you can unravel even the toughest of mysteries. If you spend at least 10 minutes combing through documents and arranging clues, you can make an Intelligence check with advantage."
+      ]
+    },
+    {
+      "name": "Trinkets",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Detective",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "By 3rd level, you’ve collected a number of magical trinkets to aid you in tracking supernatural creatures and unraveling mysteries. You can use the following trinkets:",
+        {
+          "type": "entries",
+          "name": "Glass Medalion",
+          "entries": ["As a bonus action, you can cast the spell {@spell invisibility|PHB}, targeting yourself only, once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Fogstone Periapt",
+          "entries": ["As a bonus action, you can cast the spell {@spell misty step|PHB} once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Skeleton's Key",
+          "entries": ["As a bonus action, you can cast the spell {@spell knock|PHB} once without using a spell slot or spellcomponents."]
+        }
+      ]
+    },
+    {
+      "name": "Predictive Intuition",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Detective",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "By 6th level, you can turn your skills at reconstructing events towards anticipating the next likely moment of a fight. As a bonus action, you can examine the movements of a creature you can see within 30 feet. You can choose to add {@dice 1d4} to your next attack roll targeting that creature before the start of your next turn, or you can choose to subtract {@dice 1d4} from the creature’s next attack roll against you before the start of your next turn."
+      ]
+    },
+    {
+      "name": "Interrogator's Instinct",
+      "source": "VSS",
+      "page": 109,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Detective",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "At 10th level, you are so accustomed to uncovering the truth that you can sense the intents behind someone’s voice. You can tell if a creature that you can hear speaking is charmed, possessed, or otherwise enchanted to speak against their will, and you have advantage on any ability check you make to determine if you hear a lie."
+      ]
+    },
+    {
+      "name": "Power of Deduction",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Detective",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "Starting at 14th level, you can use your action to examine a creature you can see within 30 feet, taking note of innumerable details and making a lengthy string of logical deductions. For the next minute, you have advantage on Intelligence and Charisma checks you make to interact with this creature, and you have advantage on attack rolls against them. ",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Exterminator",
+      "source": "VSS",
+      "page": 108,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Exterminator",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "An exterminator suffers no monster to live. Trained in the art of slaying aberrations, fiends, and undead, you stand against evil where others falter, and draw your blade before others recognize a threat. Grand schemes and plots are less important than retribution against those monsters which stalk the night, and your thirst for such retribution is unquenchable. There is always another werewolf to be slain, another vampire to be staked, another demon to be banished; people rarely thank you, but you find satisfaction enough in your work.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Bonus Proficiencies|Investigator|VSS|Exterminator|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinkets|Investigator|VSS|Exterminator|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Exterminator",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you gain proficiency with martial weapons and medium armor."
+      ]
+    },
+    {
+      "name": "Trinkets",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Exterminator",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "By 3rd level, you’ve collected a number of magical trinkets to aid you in the elimination of monsters and other fiendish threats. You can use the following trinkets:",
+        {
+          "type": "entries",
+          "name": "Concecrated Whetstone",
+          "entries": [
+            "As a bonus action, you can cast the spell {@spell magic weapon|PHB} once without using a spell slot or spell components."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Gilded Dragon Scale",
+          "entries": [
+            "As a bonus action, you gain resistance to one damage type of your choice for a minute."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Wyverntooth Necklace",
+          "entries": [
+            "When you hit a creature with a melee weapon attack, you can use your bonus action to activate this trinket, dealing an additional {@dice 2d6} acid damage to the creature."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Monster Slayer",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Exterminator",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "Beginning at 6th level, when you use the Attack action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once) and regain all expended uses when you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Silvered Edge",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Exterminator",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, whenever you deal damage to a creature with a weapon attack, it can’t regain hit points until the start of your next turn. Additionally, when you reduce a creature to 0 hit points, it can’t be raised as an undead creature nor be returned to life for 7 days."
+      ]
+    },
+    {
+      "name": "Killer Instinct",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Exterminator",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "Starting at 14th level, you can use your Exploit Vulnerability feature twice on your turn, but can’t use it against the same target more than once."
+      ]
+    },
+    {
+      "name": "Inquisitor",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "The church has long been the first line of defense against the tide of impending darkness. Yet, the clergy’s stubborn devotion to righteousness impedes them where it counts: you must sometimes be willing to do evil to counter evil. That’s where the inquisition comes in. ",
+        "As a righteous inquisitor of the faith, you are tasked with rooting out heresy, exorcising demons, and stamping out any sign of the occult, and are offered clemency for any action you take in the defense of the greater good. You may investigate anyone or anything you deem to be in line with the forces of evil, for you alone are a holy blade in the dark, the arbiter of your church.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Bonus Proficiencies|Investigator|VSS|Inquisitor|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Exorcist's Doctrines|Investigator|VSS|Inquisitor|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinkets|Investigator|VSS|Inquisitor|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Bonus Proficiencies",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you gain proficiency with medium armor"
+      ]
+    },
+    {
+      "name": "Exorcist's Doctrines",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Also at 3rd level, you gain proficiency in the {@skill Religion} skill and add double your proficiency bonus to checks you make with it."
+      ]
+    },
+    {
+      "name": "Trinkets",
+      "source": "VSS",
+      "page": 110,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "By 3rd level, you’ve collected a number of magical trinkets to help you banish restless spirits and foul demonic forces. You can use the following trinkets:",
+        {
+          "type": "entries",
+          "name": "Alabaster Balm",
+          "entries": [
+            "As a bonus action, you can cast the spell {@spell lesser restoration|PHB} once without using a spell slot or spell components."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hallowed Chalice",
+          "entries": [
+            "As a bonus action, you can utter a prayer and produce a volume of {@item holy water|PHB} from this cup sufficient to fill one flask. After 24 hours, this {@item holy water|PHB} becomes ordinary water. You can use this trinket 5 times before its power is expended."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reliquary of Doubt",
+          "entries": [
+            "As a bonus action, you can cast the spell {@spell detect thoughts|PHB} once without using a spell slot or spell components. When casting the spell in this way, it can only detect thoughts which are associated with negative emotions, such as guilt, apprehension, regret, or melancholy."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Divine Strike",
+      "source": "VSS",
+      "page": 111,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d6} radiant damage to the target."
+      ]
+    },
+    {
+      "name": "Rote Piety",
+      "source": "VSS",
+      "page": 111,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, you command a mastery of divine magic seldom seen among the clergy. You can use your Opportunistic Piety feature three times, and regain all expended uses when you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Excommunication",
+      "source": "VSS",
+      "page": 111,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Inquisitor",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "By 14th level, as an action, you can emblazon a creature you can see within 60 feet with a mark of religious condemnation. The target must succeed on your choice of a Constitution or Wisdom saving throw or be marked for the next minute. While marked, the creature can’t regain hit points or have advantage on any attack roll or ability check. Additionally, whenever the creature takes an action, it takes {@dice 2d6} radiant damage as the mark burns with radiant light.",
+        "Once you use this feature, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Medium",
+      "source": "VSS",
+      "page": 111,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Medium",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "As conduits between the living and dead, mediums offer an essential glimpse past the veil of mortality. Using their auguries, seances, and divinations, mediums can retrieve morsels of information from the afterlife to settle debts with the living or and assist ongoing investigations. This information, however cryptic, can point an interested party toward clues or evidence which only the deceased might be able to provide.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Fortelling|Investigator|VSS|Medium|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinkets|Investigator|VSS|Medium|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Fortelling",
+      "source": "VSS",
+      "page": 111,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Medium",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you can receive glimpses of the future. When you finish a long rest, roll two d20s and record the number rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with this foretold roll. You must choose to do so before the roll, and you can replace a roll in this way only once per turn.",
+        "As an action, you can use a use of your Rushed Incantation ability to make an additional fortelling roll. You can have up to 3 foretold rolls at one time. Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls."
+      ]
+    },
+    {
+      "name": "Trinkets",
+      "source": "VSS",
+      "page": 111,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Medium",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "By 3rd level, you’ve collected a number of objects which help you attune to the afterlife. You can use the following trinkets:",
+        {
+          "type": "entries",
+          "name": "Dead Ringer",
+          "entries": ["As an action, you can ring this bell to cast the spell {@spell speak with dead|PHB} once without using a spell slot or spell components. When you cast this spell using this trinket, you can ask only one question of the corpse."]
+        },
+        {
+          "type": "entries",
+          "name": "Heptagonal Spectacles",
+          "entries": ["As a bonus action, you can cast the spell {@spell see invisibility|PHB} once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Lucent Mirror",
+          "entries": ["You can use your bonus action to activate this trinket, causing you to phase partially into the Ethereal Plane for up to 1 minute. For the duration, you can move through other creatures and objects as if they were difficult terrain, but you take {@dice 1d10} force damage if you end your movement inside a creature or object. Additionally, you have resistance to all damage. This effect ends early after you take damage."]
+        }
+      ]
+    },
+    {
+      "name": "Forewarning Presence",
+      "source": "VSS",
+      "page": 112,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Medium",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "By 6th level, the spirits of the dead guide your hand when you would falter. You can reroll an attack roll or ability check you make, and must use the new roll.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Whispers From Beyond",
+      "source": "VSS",
+      "page": 112,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Medium",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, you can open your perceptions to receive a hint from beyond the pale. The GM answers with a one-word hint pertaining to your best course of action, a fruitful line of inquiry, or some other useful direction.",
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Third Eye",
+      "source": "VSS",
+      "page": 112,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Medium",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "By 14th level, your connection to the afterlife allows you to see all. You can use your bonus action to cast the spell true seeing without using a spell slot or spell components.",
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Occultist",
+      "source": "VSS",
+      "page": 112,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Occultist",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Vampires, demons, lycanthropes, and aberrations all have one thing in common: they are all magical threats, best combated through magical means. To meet these foes on a level playing field, occultists indulge in arcana, filling their grimoires with magical secrets and mastering a handful of spells. Occultists are the most likely investigators to cavort with warlocks, borrow tricks from wizards and magicians, and dabble in dark magic to defeat their foes.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinket|Investigator|VSS|Occultist|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Pact Magic|Investigator|VSS|Occultist|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Trinket",
+      "source": "VSS",
+      "page": 112,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Occultist",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you’ve acquired a trinket to assist in your collection of eldritch lore:",
+        {
+          "type": "entries",
+          "name": "Rune Kuuper Eyeglass",
+          "entries": ["As a bonus action, for the next hour, you can read all writing."]
+        }
+      ]
+    },
+    {
+      "name": "Pact Magic",
+      "source": "VSS",
+      "page": 112,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Occultist",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, you augment your investigative skills with complex magicks.",
+        {
+          "type": "entries",
+          "name": "Cantrips",
+          "entries": [
+            "You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spell Slots",
+          "entries": [
+            "The Occultist Spellcasting table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level.",
+            "To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spells Known of 1st Level and Higher",
+          "entries": [
+            "At 3rd level, you know two 1st-level spells of your choice from the warlock spell list.",
+            "The Spells Known column of the Occultist table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table’s Slot Level column for your level.",
+            "Additionally, when you gain a level in this class and order, you can choose one of the warlock spells you know and replace is with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "entries": [
+            "Intelligence is your spellcasting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. Use your investigator spell save DC and spell attack bonus for your warlock spells.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": ["int"]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": ["int"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eldritch Ruin",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Occultist",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "Starting at 6th level, you can use your magical cunning to rip your foes asunder. You can cast a cantrip as a bonus action instead of dealing additional damage with your Exploit Vulnerability feature."
+      ]
+    },
+    {
+      "name": "Eyes of Another World",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Occultist",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, supernatural creatures can no longer escape your detection. You can see creatures and objects that are invisible or ethereal, and you can see the original form of shapechangers or creatures whose form has been altered by magic. Additionally, you can immediately detect if a creature you can see is possessed."
+      ]
+    },
+    {
+      "name": "Maleficium",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Occultist",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "Starting at 14th level, when you use your Exploit Weakness feature against a creature, you can cast the spell bestow curse on that creature as a bonus action, without using a spell slot or spell components; the targeted creature has disadvantage on its saving throw against this spell.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Spy",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Spy",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Infiltration, disguise, and lying through their teeth: these are the principle skills of a spy. A talented spy rarely ever needs to draw a dagger to silence someone, for their honeyed words and agreeable disposition are all that is needed to draw out someone’s secrets. Of course, when they do strike, it is decisively and without warning. Such skills are invaluable for governments and organizations of all varieties, for stealing confidential information, sabotage, monitoring persons of interest, and everything in between.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Bravado|Investigator|VSS|Spy|VSS|3|VSS"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trinkets|Investigator|VSS|Spy|VSS|3|VSS"
+        }
+      ]
+    },
+    {
+      "name": "Bravado",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Spy",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "Starting when you choose this specialization at 3rd level, your knowing smile and infectious confidence inspires trust in most people you meet, even when you’re not telling the truth. You gain proficiency in the {@skill Deception} skill and add double your proficiency bonus to checks you make with it."
+      ]
+    },
+    {
+      "name": "Trinkets",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Spy",
+      "subclassSource": "VSS",
+      "level": 3,
+      "entries": [
+        "By 3rd level, you have a collection of trinkets which aid your espionage. You can use the following trinkets:",
+        {
+          "type": "entries",
+          "name": "Glass Dust",
+          "entries": ["As a bonus action, you can throw this dust in the air, becoming invisible until the beginning of your next turn. This effect ends early if you take damage."]
+        },
+        {
+          "type": "entries",
+          "name": "Horn-Rimmed Glasses",
+          "entries": ["As a bonus action, you can cast the spell {@spell disguise self|PHB} once without using a spell slot or spell components."]
+        },
+        {
+          "type": "entries",
+          "name": "Martini Glass",
+          "entries": ["As a bonus action, you can cast the spell {@spell charm person|PHB} once without using a spell slot or spell components."]
+        }
+      ]
+    },
+    {
+      "name": "Cloak and Dagger",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Spy",
+      "subclassSource": "VSS",
+      "level": 6,
+      "entries": [
+        "By 6th level, you always endeavor to kill your target in one strike. When you make an attack roll against a creature that is surprised or hasn’t taken a turn in combat yet, you can maximize your weapon’s damage die."
+      ]
+    },
+    {
+      "name": "Shaken Not Stirred",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Spy",
+      "subclassSource": "VSS",
+      "level": 10,
+      "entries": [
+        "Starting at 10th level, your roguish smile grants you incredible leeway. Whenever you fail a Charisma ({@skill Deception}) or Charisma ({@skill Persuasion}) check, you can reroll the check, and must use the results of the new roll.",
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Body Double",
+      "source": "VSS",
+      "page": 113,
+      "className": "Investigator",
+      "classSource": "VSS",
+      "subclassShortName": "Spy",
+      "subclassSource": "VSS",
+      "level": 14,
+      "entries": [
+        "By 14th level, you can rapidly exchange identities with a corpse. When you reduce a humanoid creature to 0 hit points, you can assume the creature’s appearance, as per the disguise self spell. The creature’s body, as well as its blood, clothing, and other physical evidence of its death, become invisible for 8 hours. You can also use this ability as an action to touch the corpse of a humanoid creature which has been dead no longer than 1 day, assuming its appearance and causing the body to become invisible.",
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+      ]
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Antiquarian",
+      "shortName": "Antiquarian",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 107,
+      "subclassFeatures": [
+        "Antiquarian|Investigator|VSS|Antiquarian|VSS|3",
+        "Relics|Investigator|VSS|Antiquarian|VSS|6",
+        "Magical Item Collection|Investigator|VSS|Antiquarian|VSS|10",
+        "Phylactery|Investigator|VSS|Antiquarian|VSS|14"
+      ],
+      "classname": "Investigator",
+      "Source": "VSS"
+    },
+    {
+      "name": "Archivist",
+      "subclassFeatures": [
+        "Archivist|Investigator|VSS|Archivist|VSS|3",
+        "Erudite Spell|Investigator|VSS|Archivist|VSS|6",
+        "Encyclopedic Expertise|Investigator|VSS|Archivist|VSS|10",
+        "Eidetic Memory|Investigator|VSS|Archivist|VSS|14"
+      ],
+	  "subclassSpells": [
+        "jump",
+        "longstrider",
+        "alter self",
+        "heat metal",
+        "gaseous form",
+        "meld into stone",
+        "burning hands",
+        "shatter",
+        "gust of wind",
+        "scorching ray",
+        "call lightning",
+        "wind wall",
+        "bane",
+        "false life",
+        "blindness/deafness",
+        "darkness",
+        "revivify",
+        "vampiric touch",
+        "charm person",
+        "hideous laughter",
+        "enthrall",
+        "suggestion",
+        "dispel magic",
+        "hypnotic pattern"
+      ],
+	  "shortName": "Archivist",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 108
+    },
+    {
+      "name": "Detective",
+      "subclassFeatures": [
+        "Detective|Investigator|VSS|Detective|VSS|3",
+        "Predictive Intuition|Investigator|VSS|Detective|VSS|6",
+        "Interrogator's Instinct|Investigator|VSS|Detective|VSS|10",
+        "Power of Deduction|Investigator|VSS|Detective|VSS|14"
+      ],
+	  "shortName": "Detective",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 109
+    },
+    {
+      "name": "Exterminator",
+      "subclassFeatures": [
+        "Exterminator|Investigator|VSS|Exterminator|VSS|3",
+        "Monster Slayer|Investigator|VSS|Exterminator|VSS|6",
+        "Silvered Edge|Investigator|VSS|Exterminator|VSS|10",
+        "Killer Instinct|Investigator|VSS|Exterminator|VSS|14"
+      ],
+	  "shortName": "Exterminator",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 110
+    },
+    {
+      "name": "Inquisitor",
+      "subclassFeatures": [
+        "Inquisitor|Investigator|VSS|Inquisitor|VSS|3",
+        "Divine Strike|Investigator|VSS|Inquisitor|VSS|6",
+        "Rote Piety|Investigator|VSS|Inquisitor|VSS|10",
+        "Excommunication|Investigator|VSS|Inquisitor|VSS|14"
+      ],
+	  "shortName": "Inquisitor",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 110
+    },
+    {
+      "name": "Medium",
+      "subclassFeatures": [
+        "Medium|Investigator|VSS|Medium|VSS|3",
+        "Forewarning Presence|Investigator|VSS|Medium|VSS|6",
+        "Whispers From Beyond|Investigator|VSS|Medium|VSS|10",
+        "Third Eye|Investigator|VSS|Medium|VSS|14"
+      ],
+	  "shortName": "Medium",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 111
+    },
+    {
+      "name": "Occultist",
+      "subclassTableGroup": [
+        {
+          "subclasses": [
+            {
+              "name": "Occultist",
+              "source": "VSS"
+            }
+          ],
+          "colLabels": [
+            "Cantrips Known",
+            "Spells Known",
+            "Spell Slots",
+            "Slot Level"
+          ],
+          "rows": [
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],
+            [2, 2, 1, "1st"],
+            [2, 2, 1, "1st"],
+            [2, 3, 2, "1st"],
+            [2, 3, 2, "1st"],
+            [2, 4, 2, "2nd"],
+            [2, 4, 2, "2nd"],
+            [2, 5, 2, "2nd"],
+            [3, 5, 2, "2nd"],
+            [3, 6, 2, "2nd"],
+            [3, 6, 2, "2nd"],
+            [3, 7, 2, "3rd"],
+            [3, 7, 2, "3rd"],
+            [3, 8, 2, "3rd"],
+            [3, 8, 2, "3rd"],
+            [3, 9, 2, "3rd"],
+            [3, 9, 2, "3rd"],
+            [3, 10, 2, "4th"],
+            [3, 11, 2, "4th"]
+          ]
+        }
+      ],
+      "subclassFeatures": [
+        "Occultist|Investigator|VSS|Occultist|VSS|3",
+        "Eldritch Ruin|Investigator|VSS|Occultist|VSS|6",
+        "Eyes of Another World|Investigator|VSS|Occultist|VSS|10",
+        "Maleficium|Investigator|VSS|Occultist|VSS|14"
+      ],
+	  "shortName": "Occultist",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 112
+    },
+    {
+      "name": "Spy",
+      "subclassFeatures": [
+        "Spy|Investigator|VSS|Spy|VSS|3",
+        "Cloak and Dagger|Investigator|VSS|Spy|VSS|6",
+        "Shaken Not Stirred|Investigator|VSS|Spy|VSS|10",
+        "Body Double|Investigator|VSS|Spy|VSS|14"
+      ],
+	  "shortName": "Spy",
+      "source": "VSS",
+      "className": "Investigator",
+      "classSource": "VSS",
+      "page": 113
+    }
+  ]
+}
