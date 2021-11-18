@@ -1102,69 +1102,69 @@
 			"level": 2,
 			"entries": [
 				"While all alchemists share a common knowledge base, most alchemists specialize into a particular field of study. When you reach 2nd level, you select your field of study, which grants you features at 2nd, 6th, 10th, and 18th level.",
-        "A formula granted by your field of study doesn’t count against the total number of formulae you know."
-			]
-		},
-		{
-			"name": "Reagent",
-			"source": "VSS",
-			"className": "Alchemist",
-			"classSource": "VSS",
-			"level": 3,
-			"entries": [
-				"Starting at 3rd level, you have a collection of powerful alchemical reagents, represented by a pool of reagent dice, that you can spend to brew potions or magnify the power of your explosives.",
-        {
-          "type": "entries",
-          "name": "Reagent Dice",
-          "entries": [
-            "You start with three reagent dice, which are d10s, and you gain additional reagent dice as you gain levels in this class, as shown in the Reagent Dice column of the Alchemist table. You regain all expended reagent dice when you finish a long rest.",
-            "When you prime a bomb, you can expend a number of reagent dice up to your proficiency bonus and add the dice to the bomb’s damage roll."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Brewing Potions",
-          "entries": [
-            "You can spend 10 minutes and expend any number of reagent dice to brew potions. These potions retain potency for 24 hours, after which they become inert. If a potion calls for a saving throw, it uses your bomb save DC.",
-            "The number of reagent dice and the alchemist level required to brew a potion are given on the Potions table:",
-            {
-              "name": "Potions",
-              "table":[
-                {
-                  "colLabels":[
-                    "Potion",
-                    "Cost",
-                    "Alchemist Level"
-                  ],
-                  "rows":[
-                    ["Potion of Climbing", "1 reagent die", "3rd"],
-                    ["Potion of Growth", "1 reagent die", "3rd"],
-                    ["Potion of Healing", "1 reagent die", "3rd"],
-                    ["Potion of Water Breathing", "1 reagent die", "3rd"],
-                    ["Universal Solvent", "1 reagent die", "3rd"],
-                    ["Cure-All", "2 reagent dice", "7th"],
-                    ["Potion of Greater Healing", "2 reagent dice", "7th"],
-                    ["Potion of Heroism", "2 reagent dice", "7th"],
-                    ["Potion of Resistance", "2 reagent dice", "7th"],
-                    ["Sovereign Glue (1 ounce)", "2 reagent dice", "7th"],
-                    ["Potion of Diminution", "3 reagent dice", "14th"],
-                    ["Potion of Flying", "4 reagent dice", "14th"],
-                    ["Potion of Hill Giant Strength", "4 reagent dice", "14th"],
-                    ["Potion of Invisibility", "4 reagent dice", "14th"],
-                    ["Potion of Superior Healing", "4 reagent dice", "14th"]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Reagent Synthesis",
-          "entries":[
-            "When you finish a short rest, you can choose to regain all of your expended reagent dice that weren’t used to brew potions. Once you use this feature, you can’t do so again until you finish a long rest."
-          ]
-        }
+				"A formula granted by your field of study doesn’t count against the total number of formulae you know."
+					]
+				},
+				{
+					"name": "Reagent",
+					"source": "VSS",
+					"className": "Alchemist",
+					"classSource": "VSS",
+					"level": 3,
+					"entries": [
+						"Starting at 3rd level, you have a collection of powerful alchemical reagents, represented by a pool of reagent dice, that you can spend to brew potions or magnify the power of your explosives.",
+				{
+				"type": "entries",
+				"name": "Reagent Dice",
+				"entries": [
+					"You start with three reagent dice, which are d10s, and you gain additional reagent dice as you gain levels in this class, as shown in the Reagent Dice column of the Alchemist table. You regain all expended reagent dice when you finish a long rest.",
+					"When you prime a bomb, you can expend a number of reagent dice up to your proficiency bonus and add the dice to the bomb’s damage roll."
+				]
+				},
+				{
+				"type": "entries",
+				"name": "Brewing Potions",
+				"entries": [
+					"You can spend 10 minutes and expend any number of reagent dice to brew potions. These potions retain potency for 24 hours, after which they become inert. If a potion calls for a saving throw, it uses your bomb save DC.",
+					"The number of reagent dice and the alchemist level required to brew a potion are given on the Potions table:",
+					{
+					"name": "Potions",
+					"table":[
+						{
+						"colLabels":[
+							"Potion",
+							"Cost",
+							"Alchemist Level"
+						],
+						"rows":[
+							["Potion of Climbing", "1 reagent die", "3rd"],
+							["Potion of Growth", "1 reagent die", "3rd"],
+							["Potion of Healing", "1 reagent die", "3rd"],
+							["Potion of Water Breathing", "1 reagent die", "3rd"],
+							["Universal Solvent", "1 reagent die", "3rd"],
+							["Cure-All", "2 reagent dice", "7th"],
+							["Potion of Greater Healing", "2 reagent dice", "7th"],
+							["Potion of Heroism", "2 reagent dice", "7th"],
+							["Potion of Resistance", "2 reagent dice", "7th"],
+							["Sovereign Glue (1 ounce)", "2 reagent dice", "7th"],
+							["Potion of Diminution", "3 reagent dice", "14th"],
+							["Potion of Flying", "4 reagent dice", "14th"],
+							["Potion of Hill Giant Strength", "4 reagent dice", "14th"],
+							["Potion of Invisibility", "4 reagent dice", "14th"],
+							["Potion of Superior Healing", "4 reagent dice", "14th"]
+						]
+						}
+					]
+					}
+				]
+				},
+				{
+				"type": "entries",
+				"name": "Reagent Synthesis",
+				"entries":[
+					"When you finish a short rest, you can choose to regain all of your expended reagent dice that weren’t used to brew potions. Once you use this feature, you can’t do so again until you finish a long rest."
+				]
+				}
 			]
 		},
 		{
@@ -1205,7 +1205,9 @@
 			"className": "Alchemist",
 			"classSource": "VSS",
 			"level": 6,
-			"entries": []
+			"entries": [
+				"At 6th level, you gain a feature from your Field of Study."
+			]
 		},
 		{
 			"name": "Potions Improvement",
@@ -1233,7 +1235,9 @@
 			"className": "Alchemist",
 			"classSource": "VSS",
 			"level": 10,
-			"entries": []
+			"entries": [
+				"At 10th level, you gain a feature from your Field of Study."
+			]
 		},
 		{
 			"name": "Evasion",
@@ -1290,8 +1294,10 @@
 			"source": "VSS",
 			"className": "Alchemist",
 			"classSource": "VSS",
-			"level": 17,
-			"entries": []
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature from your Field of Study."
+			]
 		},
 		{
 			"name": "Ability Score Improvement",
