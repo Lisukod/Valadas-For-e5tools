@@ -130,7 +130,6 @@
 					]
 				}
 			],
-      "subclassTitle": "Occult Specializations",
       "classSpells": [
         "Alarm",
         {
@@ -357,7 +356,8 @@
         "Exorcist|Investigator|VSS|18",
         "Ability Score Improvement|Investigator|VSS|19",
         "Spellbinder|Investigator|VSS|20"
-      ]
+      ],
+      "subclassTitle": "Occult Specializations"
     }
   ],
   "classFeature": [

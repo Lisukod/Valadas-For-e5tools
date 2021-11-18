@@ -1,0 +1,2352 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "VSS",
+				"full": "Valda's Spire of Secrets",
+				"abbreviation": "VSS",
+				"authors": [
+					"Mage Hand Press"
+				],
+				"url": "https://kickstarter.com/projects/magehandpress/spire-of-secrets",
+        "version": "2021.11.01"
+			}
+		],
+		"optionalFeatureTypes": {
+			"Bo:A": "Bomb Formula",
+			"Di:A": "Discovery"
+		}
+	},
+	"class": [
+		{
+			"name": "Alchemist",
+			"source": "VSS",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple",
+          "bombs"
+				],
+				"tools": [
+					"Alchemist's Supplies",
+          "Herbalism Kit"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"sleight of hand",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) an {@item explorer's pack|PHB} or (b) a {@item scholar's pack|PHB}",
+					"{@item alchemist's supplies|PHB} and (a) {@item vial of acid|PHB}, (b) a {@item vial of alchemist's fire}, or (c) a {@item vial of basic poison}",
+					"{@item leather armor|PHB} and {@item dagger|PHB}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							"light crossbow|phb",
+							"Crossbow Bolts (20)|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"explorer's pack|PHB"
+						],
+						"b": [
+							"scholar's pack|PHB"
+						]
+					},
+					{
+						"_": [
+							"alchemist's supplies|PHB",
+              {
+                "a" :[
+                  "vial of acid|PHB"
+                ],
+                "b": [
+                  "vial of alchemist's fire"
+                ],
+                "c": [
+                  "vial of basic poison"
+                ]
+              }
+						]
+					},
+					{
+						"_": [
+							"leather armor|PHB",
+							"dagger|PHB"
+						]
+					}
+				]
+			},
+			"fluff": [
+				{
+					"source": "VSS",
+					"page": 28,
+					"entries": [
+						"A grinning gnome cackles with glee as he hurls a bomb into a group of charging goblins, blasting them into scorched chunks. He produces another, throws it at his feet, and disappears, still laughing, into the ensuing cloud of smoke.",
+						"A slender elf quickly mixes liquids and herbs in a small bowl. She applies the mixture to an arrow wound on an injured dwarf ’s side, which immediately stops bleeding",
+						"Whether their methods are explosive, transformative, or restorative, alchemists live to transmute the world around them to their liking.",
+						{
+							"type": "entries",
+							"name": "Chemical Reactions",
+							"entries": [
+								"One of the first things an alchemist learns is how to mix chemicals that react explosively with each other. Ostensibly, this is taught to students to prevent deadly accidents, but adventuring alchemists regularly apply this knowledge to create bombs.",
+						    "An alchemical bomb is a 1-pound, apple-sized, spherical glass or clay flask filled with a reactive chemical. A smaller vial of thin glass containing a reagent is suspended in the liquid, and the whole thing is sealed with a cork or wax seal. The chemicals violently explode when mixed. This occurs when the inner vial breaks, usually after the bomb impacts a solid surface or a fuse sets off a small explosive detonator within the vial. Bombs are primarily used to fend off enemies, but creative alchemists may find more practical uses for explosives, such as demolishing obstacles"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Serums and Tinctures",
+							"entries": [
+								"More experienced alchemists learn to mix less volatile substances into potions, alchemical concoctions that replicate magical effects. These potions range from the medicinal, such as potions of healing, to the transformative, such as potions of gaseous form, to the downright deadly, such as potions of poison. Undisputed masters of potions, alchemists constantly innovate with new formulations and preparations, improving their potions into magic items in their own right."
+							]
+						},
+            {
+							"type": "entries",
+							"name": "Elemental Sciences",
+							"entries": [
+								"The primary source of alchemy’s power comes from the elemental planes. It is no surprise, then, that alchemists strive to tap deeper into that power, researching and discovering new compounds composed of the elements. The pinnacle of alchemy is the philosopher’s stone, which is rumored to grant its bearer supreme elemental power. Few alchemists have succeeded in creating a philosopher’s stone, and fewer still remain alive to divulge its secrets."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating an Alchemist",
+							"entries": [
+								"When you create an alchemist, consider why you study alchemy. Are you attracted to its dangerous power or its ability to help others? Do you desire to use magic, but lack the aptitude or inborn ability?",
+								"Why do you adventure? Are you searching for new alchemical formulae or rare ingredients? Do you, like so many, seek the philosopher’s stone?",
+                "Be sure to understand alchemy’s place in your campaign world. You might have learned your trade from a master or studied alongside artificers and wizards in a university. Your trade might be commonplace or an oddity. Depending on the setting, you might be respected for your knowledge or feared for your destructive potential.",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"You can make an alchemist quickly by following these suggestions. First, make Intelligence your highest ability score, followed by Dexterity. Choose any background of your choice, preferably one that lends insight into your history with alchemy."
+									]
+								}
+							]
+						}
+					],
+					"name": "Alchemist",
+					"type": "section"
+				}
+			],
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Reagent Dice"
+					],
+					"rows": [
+						[
+							"-"
+						],
+						[
+							"-"
+						],
+						[
+							"3d10"
+						],
+						[
+							"4d10"
+						],
+						[
+							"5d10"
+						],
+						[
+							"6d10"
+						],
+						[
+							"7d10"
+						],
+						[
+							"8d10"
+						],
+						[
+							"9d10"
+						],
+						[
+							"10d10"
+						],
+						[
+							"11d10"
+						],
+						[
+							"12d10"
+						],
+						[
+							"13d10"
+						],
+						[
+							"14d10"
+						],
+						[
+							"15d10"
+						],
+						[
+							"16d10"
+						],
+						[
+							"17d10"
+						],
+						[
+							"18d10"
+						],
+						[
+							"19d10"
+						],
+						[
+							"20d10"
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Formulae Known|optionalfeatures|source=null|feature type=Bo:A}",
+						"{@filter Discoveries Known|optionalfeatures|source=null|feature type=Di:A}"
+					],
+					"rows": [
+						[0,0],
+						[3,0],
+						[3,0],
+						[3,2],
+						[4,2],
+						[4,3],
+						[5,3],
+						[5,3],
+						[6,4],
+						[6,4],
+						[7,4],
+						[7,4],
+						[8,5],
+						[8,5],
+						[9,5],
+						[9,5],
+						[10,6],
+						[10,6],
+						[11,6],
+						[11,6]
+					]
+				}
+			],
+			"classFeatures": [
+				"Bombs|Alchemist|VSS|1",
+				"Natural Philosopher|Alchemist|VSS|1",
+				"Bomb Formulae|Alchemist|VSS|2",
+				{
+					"classFeature": "Field of Study|Alchemist|VSS|2",
+					"gainSubclassFeature": true
+				},
+				"Reagent|Alchemist|VSS|3",
+        "Ability Score Improvement|Alchemist|VSS|4",
+				"Discoveries|Alchemist|VSS|4",
+				"Flashbang|Alchemist|VSS|5",
+				{
+					"classFeature": "Field of Study Feature|Alchemist|VSS|6",
+					"gainSubclassFeature": true
+				},
+				"Potions improvement|Alchemist|VSS|7",
+				"Ability Score Improvement|Alchemist|VSS|8",
+				{
+					"classFeature": "Field of Study Feature|Alchemist|VSS|10",
+					"gainSubclassFeature": true
+				},
+				"Evasion|Alchemist|VSS|11",
+				"Ability Score Improvement|Alchemist|VSS|12",
+				"Potions improvement|Alchemist|VSS|14",
+				"Blast Coating|Alchemist|VSS|15",
+				"Ability Score Improvement|Alchemist|VSS|16",
+				{
+					"classFeature": "Field of Study Feature|Alchemist|VSS|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Alchemist|VSS|19",
+				"Philosopher's Stone|Alchemist|VSS|20"
+			],
+			"subclassTitle": "Field of Study"
+		},
+    {
+      "type": "inset",
+      "name": "Bomb",
+      "entries": [
+        "Bombs are exotic ranged weapons with the following statistics:",
+        {
+          "table":[
+            {
+              "colLabels":[
+                "Name",
+                "Cost",
+                "Damage",
+                "Weight",
+                "Properties"
+              ],
+              "rows":[
+                ["Bomb", "2sp", "1d10 fire", "1 lb.", "Finesse, special, thrown (range 30/90)"]
+              ]
+            }
+          ]
+        },
+        "Special Property",
+        {
+          "entries":[
+            "Bomb. When a bomb hits a target, it explodes in a 5-foot radius and is destroyed. The bomb can be thrown at an unoccupied space within its range. Each creature other than the target within the blast radius must succeed on a DC 11 Dexterity saving throw, taking half the damage rolled on a failed save or no damage on a successful one.",
+            "Additionally, as a bonus action, you can empty some of the bomb’s explosive material to permanently remove the blast radius from this bomb, dealing damage only to the bomb’s target."
+          ]
+        }
+      ]
+    }
+	],
+	"optionalfeature": [
+		{
+			"name": "Acid Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By mixing your bomb’s explosive contents with a few drops of ardenflotic acid, a highly corrosive chemical, you can change it into an acid bomb. An acid bomb deals acid damage instead of fire damage, and its damage dice are d4s. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, takes the same amount of damage again at the end of its next turn."
+			]
+		},
+		{
+			"name": "Bramble Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By adding a potent fertilizer to your bomb’s explosive contents, you can change it into a bramble bomb. A bramble bomb deals no damage, but instead causes tough, thorny brambles to sprout from any area of natural ground within the bomb’s blast radius, which becomes difficult terrain. Additionally, if a creature in the blast radius is prone when the bomb detonates, it is enveloped by the brambles and must succeed on a Strength (Athletics) check against your bomb save DC before it can move or stand. The brambles shrivel and die after 1 minute."
+			]
+		},
+		{
+			"name": "Cryo Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a piece of ice-nine, you can change it into a cryo bomb. A cryo bomb deals cold damage instead of fire damage, its damage dice are d8s, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has its speed reduced by 10 feet until the end of its next turn."
+			]
+		},
+		{
+			"name": "Holy Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By adding a few drops of holy water to your bomb’s explosive contents, you can change it into a holy bomb. A holy bomb deals radiant damage instead of fire damage, and its damage dice are d8s, unless the target is a celestial, fiend, or undead. The bomb’s damage dice are d6s against celestials and d12s against fiends and undead."
+			]
+		},
+		{
+			"name": "Impact Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a more reactive one, you can change it into an impact bomb. An impact bomb deals force damage instead of fire damage, and its damage dice are d8s. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, is pushed 5 feet away from the center of the blast."
+			]
+		},
+    {
+			"name": "Incendiary Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By adding a thickening agent to your bomb’s explosive contents, you can change it into an incendiary bomb. An incendiary bomb’s damage dice are d6s. Additionally, the area of the blast radius is engulfed in flames, which persist until the start of your next turn. Flammable objects in this area that aren’t being worn or carried ignite. Any creature that ends its turn in this area takes half the bomb’s damage."
+			]
+		},
+		{
+			"name": "Laughing Gas Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By mixing your bomb’s explosive contents with a drop of jesterate, a highly euphoric chemical, you can change it into a laughing gas bomb. A laughing gas bomb deals poison damage instead of fire damage, its damage dice are d6s, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, falls prone in a fit of laughter. Once a creature falls prone due to this bomb’s effects, it is immune to this effect (but not the bomb’s poison damage) for the next 24 hours."
+			]
+		},
+		{
+			"name": "Lightning Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a charged arcane capacitor, you can change it into a lightning bomb. A lightning bomb deals lightning damage instead of fire damage, and its damage dice are d8s. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, can’t take reactions until the end of its next turn."
+			]
+		},
+		{
+			"name": "Nonlethal Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a pouch of rubber pellets, you can change it into a nonlethal bomb. A nonlethal bomb deals bludgeoning damage instead of fire damage, and its damage dice are d8s. If damage from this bomb drops a creature to 0 hit points, it knocks the creature out, rather than dealing a killing blow, rendering the creature unconscious and stable. Additionally, this bomb’s rubber pellets bounce around corners, ignoring half and three-quarters cover for targets within the blast radius."
+			]
+		},
+		{
+			"name": "Oil Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By mixing your bomb’s explosive contents with a few drops of a super-surfactant, you can change it into an oil bomb. An oil bomb deals no damage, but coats each creature within the blast radius in a sticky, flammable oil. The next time a creature coated in oil takes fire damage, it takes an extra d6 damage for each die of fire damage rolled, up to a maximum of half your alchemist level, rounded up. This oil can be removed by dousing a creature with a gallon of water."
+			]
+		},
+    {
+			"name": "Prismatic Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By adding an ounce of polyjuice, an unpredictable, multicolored chemical, to your bomb’s explosive contents, you can change it into a prismatic bomb. A prismatic bomb deals damage of a randomly determined type instead of fire damage, and it requires a randomly determined type of saving throw. Its damage dice are d8s. Roll on each of the following tables."
+			],
+      "table" : [
+        {
+          "colLabels" : [
+            "d6",
+            "Damage Type"
+          ],
+          "rows" : [
+            ["1","Acid"],
+            ["2","Cold"],
+            ["3","Fire"],
+            ["4","Lightning"],
+            ["5","Poison"],
+            ["6","Radiant"]
+          ]
+        },
+        {
+          "colLabels" : [
+            "d6",
+            "Saving Throw"
+          ],
+          "rows" : [
+            ["1-2","Dexterity"],
+            ["3-4","Constitution"],
+            ["5-6","Wisdom"]
+          ]
+        }
+      ]
+		},
+		{
+			"name": "Psionic Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By mixing your bomb’s explosive contents with dust from a psionic crystal, you can change it into a psionic bomb. A psionic bomb deals psychic damage instead of fire damage, its damage dice are d6s, and it requires a Wisdom saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on Constitution saving throws it makes to maintain concentration on spells until the end of its next turn, including against this bomb’s damage."
+			]
+		},
+    {
+			"name": "Quiet Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+        "By replacing your bomb’s explosive contents with a wad of thermal cotton, you can change it into a quiet bomb. A quiet bomb’s damage dice are d8s. When this bomb detonates, it makes only a low thud, audible out to 10 feet, and releases a puff of smoke to mask the light given off by its blast. Creatures have disadvantage on ability checks to detect that this bomb was detonated nearby."
+			]
+		},
+		{
+			"name": "Seeking Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a powerful lodestone, you can change it into a seeking bomb. A seeking bomb’s damage dice are d6s. You don’t have disadvantage on ranged attack rolls you make using this bomb as a result of being within 5 feet of a hostile creature."
+			]
+		},
+		{
+			"name": "Smoke Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By removing your bomb’s explosive contents entirely, you can change it into a smoke bomb. A smoke bomb deals no damage but fills a 10-foot-radius sphere with smoke. This smoke spreads around corners and its area is heavily obscured. It lasts for a number of rounds equal to your Intelligence modifier (minimum of 1 round) or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. Once you throw one of these bombs, you can’t throw another one for 1 minute."
+			]
+		},
+		{
+			"name": "Sonic Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By mixing your bomb’s explosive contents with a few drops of air elemental essence, you can change it into a sonic bomb. A sonic bomb deals thunder damage instead of fire damage, its damage dice are d6s, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, is deafened until the end of its next turn."
+			]
+		},
+		{
+			"name": "Stink Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By adding a single drop of skunkanide, a chemical too unholy to expound upon, you can change it into a stink bomb. A stink bomb deals poison damage instead of fire damage, its damage dice are d8, and it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on ability checks it makes until the end of its next turn."
+			]
+		},
+		{
+			"name": "Teleportation Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a glowing etherite crystal, you can change it into a teleportation bomb. A teleportation bomb deals no damage and instead opens a rift in space, instantly teleporting you to its point of detonation. This effect fails if the bomb explodes more than 30 feet away from you."
+			]
+		},
+    {
+			"name": "Thermobaric Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By replacing your bomb’s explosive contents with a lower speed explosive, you can change it into a thermobaric bomb. A thermobaric bomb’s damage dice are d6s, and it explodes in a 10-foot radius"
+			]
+		},
+		{
+			"name": "Withering Bomb",
+			"source": "VSS",
+			"featureType": [
+				"Bo:A"
+			],
+			"entries": [
+				"By mixing your bomb’s explosive components with a powerful desiccating agent, you can change it into a withering bomb. A withering bomb deals necrotic damage instead of fire damage, its damage dice are d8s, it requires a Constitution saving throw, instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, can’t regain hit points until the end of its next turn."
+			]
+		},
+		{
+			"name": "Advanced Poisoner",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite": [
+				{
+          "level": 13,
+					"feature": [
+            "Venomsmith Field of Study"
+					]
+				}
+			],
+			"entries": [
+				"Your morbid research into the most vicious, exotic poisons has revealed how to synthesize the following poisons when you brew potions:"
+			],
+      "table" : [
+        {
+          "colLabels" : [
+            "Potion",
+            "Cost"
+          ],
+          "rows" : [
+            ["Burnt Othur Fumes","3 reagent dice"],
+            ["Crawler Mucus","3 reagent dice"],
+            ["Drow Poison","3 reagent dice"],
+            ["Pale Tincture","4 reagent dice"],
+            ["Midnight Tears","5 reagent dice"],
+            ["Wyvern Poison","6 reagent dice"]
+          ]
+        }
+      ]
+		},
+		{
+			"name": "Alchemy of Ascendancy",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite": [
+				{
+					"level": 17
+				}
+			],
+			"entries": [
+				"A breakthrough in your alchemical studies has revealed the formulation of several potent elixirs. You can brew the following potions:"
+			],
+      "table" : [
+        {
+          "colLabels" : [
+            "Potion",
+            "Cost"
+          ],
+          "rows" : [
+            ["Necromantic Draught","4 reagent dice"],
+            ["Oil of Etherealness","4 reagent dice"],
+            ["Potion of Speed","4 reagent dice"],
+            ["Potion of Stone Giant Strength","4 reagent dice"]
+          ]
+        }
+      ]
+		},
+		{
+			"name": "Alchemy of Influence",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"Your alchemical research has revealed many of the basic chemicals that govern emotions. You can brew the following potions:"
+			],
+      "table" : [
+        {
+          "colLabels" : [
+            "Potion",
+            "Cost"
+          ],
+          "rows" : [
+            ["Potion of Animal Friendship","1 reagent die"],
+            ["Philter of Love","2 reagent dice"],
+            ["Potion of Clairvoyance","3 reagent dice"],
+            ["Potion of Mind Reading","3 reagent dice"]
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Alchemy of Transformation",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite": [
+				{
+					"level": 13
+				}
+			],
+			"entries": [
+				"You have mastered the alchemical secrets of shifting matter, which allow you to brew the following potions:"
+			],
+      "table" : [
+        {
+          "colLabels" : [
+            "Potion",
+            "Cost"
+          ],
+          "rows" : [
+            ["Oil of Slipperiness","2 reagent dice"],
+            ["Sandstone Solution","2 reagent dice"],
+            ["Aqua Fortis","3 reagent dice"],
+            ["Chameleon Concoction","3 reagent dice"],
+            ["Potion of Gaseous Form","3 reagent dice"]
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Arcane Study",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"You learn three cantrips of your choice from the wizard spell list. Intelligence is your spellcasting ability for your wizard spells."
+			]
+		},
+    {
+			"name": "Ballistics Research",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"You learn two additional bomb formulae."
+			]
+		},
+    {
+			"name": "Battle Training",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"You gain proficiency with martial weapons and shields."
+			]
+		},
+    {
+			"name": "Beguiling Haze",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 13,
+          "features":[
+            "Amorist Field of Study"
+          ]
+        }
+      ],
+			"entries": [
+				"When you charm a creature, you can choose to place it in a dreamy state, from which it regards everyone it sees as close friends. While the creature is charmed, it is nonhostile and acts as though it is charmed equally by each creature it sees. Once you use this ability, you can’t use it again until you finish a short or long rest."
+			]
+		},
+    {
+			"name": "Buffered Metabolism",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite": [
+				{
+					"level": 13,
+          "features": [
+            "Xenoalchemist Field of Study"
+          ]
+				}
+			],
+			"entries": [
+				"As a reaction when you take damage, you can expend any number of reagent dice up to your proficiency bonus to reduce the amount of damage taken by the total rolled on the dice."
+			]
+		},
+    {
+			"name": "Clotting Agent",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"You have developed a serum that thickens your blood. Your hit point maximum increases by your alchemist level + your Constitution modifier, and it increases by 1 again whenever you gain a level in this class."
+			]
+		},
+    {
+			"name": "Craft Homunculus",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"Using a special alchemical process requiring 8 hours of work, which can be performed over the course of a long rest, you can create a homunculus. A homunculus functions as a familiar summoned by the find familiar spell, with several differences:",
+        {
+          "type": "list",
+          "items":[
+            "The telepathic link between you and your homunculus functions at any distance, provided you and your homunculus are on the same plane of existence.",
+            "You can’t dismiss your homunculus as you would a familiar",
+            "Your homunculus is a construct and can’t assume a different form",
+            "Your homunculus can take the Attack action on its turn."
+          ]
+        },
+        "When your homunculus dies, its body remains, and can be reanimated in a procedure requiring 1 hour of work, which can be performed over the course of a short or long rest."
+			]
+		},
+    {
+			"name": "Demolition Spree",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 13,
+          "features":[
+            "Mad Bomber Field of Study"
+          ]
+        }
+      ],
+			"entries": [
+				"When you prime and throw a bomb, you can choose to throw a number of bombs equal to the amount of damage dice for the bomb instead of only one. Each bomb you throw deals 1d10 damage plus your Intelligence modifier and can’t target the same creature or space. You must spend reagent dice separately on these bombs and can apply a bomb formula to only one of them."
+			]
+		},
+    {
+			"name": "Explosive Missile",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"As a bonus action, you can load one of your bombs onto the head of a crossbow bolt. Instead of its normal damage, this bolt deals damage as if the bomb had been primed and thrown, but it doesn’t have a blast radius. Only one of your bombs can be loaded onto a bolt at a time, and you can’t fire an explosive bolt on the same turn you throw a bomb."
+			]
+		},
+    {
+			"name": "Fire Brand",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"As a bonus action you can mix your bomb’s contents together and apply the fiery concoction to a melee weapon you are holding. Until the end of your turn, this melee weapon deals an extra 1d6 fire damage on a hit. This bonus damage increases by 1d6 at 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+			]
+		},
+    {
+			"name": "Fire Eater",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"Instead of throwing a bomb, you use an action to drink its contents and spit them out in a 15-foot cone. Each creature within the cone must make a Dexterity saving throw against your bomb save DC. On a failed save, a creature takes fire damage as if the bomb had been primed and thrown, or half as much on a successful save. When you use this ability, you take 1d4 points of fire damage for each of your bomb’s damage dice."
+			]
+		},
+    {
+			"name": "Fire in the Hole",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 9
+        }
+      ],
+			"entries": [
+				"You have tweaked your bomb’s formula to increase its explosive yield. Your bomb save DC increases by half your proficiency bonus, rounded down."
+			]
+		},
+    {
+			"name": "Fortified Serum",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 13,
+          "features":[
+            "Apothecary Field of Study"
+          ]
+        }
+      ],
+			"entries": [
+				"Whenever a creature regains hit points by drinking one of your potions, it gains resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons until the end of its next turn."
+			]
+		},
+    {
+			"name": "Grenadier",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"When you prime and throw a bomb, you can use your bonus action to make an attack with a weapon that isn’t two-handed."
+			]
+		},
+    {
+			"name": "Dynamo Charger",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 13,
+          "features":[
+            "Dynamo Engineer Field of Study"
+          ]
+        }
+      ],
+			"entries": [
+				"You’ve invented a device that rapidly recharges your spell dynamos. Once per day when you finish a short rest, you can regain 2 expended spell slots stored in dynamos. You can configure these dynamos immediately."
+			]
+		},
+    {
+			"name": "Hemoreagent",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 17
+        }
+      ],
+			"entries": [
+				"When you prime and throw a bomb, you can convert a measure of your own blood into reagents. You can add five or fewer reagent dice to the bomb’s damage roll without expending them, and you take 1d6 necrotic damage for each reagent die added. This damage can’t be reduced or prevented in any way"
+			]
+		},
+    {
+			"name": "Lazarus Bolt",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 9
+        }
+      ],
+			"entries": [
+				"You’ve discovered a radical necromantic workaround: restoring life with direct electricity to the heart. As an action, you can drive a bolt into the torso of a creature within 5 feet of you that has died within the last minute and shock it back to life. That creature returns to life with 1 hit point. This feature can’t return to life a creature that lacks a heart, a creature that has died of old age, or a creature that is missing vital organs.",
+        "Once you use this ability, you can’t use it again until you finish a short or long rest."
+			]
+		},
+    {
+			"name": "Magnified Blast",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 17
+        }
+      ],
+			"entries": [
+				"Thanks to a new internal design for your bombs, you have expanded their blast radius and magnitude. Whenever you add reagent dice to your bomb’s damage, you can also choose to expand the bomb’s blast radius by a distance of up to 5 feet per two reagent dice spent."
+			]
+		},
+    {
+			"name": "Ooze Cowboy",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 13,
+          "features":[
+            "Ooze Rancher Field of Study"
+          ]
+        }
+      ],
+			"entries": [
+				"Tired of waiting for your oozes to catch up with you, you’ve modified your formula to make extra fast slimes! All slimes you make have a speed of 30 feet, unless it was already higher. Additionally, you can ride any ooze you make of Medium size or larger as a mount. You and your equipment suffer no ill effect from touching your oozes directly. Lastly, your oozes add your proficiency bonus to their damage rolls and initiative rolls"
+			]
+		},
+    {
+			"name": "Poisoner",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"Your research into poisonous compounds has taught you how to concoct lethal toxins. You gain proficiency with the poisoner’s kit. Additionally, you can craft the following poisons when you brew potions, which use your bomb save DC instead of their normal save DC:"
+			],
+      "table" : [
+        {
+          "colLabels" : [
+            "Potion",
+            "Cost"
+          ],
+          "rows" : [
+            ["2 × Antitoxin","1 reagent die"],
+            ["2 × Basic Poison","1 reagent die"],
+            ["Oil of Taggit","2 reagent dice"],
+            ["Potion of Poison","2 reagent dice"],
+            ["Serpent Venom","2 reagent dice"],
+            ["Truth Serum","2 reagent dice"]
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Precision Explosives",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"You have modified your bombs to have narrow gaps in their explosions, perfect for keeping some creatures safe from the blast. You can choose one creature in the blast radius of a bomb, other than the target, to automatically succeed on its saving throw against the bomb and take no damage from it."
+			]
+		},
+    {
+			"name": "Reactionary Gulp",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 17
+        }
+      ],
+			"entries": [
+				"By keeping your potions organized on a bandolier or in a series of pouches, you can quickly draw them at a moment’s notice. Immediately after you take damage from a creature you can see, you can use your reaction to drink a potion."
+			]
+		},
+    {
+			"name": "Recycled Potions",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 9
+        }
+      ],
+			"entries": [
+				"When you brew potions, you can distill those you have already brewed, recovering the reagents stored within. You can convert brewed potions into reagent dice and you can choose to expend those dice to create new potions. You can’t gain more than your maximum number of reagent dice using this ability."
+			]
+		},
+    {
+			"name": "Syringe",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+			"entries": [
+				"Using a sophisticated hypodermic needle, you can more quickly administer potions and poisons. As a bonus action, you can inject a potion into yourself or a willing creature within 5 feet of you, granting the benefits of the potion as if it were consumed normally. You can inject a potion into an unwilling creature with a successful melee attack."
+			]
+		},
+    {
+			"name": "Tri-Mutation",
+			"source": "VSS",
+			"featureType": [
+				"Di:A"
+			],
+      "prerequisite":[
+        {
+          "level": 13,
+          "features":[
+            "Mutagenist Field of Study"
+          ]
+        }
+      ],
+			"entries": [
+				"You’ve developed a powerful, but fleeting way of blending your mutagens together. When you inject yourself with a mutagen, you can choose to inject a tri-mutagen, which grants you the benefit of all your mutagens at once. This benefit lasts for 1 minute, or until you use your bonus action to inject yourself with a different mutagen. Once you use this ability, you can’t use it again until you finish a long rest."
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Natural Philosopher",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 1,
+			"entries": [
+				"You have learned many things about alchemy during your studies. Starting at 1st level, you can add half your proficiency bonus, rounded up, to any ability check you make to identify herbs, potions, poisons, or other alchemical substances. If the ability check already includes your proficiency bonus, you can add this bonus in addition to your normal proficiency bonus."
+			]
+		},
+		{
+			"name": "Bombs",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 1,
+			"entries": [
+				"At 1st level, you can create volatile alchemical bombs using your alchemist’s supplies. Whenever you finish a short or long rest, you can create a number of bombs equal to 10 + twice your alchemist level. For you the cost of materials necessary to create these bombs is negligible. After 24 hours, an unused bomb becomes inert. The statistics of a bomb are shown in the Bomb sidebar above",
+        {
+          "type": "entries",
+          "name": "Priming Bombs",
+          "entries": [
+            "Priming Bombs. Once per turn you can take the Use an Object action to prime a bomb with explosive reagents and make an attack with it, increasing the bomb’s explosive potential. When you do so, you can add your Intelligence modifier, instead of Dexterity, to the bomb’s damage roll.",
+            "Additionally, when you throw a bomb in this way, its damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+          ]
+        },
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"When you throw a bomb, the save DC for its blast radius is calculated as follows:",
+						{
+							"type": "abilityDc",
+							"name": "Bomb",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bomb Formulae",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 2,
+			"entries": [
+				"By 2nd level, your research has granted you insight into new alchemical formulations for your bombs. Select three bomb formulae from the Bomb Formulae section. Once per turn when you prime a bomb, you can apply a formula to it. Applying a formula sometimes changes all of the damage dice rolled for a bomb, but also grants it special effects.",
+				"When you gain certain levels in this class, you learn additional formulae of your choice, as shown in the Bomb Formulae Known column of the Alchemist table. Additionally, when you gain a level in this class, you can choose one of the formulae you know and replace it with another formula."
+			]
+		},
+		{
+			"name": "Field of Study",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 2,
+			"entries": [
+				"While all alchemists share a common knowledge base, most alchemists specialize into a particular field of study. When you reach 2nd level, you select your field of study, which grants you features at 2nd, 6th, 10th, and 18th level.",
+        "A formula granted by your field of study doesn’t count against the total number of formulae you know."
+			]
+		},
+		{
+			"name": "Reagent",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, you have a collection of powerful alchemical reagents, represented by a pool of reagent dice, that you can spend to brew potions or magnify the power of your explosives.",
+        {
+          "type": "entries",
+          "name": "Reagent Dice",
+          "entries": [
+            "You start with three reagent dice, which are d10s, and you gain additional reagent dice as you gain levels in this class, as shown in the Reagent Dice column of the Alchemist table. You regain all expended reagent dice when you finish a long rest.",
+            "When you prime a bomb, you can expend a number of reagent dice up to your proficiency bonus and add the dice to the bomb’s damage roll."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Brewing Potions",
+          "entries": [
+            "You can spend 10 minutes and expend any number of reagent dice to brew potions. These potions retain potency for 24 hours, after which they become inert. If a potion calls for a saving throw, it uses your bomb save DC.",
+            "The number of reagent dice and the alchemist level required to brew a potion are given on the Potions table:",
+            {
+              "name": "Potions",
+              "table":[
+                {
+                  "colLabels":[
+                    "Potion",
+                    "Cost",
+                    "Alchemist Level"
+                  ],
+                  "rows":[
+                    ["Potion of Climbing", "1 reagent die", "3rd"],
+                    ["Potion of Growth", "1 reagent die", "3rd"],
+                    ["Potion of Healing", "1 reagent die", "3rd"],
+                    ["Potion of Water Breathing", "1 reagent die", "3rd"],
+                    ["Universal Solvent", "1 reagent die", "3rd"],
+                    ["Cure-All", "2 reagent dice", "7th"],
+                    ["Potion of Greater Healing", "2 reagent dice", "7th"],
+                    ["Potion of Heroism", "2 reagent dice", "7th"],
+                    ["Potion of Resistance", "2 reagent dice", "7th"],
+                    ["Sovereign Glue (1 ounce)", "2 reagent dice", "7th"],
+                    ["Potion of Diminution", "3 reagent dice", "14th"],
+                    ["Potion of Flying", "4 reagent dice", "14th"],
+                    ["Potion of Hill Giant Strength", "4 reagent dice", "14th"],
+                    ["Potion of Invisibility", "4 reagent dice", "14th"],
+                    ["Potion of Superior Healing", "4 reagent dice", "14th"]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reagent Synthesis",
+          "entries":[
+            "When you finish a short rest, you can choose to regain all of your expended reagent dice that weren’t used to brew potions. Once you use this feature, you can’t do so again until you finish a long rest."
+          ]
+        }
+			]
+		},
+		{
+			"name": "Discoveries",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 4,
+			"entries": [
+				"In the course of your research, you have made a number of discoveries regarding the nature of alchemy. At 4th level, you gain two discoveries of your choice. When you gain certain alchemist levels, you gain additional discoveries of your choice, as shown in the Discoveries Known column of the Alchemist table",
+        "Additionally, when you gain a level in this class, you can choose one of the discoveries you know and replace it with another discovery that you could learn at that level."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 4,
+			"entries": [
+				"When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "Alternatively, as an alchemist, when you gain an ability score improvement, you can instead choose to learn a new discovery for which you meet the prerequisites."
+			]
+		},
+		{
+			"name": "Flashbang",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you carry a supply of concussive explosives to help you escape from perilous situations. As a bonus action, you can throw one of these explosives at your feet, disorienting and distracting nearby foes. Each Large or smaller creature within 5 feet of you can’t take reactions until the start of its next turn."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 6,
+			"entries": []
+		},
+		{
+			"name": "Potions Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 7,
+			"entries": [
+				"At 7th level, you can brew five new potions."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 8,
+			"entries": [
+				"When you reach 8th, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 10,
+			"entries": []
+		},
+		{
+			"name": "Evasion",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 11,
+			"entries": [
+				"Beginning at 11th level, when you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 12,
+			"entries": [
+				"When you reach 12th, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Potions Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 14,
+			"entries": [
+				"At 14th level, you can brew five new potions."
+			]
+		},
+		{
+			"name": "Blast Coating",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 15,
+			"entries": [
+				"Starting at 15th level, you automatically succeed on saving throws against your own bombs and never take damage from them."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 16,
+			"entries": [
+				"When you reach 16th, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Field of Study Feature",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 17,
+			"entries": []
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Philosopher's Stone",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"level": 20,
+			"entries": [
+				"At 20th level, you unlock the crowning achievement of all alchemy: a philosopher’s stone, a dynamo of alchemical energy in a fist-sized, glowing jewel. You can construct your philosopher’s stone using your alchemist’s supplies, 1,000 gp worth of materials, and 7 days of work. You can only have one philosopher’s stone at a time. As long as you possess the stone, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you finish a short rest, you regain all expended reagent dice.",
+						"You can brew potions as an action, instead of over the course of 10 minutes.",
+						"You age 10 times slower than normal, and you can’t be aged magically"
+					]
+				},
+				"Additionally, you learn the following formula, which doesn’t count against the total number of formulae you know:",
+        {
+          "name": "Formula: Nuclear Bomb",
+          "entries": [
+            "By replacing your bomb’s explosive contents with your philosopher’s stone, you can change it into a nuclear bomb. A nuclear bomb deals 10d10 + 100 force damage instead of its normal fire damage, has a blast radius of 1 mile, and completely destroys the philosopher’s stone. Additionally, each creature within the blast radius that fails its saving throw takes the full bomb damage rolled, or half as much damage on a successful save. Creatures within 60 feet of the bomb gain no benefit from Evasion or similar features."
+          ]
+        }
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Amorist",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"The study of mind-affecting alchemy is a delicate one, practiced only by a small number of alchemists, known as amorists. Often called “love doctors” by their clientele, amorists specialize in the brewing of potions that produce strong emotional responses in their drinkers. While love potions are by far their most popular product, amorists can also craft pungent pheromone bombs that can even soften the hearts of terrible monsters.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|VSS|Amorist|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Pheromone Bomb|Alchemist|VSS|Amorist|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you choose this field of study at 2nd level, you gain proficiency in the Deception and Persuasion skills."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Pheromone Bomb",
+			"entries": [
+				"Starting at 2nd level, you can replace your bomb’s explosive contents with a potent pheromone, changing it into a pheromone bomb. A pheromone bomb requires a Wisdom saving throw, instead of a Dexterity saving throw. The bomb deals no damage, and instead causes the target, as well as each creature within the blast radius that fails its saving throw, to be charmed by you until the end of its turn or until it takes damage."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Magnetic Personality",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can add your Intelligence modifier to Charisma checks that you make."
+			]
+		},
+		{
+			"name": "Alchemical Perfume",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Beginning at 10th level, you wear an aromatic, mind-altering perfume that endears others to you. When a hostile creature within 5 feet of you makes an attack roll against you, it must succeed on a Wisdom saving throw against your bomb save DC or have disadvantage on the attack roll. Once a creature succeeds on this saving throw, it is immune to this effect for 24 hours. A target automatically succeeds on this saving throw if it can’t be charmed."
+			]
+		},
+		{
+			"name": "Alchemical Romance",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level, during a long rest, you can spend 4 reagent dice to make an extremely potent potion of true love. This potion acts much like a philter of love, except that when you make the potion, you choose the creature the target regards as its true love, provided the target knows the creature or meets it within 24 hours of consuming the potion. Additionally, this effect lasts indefinitely, ended only when you make a new potion of true love, or the effect is removed with a remove curse spell or similar magic. When this potion’s effects are ended on a target, it regards the creature it once loved with total disgust, and can never love that creature again."
+			]
+		},
+		{
+			"name": "Apothecary",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"Many practically minded alchemists assume the role of the apothecary, for adventuring parties always need a healer, and clerics might be in short supply. During their downtime, such alchemists have a marketable skill to depend upon for income and can do an indisputable amount of good with their knowledge. Apothecaries are constantly at work studying potions and herbology, preferring to learn how to mend the body, rather than destroy it.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|VSS|Apothecary|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Painkiller Bomb|Alchemist|VSS|Apothecary|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you choose this field of study at 2nd level, you gain proficiency in the Medicine skill."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Painkiller Bomb",
+			"entries": [
+				"At 2nd level, you can mix your bomb’s contents with a slurry of analgesic oil, changing it into a painkiller bomb. A painkiller bomb deals no damage, but instead grants each creature within its blast radius temporary hit points equal to 1d8 plus half your alchemist level, which last until the end of your next turn. This bomb has no effect on constructs and undead."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Potion Toss",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you’ve developed a chemical mechanism to deliver potions more effectively to distant allies. You can use your action to hurl a potion at a willing or unconscious creature within 20 feet of you. The target gains the potion’s benefit as if it had consumed the potion normally."
+			]
+		},
+		{
+			"name": "Self-Medication",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"By 10th level, you’ve tested out your own tolerances to painkillers such that you can take a small measure regularly without ill effect. Whenever you drink a potion that has the effect of restoring your hit points (even if you already have all of your hit points), you gain advantage on saving throws until the end of your next turn."
+			]
+		},
+		{
+			"name": "Alchemical Resurrection",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Apothecary",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level, your medicines are potent enough to rouse the dead. By using your action to mix 500 gp worth of diamond dust into a potion of superior healing or a potion of supreme healing, you create a potion of raise dead. If you use your action to pour this concoction on a humanoid corpse that has been dead no longer than 10 days, the target gains the effect of the raise dead spell."
+			]
+		},
+    {
+			"name": "Dynamo Engineer",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Dynamo",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"As an early alchemical thesis states: if the fundamental energy of magic could be captured within physical substance, there would be no need for magic-users. Some alchemists have founded their careers on this notion, inventing and iterating upon small devices known as spell dynamos, which can store and manipulate arcane energy. These dynamos can be configured to store their energy at a specific resonance, such that, when it is released, it perfectly replicates the effect of a spell. Indeed, these few alchemists have begun to brave the frontier of spellcasting without an ounce of arcane talent; just a knack for tinkering and endless inventiveness.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spectrum Analyzer|Alchemist|VSS|Dynamo|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Alchemist|VSS|Dynamo|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Spectrum Analyzer",
+			"entries": [
+				"Starting at 2nd level, you have invented a small device shaped like a monocle capable of rendering magical auras visible to the naked eye. You can cast the detect magic spell once without using a spell slot or spell components. Once you cast the spell in this way, you can’t do so again until you finish a short or long rest."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Dynamo",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Spellcasting",
+			"entries": [
+				"Also at 2nd level, you can cast spells by storing and releasing energy in spell dynamos. See the core rules for the general rules of spellcasting and the wizard spell list.",
+        {
+          "name": "Spell Dynamos",
+          "entries":[
+            "You power your spells through handheld arcane devices called spell dynamos, which each hold a single spell slot. The Dynamo Engineer Spellcasting table shows how many spell dynamos you have. The table also shows what the level of those slots held in each of your dynamos is; all of these spell slots are the same level. To cast one of your wizard spells of 1st level or higher, you must expend a spell dynamo. You regain all expended spell dynamos when you finish a long rest."
+          ]
+        },
+        {
+          "name": "Preparing Spells",
+          "entries":[
+            "Unlike other spells, you must prepare the spells held in each of your spell dynamos in advance. When you finish a long rest, you configure each of your dynamos to cast a particular wizard spell you know. You can only use a spell dynamo to cast a spell to which it is configured. When you finish a short or long rest, you can reconfigure your unexpended dynamos to hold different spells."
+          ]
+        },
+        {
+          "name": "Spells known of 1st-level and higher",
+          "entries":[
+            "You know three 1st-level wizard spells of your choice, two of which you must choose from the evocation and transmutation spells on the wizard spell list.",
+            "The Spells Known column of the Dynamo Engineer Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an evocation or transmutation spell of your choice, and must be of a level for which you have spell slots.",
+            "The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
+            "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an evocation or transmutation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
+          ]
+        },
+        {
+              "type": "table",
+              "caption": "Dynamo Engineer Spellcasting",
+              "colLabels": [
+                "Alchemist Level",
+                "Spells Known",
+                "Spell Dynamos",
+                "Slot Level"
+              ],
+              "rows":[
+                ["2nd", "3", "2", "1st"],
+                ["3rd", "3", "2", "1st"],
+                ["4th", "4", "3", "1st"],
+                ["5th", "4", "3", "1st"],
+                ["6th", "4", "3", "1st"],
+                ["7th", "5", "4", "2nd"],
+                ["8th", "6", "4", "2nd"],
+                ["9th", "6", "4", "2nd"],
+                ["10th", "7", "5", "2nd"],
+                ["11th", "8", "5", "2nd"],
+                ["12th", "8", "5", "2nd"],
+                ["13th", "9", "5", "3rd"],
+                ["14th", "10", "5", "3rd"],
+                ["15th", "10", "5", "3rd"],
+                ["16th", "11", "6", "3rd"],
+                ["17th", "11", "6", "3rd"],
+                ["18th", "11", "6", "3rd"],
+                ["19th", "12", "7", "4th"],
+                ["20th", "13", "7", "4th"]
+              ]
+        },
+        {
+          "name": "Spellcasting Ability",
+          "entries":[
+            "Intelligence is your spellcasting ability for your wizard spells, since you cast them using cutting-edge arcane technology. You use your Intelligence whenever a spell refers to your spellcasting ability. Use your bomb save DC as the saving throw DC for a wizard spell you cast, and use your Intelligence modifier when making an attack roll with one.",
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+			"name": "Formula: Arcano Bomb",
+			"entries": [
+				"Starting at 6th level, you can craft arcano bombs. By adding an unexpended dynamo to your bomb (and thus expending the dynamo’s spell slot), you can change it into an arcano bomb. An arcano bomb deals force damage instead of fire damage, its damage dice are d12s, and it deals one extra die of damage, as if a reagent die were added to it."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Dynamo",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2
+		},
+    {
+			"name": "Counter-Discharge",
+			"entries": [
+				"Beginning at 10th level, when a creature you can see casts a spell that affects you, you can use your reaction to expend a spell dynamo to release a wave of disruptive magical energy. If the spell requires you to make a saving throw to resist its effects, you have advantage on the saving throw. If the spell deals damage, you have resistance against it. Once you use this ability, you can’t use it again until you finish a long rest."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Dynamo",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2
+		},
+    {
+			"name": "Arcane Recycler",
+			"entries": [
+				"By 18th level, you can convert otherwise wasted magical energy into a usable form. When you miss with an arcano bomb, you can recycle the spell slot stored in the dynamo and transfer it to one of the empty dynamos on your person."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Dynamo",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2
+		},
+    {
+			"name": "Mad Bomber",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Bomber",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"While many “mad bombers” aren’t actually mad, it takes a special kind of crazy to devote one’s life to studying explosives. Most alchemists who specialize in this field are incorrigible pyromaniacs who take great pleasure in burning, blasting, and blowing things up. Mad bombers are always working to improve their bombs’ effectiveness.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blasting Specialty|Alchemist|VSS|Bomber|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Shrapnel Bomb|Alchemist|VSS|Bomber|VSS|2"
+				}
+			]
+		},
+    {
+			"name": "Blasting Specialty",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Bomber",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Starting when you choose this field of study at 2nd level, your bombs deal double damage to objects and structures."
+			]
+		},
+    {
+			"name": "Formula: Shrapnel Bomb",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Bomber",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"At 2nd level, you can augment your bomb’s explosive contents with metal bearings, changing it into a shrapnel bomb. A shrapnel bomb deals piercing damage instead of fire damage, its damage dice are d8s, and it explodes in a 10-foot radius."
+			]
+		},
+		{
+			"name": "Timed Demolition",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Bomber",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, when you prime and throw a bomb, you can set a duration for its detonation, which can be any number of rounds (any increment of 6 seconds) up to 1 minute. The bomb detonates at the end of your turn after this duration. If a creature is in the area of more than one bomb’s blast radius simultaneously, the creature is only affected by one of the bombs of your choice."
+			]
+		},
+		{
+			"name": "Blast Shield",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Bomber",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Starting at 10th level, you have developed an elemental plating to protect you from hazardous energies. You gain resistance to your choice of acid, cold, fire, lightning, or thunder damage and can change your selection whenever you finish a long rest."
+			]
+		},
+		{
+			"name": "Formula: Black Powder Bomb",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Bomber",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Beginning at 18th level, you can replace your bomb’s explosive contents with a charge of black powder, changing it into a dreaded black powder bomb. A black powder bomb’s damage dice are d12s."
+			]
+		},
+    {
+			"name": "Mutagenist",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"The study of alchemy is fundamentally the study of transformation. All alchemists transmute mundane materials into magical substances—potions, elixirs, and bombs—yet some take it one step further. You have discovered the secrets of the mutagen, the keystone of transmutation, which allows you to transform your very body, gaining supernatural strength or speed, sprouting additional limbs or claws, or thickening your skin into a stony aegis.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Alchemist|VSS|Mutagenist|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mutagen|Alchemist|VSS|Mutagenist|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"Starting when you choose this field of study at 2nd level, you gain proficiency in your choice of the Acrobatics or Athletics skill, as well as with shields."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Mutagen",
+			"entries": [
+				"Also at 2nd level, you can use your bonus action to inject yourself with a potent transmutative potion known as a mutagen. You gain one of the following benefits of your choice for 1 minute, or until you use your bonus action to inject yourself with a different mutagen:",
+        {
+          "name": "Strength",
+          "entries":[
+            "Your Strength score increases by 3, to a maximum of 20.",
+            "Additionally, you sprout claws, fangs, spines, horns, or a different natural weapon of your choice. You can use this natural weapon to make unarmed strikes. If you hit with it, you deal damage equal to 1d4 + your Strength modifier instead of the bludgeoning damage normal for an unarmed strike. The damage of this attack is bludgeoning, piercing, or slashing, as appropriate for the natural weapon."
+          ]
+        },
+        {
+          "name": "Dexterity",
+          "entries":[
+            "Your Dexterity score increases by 3, to a maximum of 20. Additionally, your walking speed increases by 5 feet."
+          ]
+        },
+        {
+          "name": "Constitution",
+          "entries":[
+            "Your Constitution score increases by 3, to a maximum of 20. As a result, your current and maximum hit points increase accordingly with your new Constitution score, but when this effect ends, both your current and maximum hit points decrease by the same amount."
+          ]
+        }
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Shared Mutagen",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you’ve created a mutagen formulation generic enough to safely be injected into others. You can use your action and spend a reagent die to inject a willing creature within 5 feet of you with a mutagen of your choice. A creature can only be under the effect of one mutagen at a time. Once you have injected another creature with a mutagen, you can’t do so again until the original mutagen ends."
+			]
+		},
+		{
+			"name": "Advanced Mutation",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Starting at 10th level, whenever you inject yourself with a mutagen, you can choose one of the following additional mutations:",
+        {
+          "name": "Hyperelastic",
+          "entries":[
+            "Your flesh takes on a rubbery quality, allowing you to bend and stretch with ease. Melee weapons you use are considered to have the Reach property, if they didn’t already have it already. Additionally, you have advantage on ability checks you make to escape grapple or slip binds."
+          ]
+        },
+        {
+          "name": "Mucilagnous",
+          "entries":[
+            "Your skin secretes a thick, extremely sticky substance, which helps you adhere to objects. You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You also have a climbing speed equal to your walking speed.",
+            "Additionally, creatures have disadvantage on ability checks made to escape your grapples."
+          ]
+        },
+        {
+          "name": "Polybrachia",
+          "entries":[
+            "You grow a pair of additional arms. These arms are fully functional and can be used to hold weapons and shields (allowing you to hold 2 two-handed weapons, or 4 one-handed weapons), perform somatic components of spells, and perform other actions, though the arms themselves don’t grant you any additional actions."
+          ]
+        }
+			]
+		},
+		{
+			"name": "Mutated Blood",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Mutagenist",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"By 18th level, your mutagens have permanently altered your biology. Choose Strength, Dexterity, or Constitution. The chosen ability score increases by 2, and and your maximum for this score is now 22. Once you have chosen an ability score, this selection can’t be altered."
+			]
+		},
+    {
+			"name": "Ooze Rancher",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Ooze",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"Unsurprisingly, oozes, jellies, and slimes are a fascinating subject for alchemists who wish to figure out how inanimate chemicals can form together and rise up in a moving, hungry mass. The answer to this question may very well be at the heart of alchemy itself. Alchemists who choose to research slimes in depth are called ooze ranchers, for they breed and keep numerous slimes to experiment upon.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ooze Empathy|Alchemist|VSS|Ooze|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Slime Bomb|Alchemist|VSS|Ooze|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Ooze Empathy",
+			"entries": [
+				"Starting when you choose this field of study at 2nd level, you’ve developed a pheromone mix that endears all kinds of slime to you. Whenever an ooze tries to attack you, it must make a Wisdom saving throw against your bomb save DC. On a failed save, its attack misses. On a successful save, the ooze is immune to this feature for the next 24 hours."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Ooze",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Slime Bomb",
+			"entries": [
+				"At 2nd level, you can mix your bomb’s explosive contents with the remnants of an ooze, changing it into a slime bomb. A slime bomb deals no damage, but coats each creature within the blast radius in a viscous, green slime. No creature coated in slime can take the Dash action or the Disengage action. Slime can be removed by dousing a creature with a gallon of water or by taking an action to remove most of it."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Ooze",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Bottled Oozes",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Ooze",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you’ve learned a clever alchemical trick for condensing oozes into denser states and storing them in stasis for later use. Whenever you brew potions, you can spend 2 reagent dice to create an ooze bottle (see Chapter 5)."
+			]
+		},
+		{
+			"name": "Liquid Anatomy",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Ooze",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"By 10th level, your experiments with ooze alchemy have resulted in injecting yourself with a measure of ozoplasm, a fundamental substance which composes oozes and slimes. As a result, you can move through any space as narrow as 1 inch wide without squeezing (though your equipment doesn’t similarly compress). Moreover, any critical hit against you becomes a normal hit."
+			]
+		},
+		{
+			"name": "Ooze Jug",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Ooze",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Beginning at 18th level, you’ve solved the major problem preventing large oozes from being bottled: you just needed a much larger bottle. You have one ooze jug, which functions like an ooze bottle, but contains a larger ooze. You can only have one ooze jug at a time and it can only contain one ooze at a time. You can fill it with the following oozes when you brew potions:",
+        {
+          "table":[
+            {
+              "colLabels":[
+                "Ooze",
+                "Cost"
+              ],
+              "rows":[
+                ["Ochre Jelly", "4 reagent dice"],
+                ["Gelatinous Cube", "8 reagent dice"],
+                ["Black Pudding", "10 reagent dice"]
+              ]
+            }
+          ]
+        }
+			]
+		},
+    {
+			"name": "Venomsmith",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"For every alchemist that has devoted their life to healing the sick and infirm, there is another with a darker calling. Commonly called poisoners or venomsmiths, these alchemists are masters in the art of crafting deadly and debilitating poisons. Whether employed by an assassin’s guild or performing assassinations themselves, a venomsmith’s presence is usually accompanied by untimely death.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Poisoner|Alchemist|VSS|Venomsmith|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Formula: Venom Bomb|Alchemist|VSS|Venomsmith|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Poisoner",
+			"entries": [
+				"Beginning when you choose this field of study at 2nd level, you gain the Poisoner discovery. Until you reach 3rd level, you have 2 reagent dice, which you can spend only on crafting poisons using this discovery. This discovery doesn’t count against your number of discoveries known, and you can’t later replace this discovery with a different one when you gain a level in this class.",
+        "Additionally, when you deal poison damage to a creature, you ignore resistance to poison damage and you treat immunity to poison damage as resistance instead, dealing half damage."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Formula: Venom Bomb",
+			"entries": [
+				"At 2nd level, you can mix a few drops of a fastacting toxin into your bomb’s explosive components, changing it into a venom bomb. A venom bomb deals poison damage instead of fire damage, its damage dice are d8s, and it requires a Constitution saving throw instead of a Dexterity saving throw. Additionally, the target, as well as each creature within the blast radius that fails its saving throw, has disadvantage on the next Strength, Dexterity, or Constitution saving throw it makes before the end of its next turn."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Alchemical Assassin",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, you are adept at applying poisons without being seen. You have advantage on Dexterity (Sleight of Hand) checks you make to add ingested poison to food or drink, to apply poison to a weapon you are holding without being seen, or to place a vial of poison on another creature without it noticing."
+			]
+		},
+		{
+			"name": "Mithridatism",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"By 10th level, by administering yourself small doses of various poisons and toxins, you have developed an immunity to their ravages. You have immunity to poison damage and can’t be poisoned."
+			]
+		},
+		{
+			"name": "Toxic Recompense",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Venomsmith",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level, whenever a creature within 5 feet of you hits you with a melee attack, you can use your reaction to unleash a spray of poisonous vapor. The attacker must make a Constitution saving throw against your bomb save DC or be poisoned for 1 minute. While poisoned, the creature takes 1d10 poison damage at the start of each of its turns. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+    {
+			"name": "Xenoalchemist",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Xenoalchemist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"entries": [
+				"A small number of renegade alchemists elect to experiment on themselves, modifying their anatomy or even outright attaching new body parts. These experiments are often considered unethical and dangerous, even by other alchemists, and those that practice them are branded xenoalchemists for their efforts. As xenoalchemists progress in their studies, they invariably stumble upon the dangerous practice of alchemical necromancy, which allows them to imbue unlife upon amalgamations of body parts.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Xenobiology|Alchemist|VSS|Xenoalchemist|VSS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mad Scientist|Alchemist|VSS|Xenoalchemist|VSS|2"
+				}
+			]
+		},
+		{
+			"name": "Xenobiology",
+			"entries": [
+				"Starting when you choose this field of study at 2nd level, you have advantage on all ability checks you make to identify or research monsters."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Xenoalchemist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Mad Scientist",
+			"entries": [
+				"By 2nd level, you’ve learned the finer points of reanimating dead appendages and stitching them to things. You gain two monstrous grafts of your choice. Additionally, you don’t lose hit points or Hit Dice from installing or removing grafts, and it takes you no time to recover after the attachment of a new graft. See Appendix C for monstrous grafts."
+			],
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Xenoalchemist",
+			"subclassSource": "VSS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Surgical Attack",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Xenoalchemist",
+			"subclassSource": "VSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, whenever you take the Attack or prime and throw a bomb on your turn, you can make an unarmed strike as part of that action. You can only use this ability if your unarmed strike is improved by a graft, such as Bestial Features."
+			]
+		},
+		{
+			"name": "Necromantic Organs",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Xenoalchemist",
+			"subclassSource": "VSS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"By 10th level, you’ve learned how to tinge your own biology with necromancy through reanimated organs that will persist after your death. If you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.",
+        "Once you use this ability, you can’t use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "It's Alive!",
+			"source": "VSS",
+			"className": "Alchemist",
+			"classSource": "VSS",
+			"subclassShortName": "Amorist",
+			"subclassSource": "VSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Beginning at 18th level, your research into the field of necromancy has culminated in an alchemical golem stitched together from discarded body parts. You can create an alchemy golem through an 8-hourlong procedure, which can be conducted over the course of a long rest. To complete this process, you must have a healer’s kit, alchemist’s supplies, and a knife (or a facility with access to such tools), as well as at least three recently deceased humanoid corpses.",
+        {
+          "name": "Alchemy Golem",
+          "source": "VSS",
+          "page": 43,
+          "srd": false,
+          "size": "M",
+          "type": "construct",
+          "alignment": [
+            "N"
+          ],
+          "ac": [
+            {
+              "ac": 13,
+              "from": [
+                "natural armor"
+              ]
+            }
+          ],
+          "hp": {
+            "average": 76,
+            "formula": "9d8 + 36"
+          },
+          "speed": {
+            "walk": 30
+          },
+          "str": 17,
+          "dex": 9,
+          "con": 18,
+          "int": 6,
+          "wis": 10,
+          "cha": 5,
+          "senses": [
+            "darkvision 60 ft."
+          ],
+          "passive": 13,
+          "resist": [
+            {
+              "resist": [
+                "bludgeoning",
+                "piercing",
+                "slashing"
+              ],
+              "note": "from nonmagical weapons that aren’t adamantine",
+              "cond": true
+            }
+          ],
+          "immune": [
+            "lightning"
+          ],
+          "conditionImmune": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+          ],
+          "languages": [
+            "understands the languages of its creator but can’t speak"
+          ],
+          "cr": "5",
+          "trait": [
+            {
+              "name": "Aversion to Fire",
+              "entries": [
+                "If the alchemy golem takes fire damage, it has disadvantage on ability checks and attack rolls until the end of its next turn."
+              ]
+            },
+            {
+              "name": "Immutable Form",
+              "entries": [
+                "The alchemy golem is immune to any spell or effect that would alter its form."
+              ]
+            },
+            {
+              "name": "Lightning Absorption",
+              "entries": [
+                "Whenever the alchemy golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to half the lightning damage dealt."
+              ]
+            },
+            {
+              "name": "Magic Resistance",
+              "entries": [
+                "The alchemy golem has advantage on saving throws against spells and other magical effects."
+              ]
+            },
+            {
+              "name": "Monstrous Grafts",
+              "entries": [
+                "The alchemy golem’s weapon attacks, including monstrous grafts added by its creator, are magical. Monstrous grafts have a +6 attack bonus, deal twice the normal number of damage dice, and have a +5 bonus to their damage rolls. The alchemical golem can only have 1 graft in each slot."
+              ]
+            }
+          ],
+          "action": [
+            {
+              "name": "Multiattack",
+              "entries": [
+                "The alchemy golem makes two melee weapon attacks."
+              ]
+            },
+            {
+              "name": "Slam",
+              "entries": [
+                "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) bludgeoning damage."
+              ]
+            }
+          ]
+        },
+        "Your alchemy golem acts independently on its own turn, but always obeys your commands. On each of your turns, you can use a bonus action to mentally command your golem if it is within 60 feet of you. You decide what action the golem will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the golem only defends itself against hostile creatures. Once given an order, the golem continues to follow it until its task is complete",
+        "When the alchemy golem drops to 0 hit points, it dies. You can restore your alchemy golem’s hit points and reanimate it over the course of a short or long rest.",
+        "You can attach up to three grafts to your alchemy golem. You can only have one alchemy golem at a time."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Amorist",
+			"shortName": "Amorist",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Alchemist|VSS|Amorist|VSS|2",
+				"Formula: Pheromone Bomb|Alchemist|VSS|Amorist|VSS|2",
+				"Magnetic Personality|Alchemist|VSS|Amorist|VSS|6",
+				"Alchemical Perfume|Alchemist|VSS|Amorist|VSS|10",
+				"Alchemical Romance|Alchemist|VSS|Amorist|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Apothecary",
+			"shortName": "Apothecary",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Alchemist|VSS|Apothecary|VSS|2",
+				"Formula: Painkiller Bomb|Alchemist|VSS|Apothecary|VSS|2",
+				"Potion Toss|Alchemist|VSS|Apothecary|VSS|6",
+				"Self-Medication|Alchemist|VSS|Apothecary|VSS|10",
+				"Alchemical Resurrection|Alchemist|VSS|Apothecary|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Dynamo Engineer",
+			"shortName": "Dynamo",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Spectrum Analyzer|Alchemist|VSS|Dynamo|VSS|2",
+				"Spellcasting|Alchemist|VSS|Dynamo|VSS|2",
+				"Formula: Arcano Bomb|Alchemist|VSS|Dynamo|VSS|6",
+				"Counter-Discharge|Alchemist|VSS|Dynamo|VSS|10",
+				"Arcane Recycler|Alchemist|VSS|Dynamo|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Mad Bomber",
+			"shortName": "Bomber",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Blasting Specialty|Alchemist|VSS|Bomber|VSS|2",
+				"Formula: Shrapnel Bomb|Alchemist|VSS|Bomber|VSS|2",
+				"Timed Demolition|Alchemist|VSS|Bomber|VSS|6",
+				"Blast Shield|Alchemist|VSS|Bomber|VSS|10",
+				"Formula: Black Powder Bomb|Alchemist|VSS|Bomber|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Mutagenist",
+			"shortName": "Mutagenist",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Bonus Proficiencies|Alchemist|VSS|Mutagenist|VSS|2",
+				"Mutagen|Alchemist|VSS|Mutagenist|VSS|2",
+				"Shared Mutagen|Alchemist|VSS|Mutagenist|VSS|6",
+				"Advanced Mutation|Alchemist|VSS|Mutagenist|VSS|10",
+				"Mutated Blood|Alchemist|VSS|Mutagenist|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Ooze Rancher",
+			"shortName": "Ooze",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Ooze Empathy|Alchemist|VSS|Ooze|VSS|2",
+				"Formula: Slime Bomb|Alchemist|VSS|Ooze|VSS|2",
+				"Bottled Oozes|Alchemist|VSS|Ooze|VSS|6",
+				"Liquid Anatomy|Alchemist|VSS|Ooze|VSS|10",
+				"Ooze Jug|Alchemist|VSS|Ooze|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Venomsmith",
+			"shortName": "Venomsmith",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Venomsmith|Alchemist|VSS|Venomsmith|VSS|2",
+				"Formula: Venom Bomb|Alchemist|VSS|Venomsmith|VSS|2",
+				"Alchemical Assassin|Alchemist|VSS|Venomsmith|VSS|6",
+				"Mithridatism|Alchemist|VSS|Venomsmith|VSS|10",
+				"Toxic Recompense|Alchemist|VSS|Venomsmith|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		},
+		{
+			"name": "Xenoalchemist",
+			"shortName": "Xenoalchemist",
+			"source": "VSS",
+			"subclassFeatures": [
+				"Xenobiology|Alchemist|VSS|Xenoalchemist|VSS|2",
+				"Mad Scientist|Alchemist|VSS|Xenoalchemist|VSS|2",
+				"Surgical Attack|Alchemist|VSS|Xenoalchemist|VSS|6",
+				"Necromantic Organs|Alchemist|VSS|Xenoalchemist|VSS|10",
+				"It's Alive!|Alchemist|VSS|Xenoalchemist|VSS|18"
+			],
+			"className": "Alchemist",
+			"classSource": "VSS"
+		}
+	]
+}
